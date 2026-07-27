@@ -1,0 +1,64 @@
+{
+  "branding_system": {
+    "project": "A Mãe Forte - Itinerário de 33 Dias",
+    "persona": "The Alchemist",
+    "visual_standards": {
+      "style": "Rustic Realism (Cinematic Photography)",
+      "template": "[Subject Description], realistic cinematic photography, rustic aesthetic, high contrast, warm natural lighting, textures of aged wood and coarse linen, earth tones, framed by elegant golden corner arabesques and vines, minimalist composition, professional branding, high quality, text at the center-top \"DIA X: [TITLE]\" in elegant golden serif font, caption at the bottom \"[Portuguese Caption]\" in serif font --no gradients, sharp edges",
+      "colors": {
+        "marrom_umbra": "#4E3B31",
+        "ouro_mate": "#B8860B",
+        "linho_natural": "#EAE0D5",
+        "borgonha_profundo": "#4A0E0E"
+      },
+      "typography": {
+        "titles": "Playfair Display SC / Cinzel",
+        "body": "Libre Baskerville"
+      }
+    },
+    "prompts": [
+      {
+        "day": 1,
+        "title": "O que é a Fortaleza?",
+        "theme": "Hypomoné / Locus de Controle",
+        "description": "A strong Brazilian mother in a rustic setting, leaning against a rough stone wall, looking determined but serene, chiaroscuro lighting.",
+        "prompt": "A strong Brazilian mother in her 30s, realistic cinematic photography, rustic aesthetic, leaning against a rough ancient stone wall, determined yet serene expression, high contrast, warm natural side lighting, chiaroscuro, textures of aged wood and coarse linen, earth tones, framed by elegant golden corner arabesques, text at the center-top \"DIA 1: O QUE É A FORTALEZA?\" in elegant golden serif font, caption at the bottom \"A fortaleza é o alicerce da alma.\" in serif font --no gradients, sharp edges"
+      },
+      {
+        "day": 2,
+        "title": "A Meditação",
+        "theme": "Sentido / Maria",
+        "description": "Mother sitting in a wooden chair, hands on a Bible, looking at a beam of light from a window, contemplative mood.",
+        "prompt": "Brazilian mother in her 30s sitting in a rustic wooden chair by an old window, hands resting on an open Bible, looking thoughtfully towards a dramatic beam of golden sunlight, realistic cinematic photography, rustic aesthetic, high contrast, warm natural lighting, textures of aged wood and linen, earth tones, framed by elegant golden corner arabesques, text at the center-top \"DIA 2: A MEDITAÇÃO\" in elegant golden serif font, caption at the bottom \"Maria guardava tudo no coração.\" in serif font --no gradients, sharp edges"
+      },
+      {
+        "day": 3,
+        "title": "O Pilar da Oração",
+        "theme": "Escola do Combate",
+        "description": "Mother holding a rosary like a weapon, focused and determined in a rustic headquarters setting.",
+        "prompt": "Brazilian mother in her 30s, looking focused and determined, holding a wooden rosary in her hands as if it were a shield or weapon of light, sitting in a dimly lit rustic room, a single candle illuminating her face, realistic cinematic photography, rustic aesthetic, high contrast, warm natural lighting, textures of aged wood and coarse linen, earth tones, framed by elegant golden corner arabesques, text at the center-top \"DIA 3: O PILAR DA ORAÇÃO\" in elegant golden serif font, caption at the bottom \"A escola do combate espiritual.\" in serif font --no gradients, sharp edges"
+      },
+      {
+        "day": 4,
+        "title": "A Devoção",
+        "theme": "Vontade vs Sentimento",
+        "description": "Mother praying in the dark, looking tired but faithful, candle flickering, representing acting without feeling.",
+        "prompt": "Brazilian mother in her 30s praying in a dark rustic room, visibly tired but with a firm and faithful expression, a flickering candle nearby, realistic cinematic photography, rustic aesthetic, high contrast, chiaroscuro, textures of aged wood and linen, earth tones, framed by elegant golden corner arabesques, text at the center-top \"DIA 4: A DEVOÇÃO\" in elegant golden serif font, caption at the bottom \"A devoção é a prontidão da vontade.\" in serif font --no gradients, sharp edges"
+      },
+      {
+        "day": 5,
+        "title": "Adoração e Postura",
+        "theme": "Postura / Santa Clara",
+        "description": "Mother kneeling with a straight back, hands joined, looking dignified and sovereign over her fatigue.",
+        "prompt": "Brazilian mother in her 30s kneeling with perfect straight posture in a rustic chapel or room, hands joined in prayer, looking dignified and strong despite visible fatigue, realistic cinematic photography, rustic aesthetic, high contrast, side lighting, textures of stone and wood, earth tones, framed by elegant golden corner arabesques, text at the center-top \"DIA 5: ADORAÇÃO E POSTURA\" in elegant golden serif font, caption at the bottom \"O corpo é o espelho da alma.\" in serif font --no gradients, sharp edges"
+      },
+      {
+        "day": 6,
+        "title": "O Recolhimento",
+        "theme": "Silêncio / Cela Interior",
+        "description": "Mother reading a spiritual book in a small corner, focused, while the background chaos of the home is blurred.",
+        "prompt": "Brazilian mother in her 30s reading a spiritual leather-bound book in a small rustic corner, deeply recollected and focused, soft blurred background showing a home setting, realistic cinematic photography, rustic aesthetic, warm natural lighting, textures of wood and linen, earth tones, framed by elegant golden corner arabesques, text at the center-top \"DIA 6: O RECOLHIMENTO\" in elegant golden serif font, caption at the bottom \"A cela interior no meio do caos.\" in serif font --no gradients, sharp edges"
+      }
+    ]
+  }
+}

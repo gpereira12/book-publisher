@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Cinzel:wght@500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: 160mm 230mm;
+            margin: 0;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            width: 160mm;
+            height: 230mm;
+            background-image: url('./assets/Capa_livro.jpeg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            padding-top: 150px;
+            padding-bottom: 120px;
+            overflow: hidden;
+        }
+        .title-container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .title {
+            font-family: 'Cinzel', serif;
+            font-size: 190px;
+            color: #f7ecd5; /* Marfim quente / Ouro claro */
+            text-shadow: 0px 10px 40px rgba(0,0,0,0.9), 0px 2px 10px rgba(0,0,0,0.8);
+            margin: 0;
+            line-height: 1.1;
+            font-weight: 700;
+        }
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: 65px;
+            color: #dbb666; /* Ouro da logo */
+            letter-spacing: 12px;
+            margin-top: 60px;
+            text-shadow: 0px 5px 25px rgba(0,0,0,0.9);
+            text-transform: uppercase;
+        }
+        .author-container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .author {
+            font-family: 'Allison', cursive;
+            font-size: 160px;
+            color: #f7ecd5;
+            letter-spacing: 2px;
+            margin-bottom: 60px;
+            text-shadow: 0px 5px 25px rgba(0,0,0,0.9);
+        }
+        .logo {
+            width: 220px;
+            filter: drop-shadow(0px 5px 20px rgba(0,0,0,0.9));
+        }
+    </style>
+</head>
+<body>
+    <div class="title-container">
+        <div class="title">A Mãe Forte</div>
+        <div class="subtitle">Um Itinerário de 33 Dias</div>
+    </div>
+    
+    <div class="author-container">
+        <div class="author">Carolina Cordaro</div>
+        <img class="logo" src="../../resources/logos/ilios/logo.svg" />
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "day": 12,
+  "theme": "Abstinência de Conforto",
+  "prompt": "Cinematic photorealistic image of Santa Teresinha's simple wooden chair with no backrest standing on a cold stone floor. The figure has a subtle, thin golden halo (aureola) glowing softly behind their head. The scene is framed by an intricate, heavy carved gold and dark wood arabesque border as a core design element. The scene features dramatic lighting, 8k resolution, ultra-detailed textures, and a profound religious fine art atmosphere. The Alchemist style, focusing on authority, tradition, and rustic textures. At the bottom, a dark rustic wood texture plaque featuring the serif typography text 'Dia 12: Abstinência de Conforto' engraved in gold. --ar 2:3 --v 6.0",
+  "metadata": {
+    "archetype": "The Alchemist (Realistic)",
+    "style": "Photorealistic Cinematic",
+    "core_elements": [
+      "Arabesque Frame",
+      "Wood Title Plaque",
+      "Halo"
+    ]
+  }
+}

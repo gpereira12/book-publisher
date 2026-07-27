@@ -1,0 +1,181 @@
+{
+  "project": "A Mãe Forte",
+  "branding_persona": "The Alchemist",
+  "style_guide": {
+    "colors": {
+      "primary": "#4A0E0E (Burgundy Profundo)",
+      "secondary": "#001F3F (Navy)",
+      "accent": "#D4AF37 (Gold)",
+      "background": "#FDF5E6 (Ivory)"
+    },
+    "typography": "Serifada Clássica",
+    "visual_logic": "Minimalismo Sacro, Vetorial, Flat Design"
+  },
+  "itinerary_prompts": [
+    {
+      "day": 1,
+      "theme": "A Fortaleza",
+      "prompt": "Virgin Mary standing firm and tall, hands clasped, eyes fixed forward with resolve, 'Stabat Mater' pose, vector logo illustration, flat design, minimalist, The Alchemist style, pious tradition, authority, solid deep burgundy and navy colors, ivory accents, white background, sharp edges, professional religious branding. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 1: A Fortaleza' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 2,
+      "theme": "A Meditação",
+      "prompt": "Virgin Mary in prayer, hands on her heart, head slightly bowed in contemplation, serene and pious, vector logo illustration, flat design, minimalist, The Alchemist style, tradition, authority, solid deep burgundy and navy colors, gold accents, white background, sharp edges, professional religious branding. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 2: A Meditação' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 3,
+      "theme": "Preparo da Oração",
+      "prompt": "Virgin Mary sitting quietly, hands resting on her lap, preparing the heart for combat, silent posture, vector logo illustration, flat design, minimalist, The Alchemist style, tradition, authority, solid deep navy and burgundy colors, white background, sharp edges, professional religious branding. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 3: Preparo da Oração' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 4,
+      "theme": "Devoção",
+      "prompt": "Virgin Mary praying with absolute focus, a steady flame symbol nearby, ignore external chaos, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep burgundy colors, gold accents, white background, sharp edges, professional religious branding. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 4: Devoção' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 5,
+      "theme": "Adoração",
+      "prompt": "Virgin Mary in a kneeling posture, head bowed low in profound adoration, body alignment reflecting the soul, vector logo illustration, flat design, minimalist, The Alchemist style, tradition, solid navy and ivory colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 5: Adoração' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 6,
+      "theme": "Recolhimento",
+      "prompt": "Virgin Mary inside a minimalist archway or halo, symbolizing the inner cell of the soul, vector logo illustration, flat design, minimalist, The Alchemist style, tradition, authority, solid deep burgundy and gold colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 6: Recolhimento' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 7,
+      "theme": "Atenção",
+      "prompt": "Virgin Mary focused gaze on a single golden star above, mental focus, victory over distraction, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep navy colors, ivory accents, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 7: Atenção' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 8,
+      "theme": "Louvor por Fórmulas",
+      "prompt": "Virgin Mary holding a minimalist wooden rosary, fingers on the beads, supporting the mind with prayer formulas, vector logo illustration, flat design, minimalist, The Alchemist style, tradition, solid deep burgundy and gold colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 8: O Santo Terço' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 9,
+      "theme": "Louvor pelo Canto",
+      "prompt": "Virgin Mary singing with a serene expression, simple music note symbols around her, elevating the soul, vector logo illustration, flat design, minimalist, The Alchemist style, tradition, solid deep navy and gold colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 9: Louvor e Canto' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 10,
+      "theme": "Intercessão",
+      "prompt": "Virgin Mary with hands stretched out palms up, looking upwards in intercession for her children, apex of charity, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep burgundy and ivory colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 10: Intercessão' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 11,
+      "theme": "Temperança",
+      "prompt": "Virgin Mary holding a simple stone jug of water, sealing the temperance of the will, vector logo illustration, flat design, minimalist, The Alchemist style, tradition, solid deep navy and ivory colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 11: Temperança' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 12,
+      "theme": "Abstinência de Conforto",
+      "prompt": "Virgin Mary standing on a simple stone floor, minimalist and detached from comfort, vector logo illustration, flat design, minimalist, The Alchemist style, tradition, solid deep burgundy colors, ivory accents, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 12: Abstinência de Conforto' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 13,
+      "theme": "O Minuto Heróico",
+      "prompt": "Virgin Mary standing alert and ready, overcoming inertia, the promptness of the spirit, vector logo illustration, flat design, minimalist, The Alchemist style, tradition, solid deep navy and gold colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 13: O Minuto Heróico' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 14,
+      "theme": "Gula Emocional",
+      "prompt": "Virgin Mary turning away from a bowl of grapes/fruit, mastery over appetites and emotions, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep burgundy colors, ivory accents, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 14: Gula Emocional' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 15,
+      "theme": "Jejum Estrito",
+      "prompt": "A very lean and simple silhouette of Virgin Mary, symbol of purification and biological order, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep navy and ivory colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 15: Jejum Estrito' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 16,
+      "theme": "A Vigília",
+      "prompt": "Virgin Mary standing under a minimalist crescent moon and a single star, sanctifying the dawn, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep navy and gold colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 16: A Vigília' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 17,
+      "theme": "O Silêncio",
+      "prompt": "Virgin Mary with a peaceful finger to her lips, curbing passions and noise, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep burgundy and gold colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 17: O Silêncio' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 18,
+      "theme": "O Retiro",
+      "prompt": "Virgin Mary surrounded by a minimalist circle of light, creating an inner cell amidst the home, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep navy and ivory colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 18: O Retiro' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 19,
+      "theme": "Misericórdia",
+      "prompt": "Virgin Mary holding a small golden heart, preparing for the overflow of charity, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep burgundy and gold colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 19: Misericórdia' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 20,
+      "theme": "Dar de Comer e Beber",
+      "prompt": "Virgin Mary holding a simple loaf of bread and a cup, nourishing the family, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep navy and ivory colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 20: Dar de Comer e Beber' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 21,
+      "theme": "Vestir os Nus",
+      "prompt": "Virgin Mary holding a simple garment or piece of cloth, dignity and order of the home, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep burgundy colors, ivory accents, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 21: Vestir os Nus' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 22,
+      "theme": "Dar Pousada",
+      "prompt": "Virgin Mary standing by an open door with a welcoming light, hospitality, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep navy and gold colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 22: Dar Pousada' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 23,
+      "theme": "Visitar os Enfermos",
+      "prompt": "Virgin Mary with a comforting hand gesture and a small oil vial, care for health, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep burgundy and ivory colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 23: Visitar os Enfermos' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 24,
+      "theme": "Visitar os Presos",
+      "prompt": "Virgin Mary standing near a minimalist gate/window, reaching out to those in loneliness, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep navy and ivory colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 24: Visitar os Presos' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 25,
+      "theme": "Remir os Cativos",
+      "prompt": "Virgin Mary breaking a simple chain link, sacrifice to free others from burdens, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep burgundy and gold colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 25: Remir os Cativos' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 26,
+      "theme": "Sepultar os Mortos",
+      "prompt": "Virgin Mary praying over a minimalist mound/tombstone, honoring the body, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep navy and ivory colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 26: Sepultar os Mortos' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 27,
+      "theme": "Dar Bom Conselho",
+      "prompt": "Virgin Mary pointing to her heart or a book, maternal prudence, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep burgundy and gold colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 27: Bom Conselho' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 28,
+      "theme": "Ensinar os Ignorantes",
+      "prompt": "Virgin Mary holding an open scroll or book, instruction in virtue, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep navy and ivory colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 28: Ensinar' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 29,
+      "theme": "Corrigir os que Erram",
+      "prompt": "Virgin Mary with a firm but loving posture, gentle corrective gesture, charity of discipline, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep burgundy colors, gold accents, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 29: Corrigir' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 30,
+      "theme": "Consolar os Aflitos",
+      "prompt": "Virgin Mary with arms open for a comforting hug, balm of hope, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep navy and ivory colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 30: Consolar os Aflitos' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 31,
+      "theme": "Perdoar as Ofensas",
+      "prompt": "Virgin Mary opening her hands to release a dove or light, restoring peace, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep burgundy and gold colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 31: Perdoar' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 32,
+      "theme": "Suportar as Falhas",
+      "prompt": "Virgin Mary holding a beautiful but heavy wooden beam with patience, heroics of imperfection, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep navy colors, gold accents, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 32: Suportar Falhas' --no realistic photo, shading, complex details."
+    },
+    {
+      "day": 33,
+      "theme": "Rezar pelos Vivos e Mortos",
+      "prompt": "Virgin Mary with hands joined, looking at a star and the ground simultaneously, eternal intercession, vector logo illustration, flat design, minimalist, The Alchemist style, solid deep burgundy and ivory colors, white background, sharp edges. Below the icon, a dark rustic wood texture plaque with serif text 'Dia 33: Intercessão Eterna' --no realistic photo, shading, complex details."
+    }
+  ]
+}
