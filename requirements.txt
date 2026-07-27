@@ -1,0 +1,6 @@
+playwright
+markdown
+beautifulsoup4
+jinja2
+PyPDF2
+Pillow
