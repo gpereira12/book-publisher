@@ -218,6 +218,7 @@ Parágrafo normal com texto justificado...
 
 ### 🎨 v4.1 — Templates & Temas
 
+- [ ] **Gerador de Código de Barras (EAN-13 / ISBN)** — geração automática de vetor de código de barras a partir do código ISBN/EAN para posicionamento na contracapa do livro
 - [ ] **Sistema de temas via YAML** — definir paleta de cores, fontes, margens e espaçamentos em arquivos `.yaml` por livro, sem tocar no Python
 - [ ] **Novos formatos físicos** — suporte a `Trade Paperback` (152×228mm) e `Letter` (8.5"×11")
 - [ ] **Página de direitos autorais** — geração automática de folha de créditos (CIP, ISBN, Copyright, edição)
