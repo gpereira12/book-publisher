@@ -1,0 +1,19 @@
+titulo: O Segredo da Catedral
+genero: teologia
+personagens:
+- nome: Protagonista Exemplo
+  papel: Protagonista
+  objetivo_externo: Alcançar o objetivo da trama
+  necessidade_interna: Superar a falha de caráter inicial
+  fraqueza: Orgulho ou Impaciência
+- nome: Antagonista Exemplo
+  papel: Antagonista
+  motivacao: Manter o status quo ou o controle
+worldbuilding_e_regras:
+  ambientacao: Descrição do cenário principal
+  conceitos_chave:
+  - Conceito A
+  - Conceito B
+  autoridades_ou_fontes:
+  - Autoridade 1
+  - Autoridade 2

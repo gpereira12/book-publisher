@@ -4,3 +4,5 @@ beautifulsoup4
 jinja2
 PyPDF2
 Pillow
+ebooklib
+PyYAML

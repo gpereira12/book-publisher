@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="72" viewBox="0 0 130 72">
+  <!-- Fundo Fundo Fundo Branco Fundo Quiet Zone -->
+  <rect width="130" height="72" fill="#ffffff" rx="4" ry="4" stroke="#cccccc" stroke-width="0.5"/>
+  
+  <!-- Texto Superior ISBN -->
+  <text x="65.0" y="13" font-family="Courier, monospace" font-size="7.5" font-weight="bold" fill="#000000" text-anchor="middle">ISBN 978-65-988202-7-5</text>
+  
+  <!-- Barras Vetoriais EAN-13 -->
+  <g>
+    <rect x="18.0" y="18" width="1.0" height="42.0" fill="#000000"/>
+    <rect x="20.0" y="18" width="1.0" height="42.0" fill="#000000"/>
+    <rect x="22.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="23.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="24.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="26.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="27.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="31.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="34.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="39.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="41.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="43.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="44.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="48.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="51.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="53.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="54.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="55.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="57.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="58.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="60.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="61.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="62.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="64.0" y="18" width="1.0" height="42.0" fill="#000000"/>
+    <rect x="66.0" y="18" width="1.0" height="42.0" fill="#000000"/>
+    <rect x="68.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="71.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="75.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="76.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="78.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="79.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="82.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="83.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="84.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="87.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="89.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="90.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="92.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="93.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="96.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="100.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="103.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="106.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="107.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="108.0" y="18" width="1.0" height="36.0" fill="#000000"/>
+    <rect x="110.0" y="18" width="1.0" height="42.0" fill="#000000"/>
+    <rect x="112.0" y="18" width="1.0" height="42.0" fill="#000000"/>
+  </g>
+
+  <!-- Texto Inferior Dígitos EAN-13 -->
+  <text x="65.0" y="66" font-family="Courier, monospace" font-size="7" font-weight="bold" fill="#000000" text-anchor="middle">9 786598 820275</text>
+</svg>

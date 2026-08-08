@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1031" height="756" viewBox="0 0 1031 756">
+  <!-- Definições de Estilos e Gradientes -->
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e5ab" />
+      <stop offset="50%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#aa7c11" />
+    </linearGradient>
+    <linearGradient id="overlayTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141214" stop-opacity="0.95" />
+      <stop offset="70%" stop-color="#141214" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#141214" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="overlayBottom" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141214" stop-opacity="0" />
+      <stop offset="100%" stop-color="#141214" stop-opacity="0.95" />
+    </linearGradient>
+    <style>
+      .title-gold { font-family: 'Georgia', serif; font-size: 26px; font-weight: bold; fill: url(#goldGrad); letter-spacing: 3px; }
+      .sub-tag { font-family: 'Helvetica', sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; letter-spacing: 4px; }
+      .sub-italic { font-family: 'Georgia', serif; font-size: 12px; font-style: italic; fill: #f0e6d2; }
+      .author-txt { font-family: 'Helvetica', sans-serif; font-size: 13px; font-weight: bold; fill: #ffffff; letter-spacing: 5px; }
+      .synopsis-txt { font-family: 'Georgia', serif; font-size: 12px; fill: #e0e0e0; line-height: 1.6; }
+    </style>
+  </defs>
+
+  <!-- 1. Fundo Base -->
+  <rect width="1031" height="756" fill="#1c1817" />
+
+  <!-- 2. Contracapa (X: 38px até 510px) -->
+  <g transform="translate(38, 38)">
+    <rect width="472" height="680" fill="#181618" rx="6" />
+    <text x="236" y="70" class="title-gold" text-anchor="middle">CRÔNICAS CHINESAS</text>
+    <text x="236" y="95" class="sub-tag" text-anchor="middle">PARA PEQUENOS GUERREIROS</text>
+    <line x1="186" y1="115" x2="286" y2="115" stroke="#d4af37" stroke-width="1.5" />
+    
+    <!-- Caixa de Sinopse -->
+    <rect x="30" y="150" width="412" height="220" fill="#201d20" rx="8" stroke="#332d33" stroke-width="1" />
+    <foreignObject x="45" y="165" width="382" height="190">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="color:#e0e0e0; font-family: Georgia, serif; font-size: 13px; line-height: 1.6; text-align: justify;">
+        Uma coletânea inesquecível de contos chineses tradicionais que ensinam virtudes como resiliência, autocontrole, paciência e coragem.
+      </div>
+    </foreignObject>
+
+    <!-- Rodapé Contracapa -->
+    <image href="file:///Users/gabrielpereira/Desktop/Projetos/Livros/resources/logos/coala/logo.svg" x="40" y="580" width="90" height="50" />
+    <image href="file:///Users/gabrielpereira/Desktop/Projetos/Livros/inputs/cronicas_chinesas_para_pequenos_guerreiros/assets/isbn_barcode.svg" x="300" y="570" width="130" height="65" />
+  </g>
+
+  <!-- 3. Lombada (X: 510px até 521px) -->
+  <rect x="510" y="38" width="11" height="680" fill="#0b0a0c" />
+  <g transform="translate(515, 378) rotate(-90)">
+    <text x="0" y="4" font-family="Georgia" font-size="10" font-weight="bold" fill="#d4af37" letter-spacing="2" text-anchor="middle">
+      CRÔNICAS CHINESAS • GABRIEL PEREIRA
+    </text>
+  </g>
+
+  <!-- 4. Capa Frontal Full-Bleed SVG (X: 521px até 993px) -->
+  <g transform="translate(521, 0)">
+    <!-- Arte de Fundo -->
+    <image href="file:///Users/gabrielpereira/Desktop/Projetos/Livros/inputs/cronicas_chinesas_para_pequenos_guerreiros/assets/capa.jpg" x="0" y="0" width="510" height="756" preserveAspectRatio="xMidYMid slice" />
+    
+    <!-- Gradiente Topo -->
+    <rect x="0" y="0" width="510" height="320" fill="url(#overlayTop)" />
+    <text x="255" y="90" class="title-gold" text-anchor="middle">CRÔNICAS CHINESAS</text>
+    <text x="255" y="118" class="sub-tag" text-anchor="middle">PARA PEQUENOS GUERREIROS</text>
+    <line x1="205" y1="135" x2="305" y2="135" stroke="#d4af37" stroke-width="1.5" />
+    <text x="255" y="165" class="sub-italic" text-anchor="middle">Histórias Milenares de Coragem, Sabedoria e Autocontrole</text>
+
+    <!-- Gradiente Rodapé -->
+    <rect x="0" y="550" width="510" height="206" fill="url(#overlayBottom)" />
+    <text x="255" y="700" class="author-txt" text-anchor="middle">GABRIEL PEREIRA</text>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+titulo: "Crônicas Chinesas para Pequenos Guerreiros"
+subtitulo: "Histórias Milenares de Coragem, Sabedoria e Autocontrole"
+autor: "Gabriel Pereira"
+editora: "Editora Coala"
+selo: "coala" # Opções: coala | cia-de-jesus | eldoria | ilios
+isbn: "978-65-988202-7-5"
+ano: 2026
+idioma: "pt-BR"
+genero: "infantojuvenil"
+formato: "Pocket"
+tema: "Creme"
+faixa_etaria: "8 anos"
+
+# Configuração de Acabamento Gráfico & Cores da Capa
+acabamento: "brochura" # Opções: brochura | capadura | grampo | espiral
+orelhas: false # Livro de bolso sem orelhas (0mm)
+orelha_mm: 0
+cor_capa: "#1c1817" # Cor de fundo da capa (Charcoal Tinta Nanquim Chinês)
+guardas_ilustradas: false
+
+# Configuração de Layout
+layout_mídias: "ilustrado_full_bleed"
+preset_tipografico: "classico"
+framework: "contos_parabolas_sabedoria"
+overlay_estilo: "gotouge_inherited_will"
+
+# Lista de Histórias (7 Histórias em total)
+historias:
+  - id: 1
+    titulo: "O Mestre da Fronteira e o Cavalo de Vento"
+    virtude: "Serenidade e Equilíbrio"
+  - id: 2
+    titulo: "A Espada que Permaneceu na Bainha"
+    virtude: "Autocontrole e Visão de Longo Prazo"
+  - id: 3
+    titulo: "O Homem que Lutou Contra o Tempo"
+    virtude: "Paciência e Respeito aos Processos"
+  - id: 4
+    titulo: "O General e a Chama da Última Alvorada"
+    virtude: "Coragem Sacrificial e Valor da Vida"
+  - id: 5
+    titulo: "Pendente"
+  - id: 6
+    titulo: "Pendente"
+  - id: 7
+    titulo: "Pendente"

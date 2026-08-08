@@ -1,0 +1,20 @@
+# Folha de Estilo Editorial para o livro Crônicas Chinesas para Pequenos Guerreiros
+
+grafia_estrita:
+  "Sai Weng":
+    - "Saiweng"
+    - "Sai-weng"
+    - "Sai weng"
+  "Han Xin":
+    - "Hanxin"
+    - "Han-xin"
+  "Mestre Li":
+    - "mestre li"
+    - "Mestre li"
+  "General Wen":
+    - "general wen"
+
+termos_anacronicos_proibidos:
+  - "copo de vidro"
+  - "geladeira"
+  - "relógio de pulso"

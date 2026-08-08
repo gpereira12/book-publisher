@@ -1,267 +1,136 @@
 <div align="center">
 
-# 📚 Boutique de Livros
+# 📚 Boutique de Livros — Hub Editorial & Motor Typst v4.0
 
-**Pipeline profissional de diagramação editorial: `Markdown → HTML → PDF`**
+**Hub Editorial Avançado e Pipeline de Diagramação: `Markdown AST → Typst / HTML → PDF / EPUB3`**
 
-*Converte textos em livros com qualidade gráfica, prontos para gráfica ou publicação digital.*
+*Converte manuscritos em livros de alta qualidade gráfica com margens áureas, presets tipográficos, imagens emolduradas/sangradas e exportação híbrida.*
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![Typst](https://img.shields.io/badge/Typst-v0.11+-239DA8?style=flat-square&logo=typst&logoColor=white)](https://typst.app)
 [![Playwright](https://img.shields.io/badge/Playwright-Headless_Chrome-2EAD33?style=flat-square&logo=playwright&logoColor=white)](https://playwright.dev/python/)
-[![Paged.js](https://img.shields.io/badge/Paged.js-CSS_Print_Polyfill-orange?style=flat-square)](https://pagedjs.org)
+[![EPUB3](https://img.shields.io/badge/EPUB-3.0-blue?style=flat-square)](https://w3.org/publishing/epub3)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
 
 </div>
 
 ---
 
-## Visão Geral
+## 🏛️ Visão Geral da Arquitetura (Hub Editorial)
 
-A **Boutique de Livros** é um sistema de diagramação editorial automatizado que transforma arquivos Markdown em PDFs profissionais — com capa, folha de rosto, sumário, numeração de página e suporte a múltiplos formatos físicos (A5, A4, Pocket).
-
-O pipeline funciona em três etapas encadeadas:
+O **Boutique de Livros** evoluiu para um **Hub Editorial Híbrido**, suportando dois motores de renderização de alta precisão: o tradicional pipeline web (`Markdown → HTML/Paged.js → Playwright`) e o novo motor ultra-rápido de diagramação nativa **Typst** (`Markdown AST → Typst Templates → PDF`).
 
 ```
-texto_original.md
-       │
-       ▼
-  [1] Parser (src/parser.py)
-  ├── Lê e pré-processa o Markdown
-  ├── Converte para HTML com python-markdown
-  ├── Identifica capítulos, checklists e tabelas
-  └── Otimiza imagens via Pillow (evita OOM no Chromium)
-       │
-       ▼
-  [2] Builder (src/builder.py)
-  ├── Gera HTML completo com CSS tipográfico profissional
-  ├── Incorpora Paged.js para paginação tipo InDesign
-  ├── Suporta 2 saídas: versão gráfica (com bleed/marcas de corte) e digital
-  └── Imagens embutidas em base64 para portabilidade
-       │
-       ▼
-  [3] PDF Printer (src/pdf_printer.py)
-  ├── Abre o HTML via Playwright (Chromium headless)
-  ├── Aguarda Paged.js renderizar a paginação
-  ├── Exporta o PDF nativo via CDP
-  └── Fallback automático para CLI do Chrome se necessário
+                    ┌─────────────────────────┐
+                    │ Manuscrito Original MD  │
+                    │  + YAML Frontmatter     │
+                    └────────────┬────────────┘
+                                 │
+                                 ▼
+                     ┌──────────────────────┐
+                     │  Markdown AST Parser │
+                     └───────────┬──────────┘
+                                 │
+                 ┌───────────────┴───────────────┐
+                 ▼                               ▼
+    ┌─────────────────────────┐     ┌─────────────────────────┐
+    │    Typst Layout Engine  │     │   HTML5 / Paged.js Engine│
+    │  (src/typst_exporter.py)│     │  (src/builder.py)       │
+    └────────────┬────────────┘     └────────────┬────────────┘
+                 │                               │
+                 ▼                               ▼
+     [ Typst Compile (CLI) ]         [ Playwright / Chromium ]
+                 │                               │
+                 ├───────────────────────────────┤
+                 ▼                               ▼
+        ┌─────────────────┐             ┌─────────────────┐
+        │  PDF Impresso   │             │  PDF Digital /  │
+        │  (Com Bleed 5mm)│             │     EPUB3       │
+        └─────────────────┘             └─────────────────┘
 ```
 
 ---
 
-## Funcionalidades
+## ✨ Funcionalidades Principais
 
-| Funcionalidade | Detalhe |
+| Categoria | Recursos e Detalhes |
 |---|---|
-| 📄 **Formatos de livro** | A5 (148.5×210mm), A4, Pocket (125×180mm) |
-| 🎨 **Temas** | Fundo Creme (`#FDF5E6`) ou Branco |
-| 🖼️ **Capa automática** | Imagem embutida em base64, sem fontes externas |
-| 📑 **Sumário automático** | Gerado via Paged.js com números de página reais |
-| 📐 **Versão gráfica** | Inclui `bleed: 5mm` e marcas de corte para gráfica offset |
-| 📱 **Versão digital** | Sem marcas, limpa, pronta para KDP/e-readers |
-| 🔄 **Tabelas rotacionadas** | Tabelas largas são exibidas na horizontal (landscape) automaticamente |
-| ☑️ **Checklists** | Sintaxe `* [ ]` / `* [x]` convertida para checkboxes elegantes |
-| ⏱️ **Tempo de leitura** | Calculado por capítulo (200 palavras/min) |
-| 🛡️ **Fallback robusto** | Se o Playwright crashar (OOM), usa CLI nativo do Chrome |
+| ⚡ **Motores de Renderização** | Typst (Ultra-rápido, tipografia perfeita) & HTML5 / Paged.js |
+| 📐 **Formatos Editoriais** | A5, 14x21cm, Pocket (125x180mm), Trade (152x228mm) e A4 |
+| 📏 **Proporção Áurea & Sangria** | Margens calculadas via Golden Ratio (1:1.618) + Bleed de 5mm para impressão offset |
+| 🖼️ **Layout de Imagens** | Suporte a Molduras estilizadas, Imagens Sangradas (Full-Bleed 1 página) e Spread Duplo (2 páginas) |
+| 🎨 **Elementos Gráficos** | Divisores decorativos SVG, capitulares, epígrafes e balões de mangá / quadrinhos |
+| 📑 **Ficha Catalográfica & Folha de Rosto** | Geração dinâmica de CIP com contagem de páginas e metadados via YAML Frontmatter |
+| 📖 **Exportação EPUB3** | Suporte planejado para publicação digital reflowable e e-readers |
 
 ---
 
-## Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ```
 boutique-de-livros/
 │
-├── main.py                    # Ponto de entrada — orquestra o pipeline completo
-├── inspect_pdf.py             # Utilitário para inspecionar metadados de PDFs gerados
+├── main.py                    # Orquestrador global e CLI interativo
 ├── requirements.txt           # Dependências Python
+├── README.md                  # Documentação da arquitetura e roadmap
 │
 ├── src/
-│   ├── parser.py              # Markdown → HTML + otimização de imagens
-│   ├── builder.py             # HTML → HTML completo (CSS tipográfico + Paged.js)
-│   └── pdf_printer.py         # HTML → PDF via Playwright + Fallback CLI
+│   ├── typst_exporter.py      # Compilador e integrador Typst (YAML Frontmatter + MD -> PDF)
+│   ├── parser.py              # Parser AST de Markdown e pré-processador de imagens
+│   ├── builder.py             # Builder de HTML5 e Paged.js
+│   ├── pdf_printer.py         # Renderizador Playwright (Chromium headless)
+│   │
+│   └── templates_typst/       # 🎨 Módulo de Layout & Templates Typst
+│       ├── book_base.typ      # Base engine: margens áureas, dimensões, folha de rosto e CIP
+│       ├── components.typ     # Molduras, full-bleed, double-spread, SVGs e balões de mangá
+│       └── romance.typ        # Preset clássico para literatura/romances
 │
-├── inputs/
+├── inputs/                    # Manuscritos de entrada por projeto
 │   └── <nome_do_livro>/
-│       ├── texto_original.md  # Conteúdo do livro em Markdown
-│       └── assets/            # Imagens, capas, arabescos, QR codes…
+│       ├── texto_original.md  # Manuscrito em Markdown
+│       └── assets/            # Imagens, ilustrações, capas e figuras
 │
-├── branding_system/           # Templates de prompts para geração de imagens com IA
-│   └── prompts/               # Prompts por dia (para livros de 33 dias)
-│
-└── resources/
-    └── logos/                 # Logotipos das editoras (Ilios, CIA de Jesus, Coala…)
+└── outputs/                   # PDFs impressos (com sangria) e digitais gerados
 ```
 
 ---
 
-## Instalação
+## 🚀 Como Usar
 
-### Pré-requisitos
-
-- Python **3.10+**
-- `pip`
-
-### Passo a passo
+### Compilação via Typst Exporter (Novo Motor v4.0)
 
 ```bash
-# 1. Clone o repositório
-git clone https://github.com/gpereira12/book-publisher.git
-cd book-publisher
-
-# 2. Crie e ative o ambiente virtual
-python -m venv venv
-source venv/bin/activate        # macOS / Linux
-# venv\Scripts\activate         # Windows
-
-# 3. Instale as dependências Python
-pip install -r requirements.txt
-
-# 4. Instale o browser do Playwright
-playwright install chromium
+# Compilar um manuscrito com Frontmatter usando o preset Romance
+python src/typst_exporter.py -i inputs/O_Olhar_Elevado/texto_original.md -o outputs/O_Olhar_Elevado/O_Olhar_Elevado_Typst.pdf --preset romance
 ```
 
----
-
-## Uso
-
-### Modo interativo
+### Compilação via Pipeline Tradicional (HTML / Paged.js)
 
 ```bash
-python main.py
-```
-
-O sistema vai perguntar passo a passo: nome do livro, formato, tema, autor, título e capa.
-
-### Modo linha de comando (não-interativo)
-
-```bash
-python main.py \
-  --book-dir O_Olhar_Elevado \
-  --format A5 \
-  --theme Creme \
-  --author "Carolina Cordaro" \
-  --title "O Olhar Elevado" \
-  --cover inputs/O_Olhar_Elevado/assets/capa_olhar_elevado_v2.png
-```
-
-### Flags disponíveis
-
-| Flag | Descrição |
-|---|---|
-| `--book-dir` | Nome da pasta dentro de `inputs/` |
-| `--format` | `A5` (padrão), `A4`, `Pocket` |
-| `--theme` | `Creme` (padrão) ou `Branco` |
-| `--author` | Nome do autor |
-| `--title` | Título do livro |
-| `--cover` | Caminho para a imagem de capa |
-| `--digital-only` | Gera apenas o PDF digital |
-| `--print-only` | Gera apenas o PDF para gráfica |
-
-### Saída
-
-```
-outputs/
-└── O_Olhar_Elevado/
-    ├── O_Olhar_Elevado_digital.pdf    # Para KDP, e-readers, envio digital
-    └── O_Olhar_Elevado_impresso.pdf   # Para gráfica (com sangria e marcas de corte)
+python main.py --book-dir O_Olhar_Elevado --format A5 --theme Creme
 ```
 
 ---
 
-## Formatação do Markdown
+## 🛤️ Roadmap v4.0 — Hub Editorial & Motor Typst
 
-O sistema reconhece convenções especiais no Markdown do livro:
+> *Planejamento estratégico de evolução da plataforma de diagramação automatizada.*
 
-```markdown
-# Capítulo 1 — Título Principal
-## Subcapítulo
-
-> Texto de epígrafe (exibido alinhado à direita, itálico)
-
-Parágrafo normal com texto justificado...
-
-### Lista de Verificação
-
-* [ ] Item pendente
-* [x] Item concluído
-
-### Tabela com Rotação Automática
-
-| Coluna A | Coluna B | Coluna C |
-|----------|----------|----------|
-| ...      | ...      | ...      |
-```
-
-> **Dica:** Tabelas precedidas de um título são automaticamente detectadas e renderizadas em modo *landscape* (página horizontal).
+- [x] **v4.0.0 — Arquitetura de Templates Typst Base**
+  - [x] Criação do `src/templates_typst/book_base.typ` com Proporção Áurea e Ficha Catalográfica dinâmica.
+  - [x] Criação do `src/templates_typst/components.typ` (`#moldura()`, `#full-bleed()`, `#double-spread()`, `#svg-divider()`, balões de mangá).
+  - [x] Preset tipográfico `src/templates_typst/romance.typ` para literatura.
+  - [x] Script compilador `src/typst_exporter.py` com suporte a YAML Frontmatter.
+- [ ] **v4.1.0 — Suporte Total a EPUB3 e AST Markdown Extensível**
+  - [ ] Parser de AST em Python integrando `marko` ou `mistune` para representação intermediária única.
+  - [ ] Gerador nativo de `.epub` 3.0 com suporte a CSS Reflowable e metadados Dublin Core.
+- [ ] **v4.2.0 — Presets de Mangás e HQs**
+  - [ ] Template Typst dedicado para leitura Right-to-Left (RTL), grids de painéis e onomatopeias em camadas SVG.
+- [ ] **v4.3.0 — Interface Web & Preview em Tempo Real**
+  - [ ] Dashboard Web em FastAPI + WebAssembly/Typst para visualização síncrona da diagramação.
 
 ---
 
-## Livros Publicados com Este Sistema
+## 📜 Licença
 
-| Livro | Autora | Formato |
-|---|---|---|
-| O Olhar Elevado | Carolina Cordaro | A5 Creme |
-| A Mãe Forte | — | A5 Creme |
-| As Virtudes do Pai | — | A5 Creme |
-
----
-
-## Roadmap — Próximas Melhorias
-
-> Funcionalidades planejadas para as próximas versões da Boutique de Livros.
-
-### 🔥 v4.0 — Motor & Qualidade
-
-- [ ] **Migrar de `PyPDF2` para `pypdf`** — biblioteca ativamente mantida, com melhor suporte a metadados e criptografia
-- [ ] **Geração de metadados PDF/A** — embutir título, autor, ISBN, editora e palavras-chave no `DocumentInfo` do PDF para conformidade editorial
-- [ ] **Suporte a hifenização** — integrar `pyphen` para hifenização automática em pt-BR, eliminando rios de espaço no texto justificado
-- [ ] **Cache de imagens otimizadas** — salvar hash de cada imagem otimizada e reutilizar entre builds, reduzindo tempo de geração em ~40%
-
-### 🎨 v4.1 — Templates & Temas
-
-- [ ] **Gerador de Código de Barras (EAN-13 / ISBN)** — geração automática de vetor de código de barras a partir do código ISBN/EAN para posicionamento na contracapa do livro
-- [ ] **Sistema de temas via YAML** — definir paleta de cores, fontes, margens e espaçamentos em arquivos `.yaml` por livro, sem tocar no Python
-- [ ] **Novos formatos físicos** — suporte a `Trade Paperback` (152×228mm) e `Letter` (8.5"×11")
-- [ ] **Página de direitos autorais** — geração automática de folha de créditos (CIP, ISBN, Copyright, edição)
-- [ ] **Cabeçalhos de página (running headers)** — exibir título do capítulo atual no topo das páginas ímpares
-
-### 🤖 v4.2 — Inteligência Artificial
-
-- [ ] **Geração de capa com IA** — integração nativa com API da OpenAI (DALL-E) ou Stability AI, usando os prompts já estruturados em `branding_system/`
-- [ ] **Sugestão de título via LLM** — analisar o texto e sugerir títulos e subtítulos alternativos
-- [ ] **Revisão gramatical automatizada** — passar o Markdown pelo LanguageTool (pt-BR) antes da diagramação e exibir um relatório de sugestões
-
-### 🌐 v4.3 — Interface & Distribuição
-
-- [ ] **Interface Web (FastAPI + React)** — painel de controle com upload de Markdown, preview ao vivo do HTML e download dos PDFs
-- [ ] **CLI com Rich** — substituir os `print()` simples por uma TUI elegante usando a biblioteca `rich` (progress bars, tabelas, cores)
-- [ ] **Exportação para EPUB** — gerar `.epub` a partir das seções já parseadas, para publicação em lojas digitais (Kobo, Apple Books)
-- [ ] **Integração com KDP** — verificação automática das especificações de tamanho, resolução e sangria da Amazon KDP
-
-### 🏗️ v4.4 — Arquitetura & DevOps
-
-- [ ] **Testes automatizados** — suite `pytest` cobrindo o parser (Markdown → seções), o builder (HTML gerado) e a impressão (PDF gerado e não corrompido)
-- [ ] **GitHub Actions** — CI que roda os testes a cada push e valida que o PDF do livro de exemplo é gerado com sucesso
-- [ ] **Docker** — imagem Docker com Python + Playwright + fontes Google pré-instaladas, eliminando dependências de sistema
-- [ ] **Plugin de configuração por livro** — arquivo `book.yaml` dentro de cada pasta `inputs/<livro>/` com todas as configurações, sem precisar de flags no CLI
-
----
-
-## Contribuindo
-
-1. Fork o repositório
-2. Crie sua branch: `git checkout -b feature/minha-melhoria`
-3. Commit: `git commit -m 'feat: minha melhoria'`
-4. Push: `git push origin feature/minha-melhoria`
-5. Abra um Pull Request
-
----
-
-## Licença
-
-Distribuído sob a licença **MIT**. Veja [`LICENSE`](LICENSE) para mais detalhes.
-
----
-
-<div align="center">
-  Feito com ☕ e tipografia por <a href="https://github.com/gpereira12">gpereira12</a>
-</div>
+Distribuído sob a licença **MIT**. Veja `LICENSE` para mais detalhes.

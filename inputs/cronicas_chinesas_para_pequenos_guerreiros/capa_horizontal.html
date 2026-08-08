@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Capa Horizontal - HTML Engine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@700;900&family=Cormorant+Garamond:ital,wght@0,600;1,400&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    @page { size: 273.0mm 200.0mm; margin: 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 273.0mm;
+      height: 200.0mm;
+      background-color: #1c1817;
+      color: #1a1a1a;
+      font-family: 'Cormorant Garamond', serif;
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+    }
+    .bleed-left { width: 10.0mm; height: 100%; background: #1c1817; }
+    .back-cover {
+      width: 125.0mm;
+      height: 100%;
+      padding: 25mm 15mm 15mm 15mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: #1c1817;
+    }
+    .back-title { font-family: 'Cinzel Decorative', 'Cinzel', serif; color: #8c6d1f; font-size: 13pt; letter-spacing: 2px; text-align: center; }
+    .gold-divider { width: 40px; height: 1px; background: #8c6d1f; margin: 10px auto; }
+    .synopsis-box {
+      background: rgba(0, 0, 0, 0.03);
+      border: 1px solid rgba(140, 109, 31, 0.2);
+      border-radius: 6px;
+      padding: 16px;
+      font-size: 9.5pt;
+      line-height: 1.6;
+      color: #e0e0e0;
+      text-align: justify;
+    }
+    .back-footer { display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+    .publisher-seal img { height: 45px; }
+    .barcode-img img { width: 125px; border-radius: 3px; }
+
+    .spine {
+      width: 3.0mm;
+      height: 100%;
+      background: #0d0c0e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .spine-text {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-family: 'Cinzel Decorative', 'Cinzel', serif;
+      font-size: 8pt;
+      font-weight: 700;
+      color: #8c6d1f;
+      letter-spacing: 2px;
+      white-space: nowrap;
+    }
+
+    .front-cover {
+      width: calc(125.0mm + 10.0mm);
+      height: 100%;
+      position: relative;
+      background: #1c1817;
+    }
+    .art-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+    .overlay-top {
+      position: absolute; top: 0; left: 0; width: 100%; height: 45%;
+      background: linear-gradient(to bottom, #1c1817 0%, rgba(20,18,20,0.65) 60%, rgba(20,18,20,0) 100%);
+      padding: 25.0mm 15mm 0 15mm;
+      text-align: center;
+    }
+    .front-title { font-family: 'Cinzel Decorative', 'Cinzel', serif; font-size: 20pt; font-weight: 900; color: #8c6d1f; letter-spacing: 2px; }
+    .front-subtitle-tag { font-family: 'Montserrat', sans-serif; font-size: 8pt; font-weight: 700; color: #ffffff; letter-spacing: 3px; margin-top: 6px; text-transform: uppercase; }
+    .front-subtitle-italic { font-style: italic; font-size: 9.5pt; color: #5c4a15; margin-top: 8px; }
+    .overlay-bottom {
+      position: absolute; bottom: 0; left: 0; width: 100%; height: 25%;
+      background: linear-gradient(to top, #1c1817 0%, rgba(20,18,20,0) 100%);
+      padding-bottom: 20.0mm;
+      display: flex; justify-content: center; align-items: flex-end;
+    }
+    .author-name { font-family: 'Montserrat', sans-serif; font-size: 10pt; font-weight: 700; color: #ffffff; letter-spacing: 4px; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <div class="bleed-left"></div>
+  <div class="back-cover">
+    <div>
+      <div class="back-title">CRÔNICAS CHINESAS PARA PEQUENOS GUERREIROS</div>
+      <div class="gold-divider"></div>
+      <div class="synopsis-box">Sinopse do livro aqui.</div>
+    </div>
+    <div class="back-footer">
+      <div class="publisher-seal"><img src='file:///Users/gabrielpereira/Desktop/Projetos/Livros/resources/logos/coala/logo.svg'></div>
+      <div class="barcode-img"><img src="file:///Users/gabrielpereira/Desktop/Projetos/Livros/inputs/cronicas_chinesas_para_pequenos_guerreiros/assets/isbn_barcode.svg"></div>
+    </div>
+  </div>
+  <div class="spine">
+    <div class="spine-text">CRÔNICAS CHINESAS PARA PEQUENOS GUERREIROS • GABRIEL PEREIRA</div>
+  </div>
+  <div class="front-cover">
+    <img class='art-bg' src='file:///Users/gabrielpereira/Desktop/Projetos/Livros/inputs/cronicas_chinesas_para_pequenos_guerreiros/assets/capa.jpg'>
+    <div class="overlay-top">
+      <div class="front-title">CRÔNICAS CHINESAS PARA PEQUENOS GUERREIROS</div>
+      <div class="gold-divider"></div>
+      <div class="front-subtitle-italic">Histórias Milenares de Coragem, Sabedoria e Autocontrole</div>
+    </div>
+    <div class="overlay-bottom">
+      <div class="author-name">GABRIEL PEREIRA</div>
+    </div>
+  </div>
+</body>
+</html>
