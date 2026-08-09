@@ -49,7 +49,7 @@ Passe o texto pelas skills de `revisao/`:
 3. Gere o PDF final executando o sistema centralizado:
 // turbo
 ```bash
-python3 main.py texto_final.md --title "[Título]" --author "[Autor]" --output "output/[Nome_do_Livro].pdf"
+python3 3-layout/main.py texto_final.md --title "[Título]" --author "[Autor]" --output "output/[Nome_do_Livro].pdf"
 ```
 
 ### 7. Verificação Final

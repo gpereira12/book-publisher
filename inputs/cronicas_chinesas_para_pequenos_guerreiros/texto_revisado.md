@@ -2,7 +2,7 @@
 title: Crônicas Chinesas para Pequenos Guerreiros
 subtitle: Histórias Milenares de Coragem, Sabedoria e Autocontrole
 author: Gabriel Pereira
-publisher: Ílios Editorial
+publisher: Boutique Editorial
 year: 2026
 city: São Paulo
 format: Pocket

@@ -2,7 +2,7 @@
 description: Produção e escrita iterativa de livros do zero com suporte aos 18 Frameworks Narrativos.
 ---
 
-# Workflow: Escrever (/escrever) — Projeto 1 (Escrita)
+# Workflow: Escrever (/escrever) — Draft (Projeto 1 — Escrita)
 
 Este workflow guia o autor no processo completo de concepção, estruturação e redação de um novo livro (Ficção, Não-Ficção, Teologia, Filosofia ou Mangá).
 
@@ -40,7 +40,7 @@ Apresente a recomendação de **Framework Estrutural Principal** com base no gê
   - *`[Refinar tom / Adicionar detalhes]`*
 
 ### 5. Finalização & Transição
-Ao concluir o último capítulo, notifique que o manuscrito está pronto e ofereça a transição direta para o **Projeto 3 (Diagramação)** via comando `/diagramar`.
+Ao concluir o último capítulo, notifique que o manuscrito está pronto e ofereça a transição direta para o **Layout (Projeto 3 — Diagramação)** via comando `/diagramar`.
 
 ---
 **Comando de atalho:** `/escrever`

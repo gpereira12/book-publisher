@@ -34,7 +34,7 @@
         columns: (1fr, auto),
         align: (left + horizon, right + horizon),
         image("../../resources/logos/coala/logo.svg", width: 65pt),
-        image("../../inputs/cronicas_chinesas_para_pequenos_guerreiros/assets/isbn_barcode.svg", width: 105pt)
+        image("assets/isbn_barcode.svg", width: 105pt)
       )
     ],
 

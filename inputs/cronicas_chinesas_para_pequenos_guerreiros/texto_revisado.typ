@@ -1,4 +1,4 @@
-#import "../../src/templates_typst/romance.typ": romance-theme, moldura, full-bleed, double-spread, svg-divider
+#import "../../3-layout/src/templates_typst/romance.typ": romance-theme, moldura, full-bleed, double-spread, svg-divider
 
 #show: doc => romance-theme(
   title: "Crônicas Chinesas para Pequenos Guerreiros",

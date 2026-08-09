@@ -27,9 +27,9 @@ Este workflow deve ser ativado sempre que o usuário fornecer um prompt estrutur
    - Se não, procure por imagens existentes no diretório do livro.
 
 4. **Execução Técnica:**
-   - Chame o `main.py` com os novos argumentos:
+   - Chame o `3-layout/main.py` com os novos argumentos:
    ```bash
-   python3 main.py [Caminho/Para/texto_original.md] \
+   python3 3-layout/main.py [Caminho/Para/texto_original.md] \
      --title "[Título]" \
      --author "[Autor]" \
      --format "[Formato]" \
