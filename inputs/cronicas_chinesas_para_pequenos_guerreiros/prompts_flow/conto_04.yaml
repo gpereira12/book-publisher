@@ -1,0 +1,82 @@
+schema_version: "1.0"
+status: approved_for_layout
+provider: google_flow
+prompt_language: en
+illustration_mode: totalmente_ilustrado
+generate_prompts: true
+generate_images: false
+
+book: "Crônicas Chinesas para Pequenos Guerreiros"
+chapter:
+  order: 4
+  title: "O General e a Chama da Última Alvorada"
+  pages: [29, 40]
+  central_virtue: "Fortaleza"
+  ideogram: "勇德"
+  ideogram_reading: "yǒng dé"
+
+print_targets:
+  opener:
+    trim_mm: "125 × 180"
+    bleed_mm: 3
+    final_canvas_mm: "131 × 186"
+    final_canvas_px_300dpi: "1547 × 2197"
+  spread:
+    trim_mm: "250 × 180"
+    bleed_mm: 3
+    final_canvas_mm: "256 × 186"
+    final_canvas_px_300dpi: "3024 × 2197"
+
+workflow:
+  - "Use uma arte aprovada do Conto 1, 2 ou 3 como @Book_Style_Master."
+  - "Gere @Northern_Mountain_Pass_Style para fixar a geografia e materiais das montanhas do Norte."
+  - "Gere as fichas de identidade @General_Wen, @Zhang_Immortal, @Wen_Old_Master e @Wen_Spear_Qiang."
+  - "Gere a abertura e os 5 spreads com narrativa sequencial contínua e zonas de texto seguras no rodapé."
+
+reference_prompts:
+  - id: style_bridge_mountain_pass
+    flow_name: Northern_Mountain_Pass_Style
+    aspect_ratio: "4:3"
+  - id: character_general_wen
+    flow_name: General_Wen
+    aspect_ratio: "3:4"
+  - id: character_zhang_immortal
+    flow_name: Zhang_Immortal
+    aspect_ratio: "3:4"
+  - id: character_master_spirit
+    flow_name: Wen_Old_Master
+    aspect_ratio: "3:4"
+  - id: weapon_wen_spear
+    flow_name: Wen_Spear_Qiang
+    aspect_ratio: "3:4"
+
+scenes:
+  - id: c04_s01_abertura
+    pages: [29]
+    arquivo: "assets/interior/c04_s01_abertura.jpeg"
+    status: aprovada_para_layout
+  - id: c04_s02_chegada_bloqueio
+    pages: [30, 31]
+    arquivo: "assets/interior/c04_s02_chegada_bloqueio.jpeg"
+    distribuicao_texto: [bottom, bottom]
+    status: aprovada_para_layout
+  - id: c04_s03_elixir_tentacao
+    pages: [32, 33]
+    arquivo: "assets/interior/c04_s03_elixir_tentacao.png"
+    distribuicao_texto: [bottom, bottom]
+    status: aprovada_para_layout
+  - id: c04_s04_recusa_chama
+    pages: [34, 35]
+    arquivo: "assets/interior/c04_s04_recusa_chama.png"
+    distribuicao_texto: [bottom, bottom]
+    status: aprovada_para_layout
+  - id: c04_s05_batalha_punhos
+    pages: [36, 37]
+    arquivo: "assets/interior/c04_s05_batalha_punhos.jpeg"
+    distribuicao_texto: [bottom, bottom]
+    status: aprovada_para_layout
+  - id: c04_s06_alvorada_mestre
+    pages: [38, 39]
+    arquivo: "assets/interior/c04_s06_alvorada_mestre.png"
+    distribuicao_texto: [bottom, bottom]
+    status: aprovada_para_layout

@@ -1,0 +1,19 @@
+<svg class="title-lettering lettering-imperial" viewBox="0 0 620 180" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lettering-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0e6d2"/><stop offset="0.48" stop-color="#DBB666"/><stop offset="1" stop-color="#DBB666" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+  <path id="lettering-arc" d="M 76,50 Q 310,4 544,50" fill="none"/>
+  <text font-family="&#x27;Cinzel Decorative&#x27;, &#x27;Cinzel&#x27;, serif" font-size="31" letter-spacing="4.2" fill="#f0e6d2">
+    <textPath href="#lettering-arc" startOffset="50%" text-anchor="middle">CRÔNICAS CHINESAS</textPath>
+  </text>
+  <text x="310" y="86" text-anchor="middle" font-family="&#x27;Cormorant Garamond&#x27;, serif" font-size="23" font-weight="600" letter-spacing="7" fill="#DBB666">PARA PEQUENOS</text>
+  <text x="310" y="140" text-anchor="middle" font-family="&#x27;Cinzel Decorative&#x27;, &#x27;Cinzel&#x27;, serif" font-size="57" font-weight="900" letter-spacing="1.5" fill="url(#lettering-gold)" stroke="#2b0813" stroke-width="0.9">GUERREIROS</text>
+  <g fill="none" stroke="#DBB666" stroke-width="2.6" stroke-linecap="round">
+    <path d="M 44,154 H 190 Q 211,154 211,143 Q 211,132 225,132"/>
+    <path d="M 576,154 H 430 Q 409,154 409,143 Q 409,132 395,132"/>
+    <path d="M 225,154 C 246,129 270,130 278,148 C 286,126 302,126 310,146 C 318,126 334,126 342,148 C 350,130 374,129 395,154"/>
+  </g>
+  <circle cx="44" cy="154" r="4" fill="#DBB666"/><circle cx="576" cy="154" r="4" fill="#DBB666"/>
+</svg>

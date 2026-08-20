@@ -25,8 +25,18 @@ outputs/
 .cache/
 scratch/
 playwright_browsers/
+inputs/**/.book_index.db
+inputs/**/.book_index.db-shm
+inputs/**/.book_index.db-wal
+inputs/**/.book_index.db.backup-*
+inputs/**/.knowledge_reviews.lock
+inputs/**/.knowledge-reviews-*.tmp
+inputs/**/.universe_index.db
+inputs/**/.universe_index.db-shm
+inputs/**/.universe_index.db-wal
 
 # Temporary files
+tmp/
 *.tmp
 *.log
 *.bak

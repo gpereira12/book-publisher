@@ -1,0 +1,531 @@
+schema_version: "1.0"
+status: planejamento
+livro: "Crônicas Chinesas para Pequenos Guerreiros"
+modo: totalmente_ilustrado
+provedor_prompts: google_flow
+idioma_prompts: en
+gerar_artes: false
+
+miolo:
+  formato_corte_mm: [125, 180]
+  sangria_mm: 3
+  resolucao_dpi: 300
+  paginas_iniciais: [1, 2, 3, 4]
+  paginas_historias: [5, 60]
+  paginas_finais: [61, 62, 63, 64]
+  total_paginas: 64
+
+composicao:
+  texto_integrado: true
+  texto_embutido_na_imagem: false
+  quantidade_spreads: adaptativa
+  min_spreads_por_capitulo: 3
+  referencia_densidade:
+    conto: 1
+    palavras_narrativas_aproximadas: 631
+    spreads: 3
+    regra: >-
+      Usar abertura e três spreads como mínimo. Acrescentar spreads quando o
+      volume do texto ou a quantidade de momentos narrativos tornar a densidade
+      superior à referência do Conto 1. A recomendação deve ser apresentada ao
+      editor antes de alterar o mapa de páginas ou gerar novas artes.
+  abertura:
+    suporte: pagina_impar
+    tamanho_com_sangria_mm: [131, 186]
+    tamanho_recomendado_px: [1547, 2197]
+  spread:
+    suporte: duas_paginas
+    tamanho_com_sangria_mm: [256, 186]
+    tamanho_recomendado_px: [3024, 2197]
+  restricoes:
+    - "Não gerar letras, títulos, legendas ou balões dentro da arte."
+    - "Reservar uma área de baixo detalhe para a composição tipográfica indicada em zona_texto."
+    - "Não posicionar rostos, mãos, armas ou símbolos importantes sobre a medianiz."
+    - "Manter continuidade de roupas, idades, objetos, clima e paleta entre todas as cenas do conto."
+    - "Permitir corte de 3 mm nas bordas externas sem perder elementos essenciais."
+
+# Bíblia visual compartilhada pelos 28 prompts. A linguagem pertence a este livro;
+# outros projetos podem declarar outra direção sem alterar o motor de revisão.
+direcao_visual:
+  estilo_ilustracao: >-
+    Ilustração narrativa infantil sofisticada, pintura digital com aparência de
+    guache e aquarela sobre papel levemente texturizado, formas orgânicas, detalhes
+    seletivos e expressões legíveis; poética e calorosa, sem aparência de fotografia,
+    anime, desenho vetorial genérico ou renderização 3D.
+  acabamento: >-
+    Acabamento editorial coeso, bordas pictóricas naturais, detalhe suficiente para
+    impressão e massas visuais que permaneçam claras quando vistas em página inteira.
+  fotografia:
+    abertura: >-
+      Enquadramento vertical equivalente a lente normal de 50 mm, plano geral ou
+      plano médio ambiental, câmera na altura da criança, profundidade em três planos
+      e foco visual inequívoco no protagonista.
+    spread: >-
+      Enquadramento panorâmico equivalente a lente de 35 mm, leitura da esquerda para
+      a direita, primeiro plano de entrada, ação principal fora da medianiz e fundo
+      atmosférico que conecte as duas páginas sem distorção grande-angular.
+  cinematografia: >-
+    Composição cinematográfica baseada em regra dos terços, linhas de condução,
+    silhuetas separadas, hierarquia clara entre protagonista, ação e ambiente; usar
+    profundidade, escala e contraste para conduzir o olhar, preservando ritmo e pausa.
+  movimento_e_ritmo: >-
+    Escolher o instante decisivo da ação, com gestos em curso, roupas, cabelos,
+    poeira, água, folhas ou fumaça reagindo ao movimento; criar vetores diagonais,
+    sobreposição de planos e espaço à frente do deslocamento. Mesmo nas cenas calmas,
+    sugerir vida por meio do vento, do olhar e de pequenas ações, evitando poses de
+    catálogo, personagens alinhados ou grupos parados olhando para a câmera.
+  variedade_cinematografica: >-
+    As quatro imagens de cada conto devem formar uma sequência visual variada:
+    alternar escala de plano, altura e distância da câmera, direção dominante,
+    distribuição dos personagens e ritmo emocional. Não repetir o mesmo horizonte,
+    enquadramento frontal, posição do protagonista ou arranjo simétrico em cenas
+    consecutivas; usar a abertura como apresentação, os spreads como progressão,
+    ação e consequência, e a última imagem como resolução visual.
+  cenografia: >-
+    China histórica ou lendária coerente com cada conto, arquitetura, mobiliário,
+    vestuário e objetos construídos com materiais plausíveis como madeira, pedra,
+    cerâmica, tecido, papel e metal; evitar mistura aleatória de dinastias e clichês
+    decorativos sem função narrativa.
+  cor_e_luz: >-
+    Luz motivada pelo horário e pelo ambiente, paleta terrosa com acentos de jade,
+    vermelho mineral e dourado envelhecido; contraste moderado, sombras coloridas,
+    atmosfera volumétrica sutil e progressão cromática de acordo com a emoção da cena.
+  personagens: >-
+    Anatomia infantilmente acessível, gestos naturais, emoções contidas e específicas,
+    diversidade de idades e fisionomias; preservar rosto, idade, roupas, proporções e
+    objetos identificadores do mesmo personagem ao longo das quatro cenas.
+
+prompt_negativo: >-
+  letras, palavras, caligrafia, caracteres chineses inventados, título, legenda,
+  balão de fala, marca-d'água, logotipo, moldura, página mockup, divisão visível entre
+  páginas, elemento importante na medianiz, mãos deformadas, dedos extras, anatomia
+  quebrada, rostos duplicados, personagens flutuantes, perspectiva incoerente,
+  excesso de detalhes na área reservada ao texto, neon, plástico moderno, fotografia,
+  hiper-realismo, anime, vetor genérico, 3D brilhante, estereótipo caricatural.
+
+capitulos:
+  - ordem: 1
+    titulo: "O Mestre da Fronteira e o Cavalo de Vento"
+    paginas: [5, 12]
+    pagina_reflexao: 12
+    cenas:
+      - id: c01_s01_abertura
+        tipo: abertura
+        paginas: [5]
+        funcao: "Apresentar Sai Weng, o cavalo e a serenidade da fronteira."
+        ancora_textual: "Lá vivia um velho mestre conhecido como Sai Weng — o Velho da Fronteira."
+        descricao: "Sai Weng diante de seu casebre na fronteira entre a muralha e o deserto, com o cavalo de vento ao lado; atmosfera calma antes da mudança."
+        zona_texto: "terço superior e faixa inferior direita, com céu e chão de baixo detalhe"
+        personagens: ["Sai Weng"]
+        elementos_continuidade: ["casebre", "muralha distante", "cavalo escuro", "roupas simples do mestre"]
+        alt_texto: "Sai Weng permanece sereno ao lado de seu cavalo diante da fronteira e do deserto."
+        arquivo: "assets/interior/c01_s01_abertura.png"
+        status: arte_aprovada
+        aprovada_em: "2026-08-10"
+        arquivo_local_validado_em: "2026-08-10"
+        usar_como_referencia_estilo: true
+      - id: c01_s02_perda_retorno
+        tipo: spread
+        paginas: [6, 7]
+        funcao: "Contrapor a fuga do cavalo ao retorno acompanhado da égua branca."
+        ancora_textual: "O cavalo voltou! E não veio só."
+        descricao: "Panorama temporal: à esquerda, estábulo aberto e trilha vazia nas montanhas; à direita, o cavalo retorna levantando poeira com uma égua branca, enquanto aldeões reagem."
+        zona_texto: "céu contínuo no alto e área calma próxima às margens externas"
+        personagens: ["Sai Weng", "aldeões"]
+        elementos_continuidade: ["cavalo escuro", "égua branca", "aldeia da fronteira"]
+        alt_texto: "O cavalo perdido retorna das montanhas acompanhado de uma égua branca diante da aldeia surpresa."
+        arquivo: "assets/interior/c01_s02_perda_retorno.png"
+        status: aprovada_para_layout
+        preflight:
+          remove_center_seam: true
+      - id: c01_s03_queda
+        tipo: spread
+        paginas: [8, 9]
+        distribuicao_texto_paginas: [split, auto]
+        funcao: "Mostrar a consequência da euforia e o cuidado do pai."
+        ancora_textual: "O animal, furioso, empinou e lançou o rapaz contra as pedras."
+        descricao: "A égua empina no campo; o filho cai longe da medianiz. Sai Weng corre para socorrê-lo, enquanto a aldeia observa assustada."
+        zona_texto: "faixa de névoa e terreno livre no alto esquerdo e no canto inferior direito"
+        personagens: ["Sai Weng", "filho de Sai Weng", "aldeões"]
+        elementos_continuidade: ["égua branca", "perna ferida", "expressão contida de Sai Weng"]
+        alt_texto: "A égua derruba o filho de Sai Weng, que se aproxima para socorrê-lo diante dos aldeões."
+        arquivo: "assets/interior/c01_s03_queda.png"
+        status: aprovada_para_layout
+      - id: c01_s04_guerra
+        tipo: spread
+        paginas: [10, 11]
+        funcao: "Resolver a parábola com a guerra e a sobrevivência do filho."
+        ancora_textual: "Por causa de sua perna manca, não servia para a guerra."
+        descricao: "Jovens marcham ao longe sob tambores e estandartes; em primeiro plano, Sai Weng e o filho manco trabalham juntos no campo em serenidade."
+        zona_texto: "céu amplo sobre a marcha e campo claro junto às bordas"
+        personagens: ["Sai Weng", "filho de Sai Weng", "jovens soldados"]
+        elementos_continuidade: ["perna manca", "campo", "muralha", "tambores de guerra"]
+        alt_texto: "Enquanto jovens marcham para a guerra, Sai Weng e seu filho manco permanecem trabalhando juntos no campo."
+        arquivo: "assets/interior/c01_s04_guerra.png"
+        status: aprovada_para_layout
+
+  - ordem: 2
+    titulo: "A Espada que Permaneceu na Bainha"
+    paginas: [13, 20]
+    pagina_reflexao: 20
+    cenas:
+      - id: c02_s01_abertura
+        tipo: abertura
+        paginas: [13]
+        funcao: "Apresentar Han Xin e a espada como promessa de poder contido."
+        ancora_textual: "Junto à cintura, carregava sua única posse valiosa: uma espada antiga e afiada."
+        descricao: "Han Xin jovem atravessa um mercado chinês movimentado, pobre mas ereto, com a espada embainhada junto à cintura e olhares curiosos ao redor."
+        zona_texto: "faixa superior de toldos claros e chão livre no canto inferior"
+        personagens: ["Han Xin jovem"]
+        elementos_continuidade: ["roupas gastas", "espada antiga embainhada", "postura digna"]
+        alt_texto: "Han Xin atravessa o mercado com roupas gastas e uma espada embainhada junto à cintura."
+        arquivo: "assets/interior/c02_s01_abertura.png"
+        status: aprovada_para_layout
+      - id: c02_s02_desafio
+        tipo: spread
+        paginas: [14, 15]
+        funcao: "Estabelecer a provocação e a escolha entre violência e humilhação."
+        ancora_textual: "Saque essa espada e me mate agora."
+        descricao: "O açougueiro gigantesco bloqueia a rua e abre as pernas em desafio; Han Xin segura o cabo da espada sem sacá-la, cercado por uma multidão."
+        zona_texto: "toldos e paredes laterais com baixa informação; centro da medianiz sem rostos"
+        personagens: ["Han Xin jovem", "açougueiro", "multidão"]
+        elementos_continuidade: ["espada embainhada", "mercado", "banca do açougueiro"]
+        alt_texto: "O açougueiro provoca Han Xin no mercado enquanto o jovem contém a mão sobre a espada."
+        arquivo: "assets/interior/c02_s02_desafio.png"
+        status: aprovada_para_layout
+        preflight:
+          remove_center_seam: true
+      - id: c02_s03_humilhacao
+        tipo: spread
+        paginas: [16, 17]
+        funcao: "Mostrar o autocontrole por meio da travessia humilhante."
+        ancora_textual: "Rastejou por baixo das pernas do açougueiro."
+        descricao: "Han Xin passa sob as pernas do agressor sem desembainhar a espada; a multidão ri, mas seu rosto revela raiva dominada e propósito."
+        zona_texto: "fachadas acima da multidão e faixa de poeira à frente de Han Xin"
+        personagens: ["Han Xin jovem", "açougueiro", "multidão"]
+        elementos_continuidade: ["espada ainda embainhada", "poeira", "roupas gastas"]
+        alt_texto: "Han Xin suporta a humilhação e rasteja sob as pernas do açougueiro sem sacar a espada."
+        arquivo: "assets/interior/c02_s03_humilhacao.png"
+        status: aprovada_para_layout
+        preflight:
+          remove_center_seam: true
+      - id: c02_s04_reconciliacao
+        tipo: spread
+        paginas: [18, 19]
+        funcao: "Contrastar o poder conquistado com a decisão de perdoar."
+        ancora_textual: "Eu não vou ferir você."
+        descricao: "Anos depois, Han Xin como grande general desce de seu assento e oferece a mão ao açougueiro envelhecido e ajoelhado, diante de soldados atentos."
+        zona_texto: "parede clara do salão e piso livre nas margens; mãos fora da medianiz"
+        personagens: ["Han Xin general", "açougueiro idoso", "soldados"]
+        elementos_continuidade: ["espada cerimonial embainhada", "postura serena", "açougueiro reconhecível e envelhecido"]
+        alt_texto: "Han Xin, agora general, oferece clemência ao açougueiro idoso ajoelhado diante dele."
+        arquivo: "assets/interior/c02_s04_reconciliacao.png"
+        status: aprovada_para_layout
+        preflight:
+          source_file: "assets/interior/c02_s04_reconciliacao.jpeg"
+          remove_center_seam: true
+
+  - ordem: 3
+    titulo: "O Homem que Lutou Contra o Tempo"
+    paginas: [21, 28]
+    pagina_reflexao: 28
+    cenas:
+      - id: c03_s01_abertura
+        tipo: abertura
+        paginas: [21]
+        funcao: "Apresentar Chen cercado pelo arrozal e consumido pela pressa."
+        ancora_textual: "Chen não suportava esperar."
+        descricao: "Chen observa brotos jovens em um arrozal ao amanhecer, inclinado para a frente com impaciência, enquanto o campo cresce lentamente ao redor."
+        zona_texto: "céu da manhã e reflexos tranquilos da água"
+        personagens: ["Chen"]
+        elementos_continuidade: ["roupas de agricultor", "chapéu simples", "brotos verdes", "arrozal alagado"]
+        alt_texto: "Chen observa com impaciência os pequenos brotos de arroz em seu campo ao amanhecer."
+        arquivo: "assets/interior/c03_s01_abertura.png"
+        status: aprovada_para_layout
+      - id: c03_s02_ansiedade
+        tipo: spread
+        paginas: [22, 23]
+        distribuicao_texto_paginas: [bottom, auto]
+        funcao: "Contrastar a ansiedade de Chen com o instante de falsa certeza em que ele acredita ter encontrado uma solução."
+        ancora_textual: '"Tudo está devagar!" → "Se eu puxar um pouco cada broto para cima..."'
+        descricao: "Spread sequencial em dois tempos, sem molduras de quadrinhos. Na página esquerda, Chen caminha ansiosamente sobre os diques, com ombros tensos, testa franzida e uma das mãos próxima à boca, olhando repetidamente para os brotos e para o campo mais verde do vizinho. Na página direita, o mesmo Chen para subitamente: os olhos se iluminam e surge um pequeno sorriso aliviado, quase juvenil, de quem acredita ter encontrado a solução. Ele olha para os brotos e começa a inclinar o corpo na direção deles, mas ainda não os arranca. A paisagem contínua e um canal de irrigação conduzem a leitura entre os dois momentos."
+        zona_texto: "Página esquerda: água e reflexos pouco detalhados no terço inferior. Página direita: céu claro e arrozais suaves no alto. Faixa central da medianiz livre de rostos, mãos, pés e gestos essenciais."
+        personagens: ["Chen"]
+        elementos_continuidade: ["mesmas roupas", "brotos ainda jovens", "campo vizinho ao fundo", "duas aparições sequenciais do mesmo Chen, uma em cada página"]
+        alt_texto: "À esquerda, Chen caminha ansioso pelos diques dos arrozais; à direita, ele para e sorri ao acreditar que encontrou uma solução para acelerar o crescimento dos brotos."
+        arquivo: "assets/interior/c03_s02_ansiedade.png"
+        status: aprovada_para_layout
+      - id: c03_s03_puxando_brotos
+        tipo: spread
+        paginas: [24, 25]
+        funcao: "Mostrar o esforço absurdo tratado como batalha."
+        ancora_textual: "Ele percorreu o campo inteiro, puxando cada planta, uma por uma."
+        descricao: "Sob o sol forte, Chen atravessa a lama puxando fileiras de brotos para cima; suor, cansaço e falsa satisfação crescem ao longo do panorama."
+        zona_texto: "reflexos claros da água e horizonte acima das plantas"
+        personagens: ["Chen"]
+        elementos_continuidade: ["lama nas pernas", "plantas deslocadas", "sol de verão"]
+        alt_texto: "Chen trabalha sob o sol puxando um a um os brotos de arroz para fazê-los parecer maiores."
+        arquivo: "assets/interior/c03_s03_puxando_brotos.png"
+        status: aprovada_para_layout
+      - id: c03_s04_campo_morto
+        tipo: spread
+        paginas: [26, 27]
+        funcao: "Revelar o resultado e a compreensão tardia de Chen."
+        ancora_textual: "O campo não estava verde e alto. Estava amarelo e murcho."
+        descricao: "O filho encontra o arrozal amarelo; Chen chega, cai de joelhos e segura a terra seca, cercado pelas plantas mortas ao entardecer."
+        zona_texto: "céu pálido e faixas vazias de terra; rostos afastados da medianiz"
+        personagens: ["Chen", "filho de Chen"]
+        elementos_continuidade: ["plantas arrancadas", "roupas enlameadas", "luz de entardecer"]
+        alt_texto: "Chen cai de joelhos ao perceber que os brotos puxados morreram diante de seu filho."
+        arquivo: "assets/interior/c03_s04_campo_morto.png"
+        status: aprovada_para_layout
+
+  - ordem: 4
+    titulo: "O General e a Chama da Última Alvorada"
+    paginas: [29, 40]
+    pagina_reflexao: 40
+    cenas:
+      - id: c04_s01_abertura
+        tipo: abertura
+        paginas: [29]
+        funcao: "Apresentar Wen exausto vigiando o passo da montanha na noite fria para proteger o vilarejo."
+        ancora_textual: "Nas montanhas geladas do Norte, havia um passo estreito que protegia a entrada da China."
+        descricao: "Noite gelada no passo estreito: o General Wen ferido sustenta a lança de vigília diante do vilarejo distante no vale."
+        zona_texto: "terço superior em céu noturno e névoa"
+        personagens: ["General Wen"]
+        elementos_continuidade: ["lança de Wen", "armadura de batalha", "vilarejo abaixo"]
+        alt_texto: "O General Wen vigia o passo da montanha nevada na noite escura protegendo o vilarejo."
+        arquivo: "assets/interior/c04_s01_abertura.jpeg"
+        status: aprovada_para_layout
+      - id: c04_s02_chegada_bloqueio
+        tipo: spread
+        paginas: [30, 31]
+        distribuicao_texto_paginas: [bottom, bottom]
+        paragrafos: [[0, 1], [2, 3]]
+        funcao: "Apresentar o surgimento silencioso de Zhang e o impacto do Bloqueio da Tartaruga Negra."
+        ancora_textual: "Era Zhang, o Imortal. [...] Esse foi o 'Bloqueio da Tartaruga Negra'."
+        descricao: "À esquerda, Zhang surge da névoa gélida da caverna; à direita, Zhang ataca com a espada e Wen executa o Bloqueio da Tartaruga Negra com a lança."
+        zona_texto: "neve limpa no rodapé de ambas as páginas"
+        personagens: ["General Wen", "Zhang"]
+        elementos_continuidade: ["manto de seda de Zhang", "espada Jian", "lança Qiang", "neve"]
+        alt_texto: "Zhang surge da caverna na esquerda e ataca Wen na direita, que bloqueia o golpe com sua lança."
+        arquivo: "assets/interior/c04_s02_chegada_bloqueio.png"
+        status: aprovada_para_layout
+      - id: c04_s03_elixir_tentacao
+        tipo: spread
+        paginas: [32, 33]
+        distribuicao_texto_paginas: [bottom, bottom]
+        paragrafos: [[4, 5], [6, 7]]
+        funcao: "Dramatizar a tentação do frasco de jade na noite estrelada com lua."
+        ancora_textual: "Na palma, havia um pequeno frasco de jade."
+        descricao: "Zhang oferece o frasco luminoso de jade à esquerda; Wen ferido e apoiado na lança olha carinhosamente para o vilarejo no vale à direita."
+        zona_texto: "neve limpa no rodapé de ambas as páginas"
+        personagens: ["General Wen", "Zhang"]
+        elementos_continuidade: ["frasco de jade", "lua crescente", "lança de Wen", "vilarejo"]
+        alt_texto: "Zhang oferece o frasco de jade a Wen, que olha para a segurança do vilarejo abaixo."
+        arquivo: "assets/interior/c04_s03_elixir_tentacao.png"
+        status: aprovada_para_layout
+      - id: c04_s04_recusa_chama
+        tipo: spread
+        paginas: [34, 35]
+        distribuicao_texto_paginas: [bottom, bottom]
+        paragrafos: [[8, 9], [10]]
+        funcao: "Dramatizar a recusa da imortalidade e a ignição da alma de Wen em chamas solares."
+        ancora_textual: "Eu escolho a vida! [...] Cinzas, não. Chama!"
+        descricao: "À esquerda, Zhang zomba com desdém; à direita, Wen firma os pés e sua alma irrompe em uma brilhante aura solar dourada."
+        zona_texto: "neve limpa no rodapé de ambas as páginas"
+        personagens: ["General Wen", "Zhang"]
+        elementos_continuidade: ["aura dourada", "lança de Wen", "chamas solares"]
+        alt_texto: "Zhang zomba da morte enquanto Wen irrompe em uma aura dourada de fogo solar."
+        arquivo: "assets/interior/c04_s04_recusa_chama.png"
+        status: aprovada_para_layout
+      - id: c04_s05_batalha_punhos
+        tipo: spread
+        paginas: [36, 37]
+        distribuicao_texto_paginas: [bottom, bottom]
+        paragrafos: [[11], [12, 13]]
+        funcao: "Mostrar a quebra da lança e o combate sacrificial com punhos nus em chamas."
+        ancora_textual: "Ele apanhou, caiu, teve a lança quebrada, mas lutou com os punhos nus."
+        descricao: "À esquerda, Zhang quebra a lança de Wen com a espada; à direita, Wen avança com punhos nus em chamas douradas empurrando o Imortal."
+        zona_texto: "neve limpa no rodapé de ambas as páginas"
+        personagens: ["General Wen", "Zhang"]
+        elementos_continuidade: ["lança partida", "aura solar", "manto de Zhang"]
+        alt_texto: "A lança de Wen se parte na esquerda e ele avança com punhos nus em chamas douradas na direita."
+        arquivo: "assets/interior/c04_s05_batalha_punhos.jpeg"
+        status: aprovada_para_layout
+      - id: c04_s06_alvorada_mestre
+        tipo: spread
+        paginas: [38, 39]
+        distribuicao_texto_paginas: [split, split]
+        paragrafos: [[14, 15, 16], [17, 18, 19, 20]]
+        funcao: "Resolver o sacrifício com a fuga de Zhang ao sol, a paz de Wen e a bênção do Velho Mestre."
+        ancora_textual: "Quando o sol dourado banhou a montanha, Wen ainda estava de pé."
+        descricao: "À esquerda, Zhang foge para as sombras cobrindo o rosto do sol; à direita, Wen repousa sereno na neve ao lado de seu Velho Mestre na alvorada dourada."
+        zona_texto: "neve limpa no rodapé de ambas as páginas"
+        personagens: ["General Wen", "Zhang", "velho mestre de Wen"]
+        elementos_continuidade: ["alvorada", "ferimentos de Wen", "velho mestre em vestes ocre", "vilarejo desperto"]
+        alt_texto: "Zhang foge para a caverna enquanto Wen descansa sereno na alvorada ao lado de seu Velho Mestre."
+        arquivo: "assets/interior/c04_s06_alvorada_mestre.png"
+        status: aprovada_para_layout
+
+  - ordem: 5
+    titulo: "A Semente que Nunca Brotou"
+    paginas: [37, 44]
+    pagina_reflexao: 44
+    cenas:
+      - id: c05_s01_abertura
+        tipo: abertura
+        paginas: [37]
+        funcao: "Apresentar Ling, a semente e a promessa do desafio."
+        ancora_textual: "Entre as crianças estava Ling, um menino humilde do interior."
+        descricao: "Ling segura uma pequena semente e um vaso simples no pátio imperial, cercado por crianças; o Imperador observa do alto com expressão sábia."
+        zona_texto: "arquitetura clara no alto e piso livre junto à margem inferior"
+        personagens: ["Ling", "Imperador", "crianças"]
+        elementos_continuidade: ["vaso simples de Ling", "roupas humildes", "semente", "trajes do Imperador"]
+        alt_texto: "Ling recebe uma semente e um vaso do Imperador entre as outras crianças do palácio."
+        arquivo: "assets/interior/c05_s01_abertura.png"
+        status: planejada
+      - id: c05_s02_distribuicao
+        tipo: spread
+        paginas: [38, 39]
+        funcao: "Mostrar a escala da prova e a esperança inicial."
+        ancora_textual: "Os guardas distribuíram pequenos vasos de cerâmica e uma única semente."
+        descricao: "Grande pátio imperial com guardas distribuindo sementes e vasos; crianças animadas imaginam flores, enquanto Ling recebe o seu com cuidado."
+        zona_texto: "céu e paredes do palácio, deixando o gesto de entrega fora da medianiz"
+        personagens: ["Ling", "Imperador", "guardas", "crianças"]
+        elementos_continuidade: ["vaso de Ling", "sementes iguais", "palácio"]
+        alt_texto: "Guardas distribuem sementes e vasos às crianças reunidas diante do Imperador."
+        arquivo: "assets/interior/c05_s02_distribuicao.png"
+        status: planejada
+      - id: c05_s03_estacoes
+        tipo: spread
+        paginas: [40, 41]
+        funcao: "Comprimir meses de cuidado e contraste com as flores falsas."
+        ancora_textual: "Passaram-se meses. O inverno veio e se foi."
+        descricao: "Panorama das estações ao redor de Ling cuidando do mesmo vaso vazio; ao fundo, outras crianças exibem plantas cada vez mais exuberantes e zombam."
+        zona_texto: "transições de céu e paredes claras entre as estações"
+        personagens: ["Ling", "outras crianças"]
+        elementos_continuidade: ["mesmo vaso vazio", "roupas de Ling adaptadas às estações", "nenhum broto"]
+        alt_texto: "Ling cuida do vaso vazio durante meses enquanto outras crianças exibem flores exuberantes."
+        arquivo: "assets/interior/c05_s03_estacoes.png"
+        status: planejada
+      - id: c05_s04_verdade
+        tipo: spread
+        paginas: [42, 43]
+        funcao: "Revelar a honestidade de Ling e o segredo das sementes cozidas."
+        ancora_textual: "Encontrei o novo Imperador!"
+        descricao: "No salão repleto de flores, Ling ajoelha com seu vaso de terra; o Imperador o ergue e anuncia a escolha, enquanto as outras crianças baixam os olhos."
+        zona_texto: "colunas e parede superior claras; vaso e mãos longe da medianiz"
+        personagens: ["Ling", "Imperador", "crianças", "cortesãos"]
+        elementos_continuidade: ["vaso vazio de Ling", "flores coloridas dos demais", "trono"]
+        alt_texto: "O Imperador ergue Ling e seu vaso vazio diante das crianças que levaram flores ao palácio."
+        arquivo: "assets/interior/c05_s04_verdade.png"
+        status: planejada
+
+  - ordem: 6
+    titulo: "A Xícara de Chá Transbordante"
+    paginas: [45, 52]
+    pagina_reflexao: 52
+    cenas:
+      - id: c06_s01_abertura
+        tipo: abertura
+        paginas: [45]
+        funcao: "Apresentar a subida arrogante de Chao e a calma de Mestre Li."
+        ancora_textual: "Um dia, um jovem lutador chamado Chao subiu a montanha."
+        descricao: "Chao sobe os degraus de Wudang com postura orgulhosa; no alto, Mestre Li prepara chá diante do templo entre montanhas e pinheiros."
+        zona_texto: "névoa da montanha e céu acima do templo"
+        personagens: ["Chao jovem", "Mestre Li"]
+        elementos_continuidade: ["roupas de lutador de Chao", "túnica simples de Li", "bule de ferro", "templo"]
+        alt_texto: "Chao sobe orgulhoso até o templo onde Mestre Li prepara chá em silêncio."
+        arquivo: "assets/interior/c06_s01_abertura.png"
+        status: planejada
+      - id: c06_s02_arrogancia
+        tipo: spread
+        paginas: [46, 47]
+        funcao: "Contrastar a exibição de Chao com a hospitalidade silenciosa do mestre."
+        ancora_textual: "Eu sou o melhor lutador do Vale do Sul!"
+        descricao: "Chao entra no templo gesticulando e enumerando golpes; Mestre Li permanece sentado junto à mesa de chá, pequeno e sereno diante da energia do jovem."
+        zona_texto: "paredes de papel e espaço vazio acima da mesa"
+        personagens: ["Chao jovem", "Mestre Li"]
+        elementos_continuidade: ["mesa baixa", "xícara branca", "bule de ferro", "roupas de Chao"]
+        alt_texto: "Chao proclama suas vitórias enquanto Mestre Li o recebe calmamente junto à mesa de chá."
+        arquivo: "assets/interior/c06_s02_arrogancia.png"
+        status: planejada
+      - id: c06_s03_transbordamento
+        tipo: spread
+        paginas: [48, 49]
+        funcao: "Transformar a lição abstrata em gesto visual memorável."
+        ancora_textual: "O chá começou a transbordar."
+        descricao: "Mestre Li continua servindo; o chá dourado transborda da xícara, atravessa a mesa e pinga perto de Chao, que se levanta irritado."
+        zona_texto: "parede clara superior e vapor do chá; fluxo do líquido longe da medianiz"
+        personagens: ["Chao jovem", "Mestre Li"]
+        elementos_continuidade: ["xícara branca", "bule de ferro", "mesa molhada", "túnica simples"]
+        alt_texto: "Mestre Li continua servindo chá até a xícara transbordar diante de Chao irritado."
+        arquivo: "assets/interior/c06_s03_transbordamento.png"
+        status: planejada
+      - id: c06_s04_ciclo
+        tipo: spread
+        paginas: [50, 51]
+        funcao: "Mostrar a transformação e a transmissão da lição."
+        ancora_textual: "Chao, agora de cabelos grisalhos e olhar manso, apenas serviu-lhe uma xícara de chá."
+        descricao: "Composição temporal: Chao jovem ajoelha diante de Li à esquerda; à direita, anos depois, Chao maduro serve chá a outro lutador arrogante no mesmo templo."
+        zona_texto: "névoa central separando os tempos e paredes externas de baixo detalhe"
+        personagens: ["Chao jovem", "Chao maduro", "Mestre Li", "novo lutador"]
+        elementos_continuidade: ["mesma xícara", "mesmo templo", "Chao reconhecível após envelhecer"]
+        alt_texto: "Chao aprende ajoelhado com Mestre Li e, anos depois, oferece a mesma lição a outro jovem arrogante."
+        arquivo: "assets/interior/c06_s04_ciclo.png"
+        status: planejada
+
+  - ordem: 7
+    titulo: "As Sete Flechas do Velho General"
+    paginas: [53, 60]
+    pagina_reflexao: 60
+    cenas:
+      - id: c07_s01_abertura
+        tipo: abertura
+        paginas: [53]
+        funcao: "Apresentar Zhao diante da força e da divisão dos sete filhos."
+        ancora_textual: "Zhao tinha sete filhos, e cada um carregava um dom diferente."
+        descricao: "O General Zhao observa seus sete filhos treinando e discutindo no pátio; cada um revela postura e habilidade distintas."
+        zona_texto: "muro claro do pátio e céu acima dos telhados"
+        personagens: ["General Zhao", "sete filhos"]
+        elementos_continuidade: ["sete filhos distinguíveis", "pátio de treino", "General idoso", "armas de treino"]
+        alt_texto: "O velho General Zhao observa seus sete filhos talentosos discutindo no pátio de treinamento."
+        arquivo: "assets/interior/c07_s01_abertura.png"
+        status: planejada
+      - id: c07_s02_briga
+        tipo: spread
+        paginas: [54, 55]
+        funcao: "Mostrar como os talentos se anulam quando viram competição."
+        ancora_textual: "Os irmãos viviam em pé de guerra."
+        descricao: "Os sete irmãos disputam espada, montaria, comida e espaço em pequenos focos de conflito conectados pelo pátio; Zhao observa com pesar."
+        zona_texto: "paredes e chão entre os grupos; manter contagem visual clara dos sete"
+        personagens: ["General Zhao", "sete filhos"]
+        elementos_continuidade: ["roupas e traços distintos para cada irmão", "espada", "montaria", "pátio"]
+        alt_texto: "Os sete filhos do General Zhao discutem e disputam objetos enquanto o pai observa preocupado."
+        arquivo: "assets/interior/c07_s02_briga.png"
+        status: planejada
+      - id: c07_s03_feixe
+        tipo: spread
+        paginas: [56, 57]
+        funcao: "Apresentar a demonstração física da união."
+        ancora_textual: "Agora, meu filho, tente quebrar este feixe de sete flechas."
+        descricao: "À esquerda, o filho mais velho quebra a flecha isolada; à direita, ele força sem sucesso o feixe de sete, observado pelos seis irmãos e por Zhao."
+        zona_texto: "parede superior e piso nas margens; feixe inteiro fora da medianiz"
+        personagens: ["General Zhao", "sete filhos"]
+        elementos_continuidade: ["uma flecha quebrada", "sete flechas intactas no feixe", "cordão de couro"]
+        alt_texto: "O filho mais velho quebra uma flecha isolada, mas não consegue partir o feixe de sete flechas."
+        arquivo: "assets/interior/c07_s03_feixe.png"
+        status: planejada
+      - id: c07_s04_uniao
+        tipo: spread
+        paginas: [58, 59]
+        funcao: "Resolver a lição mostrando a família unida diante das dificuldades."
+        ancora_textual: "A família do General Zhao permaneceu forte, próspera e protegida."
+        descricao: "Os sete irmãos agora trabalham juntos para proteger a casa e repartir provisões durante seca e inverno; Zhao os observa em paz, com o feixe guardado ao fundo."
+        zona_texto: "céu de inverno e áreas de parede ou neve pouco detalhadas"
+        personagens: ["General Zhao", "sete filhos"]
+        elementos_continuidade: ["sete irmãos reconhecíveis", "feixe de flechas", "casa familiar", "mudança de estação"]
+        alt_texto: "Os sete irmãos trabalham unidos para proteger a família durante tempos de seca e inverno."
+        arquivo: "assets/interior/c07_s04_uniao.png"
+        status: planejada

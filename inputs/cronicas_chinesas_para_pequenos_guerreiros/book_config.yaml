@@ -1,21 +1,276 @@
 titulo: "Crônicas Chinesas para Pequenos Guerreiros"
 subtitulo: "Histórias Milenares de Coragem, Sabedoria e Autocontrole"
 autor: "Gabriel Pereira"
-editora: "Editora Coala"
-selo: "coala" # Opções: coala | cia-de-jesus | eldoria | ilios
+editora: "Ílios Editorial"
+cidade: "Santo André"
+selo: "ilios" # Opções: coala | cia-de-jesus | eldoria | ilios
+sinopse: >-
+  Um cavalo que foge pode trazer uma bênção. Uma espada que não sai da bainha
+  pode vencer a batalha mais difícil. Uma semente que não brota pode revelar
+  o coração mais corajoso. Inspiradas em provérbios e lendas da China antiga,
+  estas sete histórias acompanham mestres, guerreiros, camponeses e imperadores
+  diante de escolhas que exigem prudência, paciência, honestidade, humildade e
+  união. Recriadas para pequenos leitores — e para os adultos que leem com eles —,
+  estas crônicas mostram que a verdadeira força nem sempre está em atacar ou
+  correr mais depressa, mas em governar a si mesmo, esperar o momento certo e
+  permanecer firme quando tudo parece mudar. Abra estas páginas e descubra:
+  todo pequeno guerreiro trava suas maiores batalhas dentro do próprio coração.
 isbn: "978-65-988202-7-5"
 ano: 2026
 idioma: "pt-BR"
 genero: "infantojuvenil"
 formato: "Pocket"
-tema: "Creme"
+tema: "Vinho"
 faixa_etaria: "8 anos"
+
+# Metas editoriais de revisão. São parâmetros de triagem, não regras de
+# simplificação automática nem certificação pedagógica.
+revisao:
+  gramatica:
+    variante: pt-BR
+    nivel: conservador
+    max_itens_relatorio: 100
+    preservar_desvios_dialogo: true
+    ignorar_regras: []
+  coesao:
+    min_repeticoes_conector: 3
+    max_itens_relatorio: 100
+    ignorar_regras: []
+    entidades:
+      sai_weng:
+        genero: masculino
+        aliases: ["Sai Weng"]
+      han_xin:
+        genero: masculino
+        aliases: ["Han Xin"]
+      chen:
+        genero: masculino
+        aliases: ["Chen"]
+      wen:
+        genero: masculino
+        aliases: ["Wen", "General Wen"]
+      zhang:
+        genero: masculino
+        aliases: ["Zhang"]
+      ling:
+        genero: masculino
+        aliases: ["Ling"]
+      chao:
+        genero: masculino
+        aliases: ["Chao"]
+      mestre_li:
+        genero: masculino
+        aliases: ["Mestre Li"]
+      general_zhao:
+        genero: masculino
+        aliases: ["General Zhao", "Zhao"]
+  coerencia:
+    max_itens_relatorio: 100
+    ignorar_regras: []
+    # O motor é genérico; estas regras descrevem apenas continuidades deste livro.
+    estados:
+      - id: wen_apos_partida
+        escopo: secao
+        padroes_terminais:
+          - '\b(?:General\s+)?Wen\s+partiu\b'
+        padroes_incompativeis:
+          - '\bWen\s+(?:disse|respondeu|levantou|atacou|lutou|caminhou)\b'
+      - id: integridade_das_sete_flechas
+        escopo: secao
+        padroes_terminais:
+          - '\ba flecha estalou e se dividiu em duas partes\b'
+        padroes_incompativeis:
+          - '\boutras seis flechas[^.]+metade da primeira[^.]+sete flechas juntas\b'
+    sequencias:
+      - id: cavalo_de_sai_weng
+        escopo: capitulo
+        marcos:
+          - id: fuga
+            padroes: ['\bo cavalo fugira\b']
+          - id: retorno
+            padroes: ['\bo cavalo voltou\b']
+          - id: guerra
+            padroes: ['\btambores de guerra\b']
+      - id: semente_de_ling
+        escopo: capitulo
+        marcos:
+          - id: cultivo
+            padroes: ['\bLing mudou o vaso\b']
+          - id: apresentacao
+            padroes: ['\bcarregando seu vaso de terra\b']
+          - id: revelacao
+            padroes: ['\bsementes que (?:eu )?haviam sido cozidas\b']
+    fatos_numericos:
+      - id: filhos_do_general_zhao
+        escopo: capitulo
+        padroes:
+          - '\b(?P<valor>sete|7) filhos\b'
+          - '\b(?P<valor>sete|7) irmãos\b'
+  factualidade:
+    max_itens_relatorio: 100
+    ignorar_regras: []
+    fontes:
+      huainanzi_sai_weng:
+        titulo: "Huainanzi, capítulo 18 — Lessons of the Human World"
+        url: "https://ctext.org/huainanzi/lessons-of-the-human-world"
+        tipo: primaria
+        acesso: "2026-08-09"
+      shiji_han_xin:
+        titulo: "Records of the Grand Historian — biografia de Han Xin"
+        url: "https://ctext.org/datawiki.pl?if=en&res=1168000"
+        tipo: primaria
+        acesso: "2026-08-09"
+      mencius_brotos:
+        titulo: "Mengzi, Gong Sun Chou I — relato de puxar os brotos"
+        url: "https://ctext.org/mengzi/gong-sun-chou-i"
+        tipo: primaria
+        acesso: "2026-08-09"
+      acs_plastico:
+        titulo: "American Chemical Society — Bakelite, the world's first synthetic plastic"
+        url: "https://www.acs.org/education/whatischemistry/landmarks/bakelite.html"
+        tipo: institucional
+        acesso: "2026-08-09"
+      proveniencia_xicara:
+        titulo: "Lajos Brons — Nan-in and the Professor: A Western Zen Parable"
+        url: "https://www.lajosbrons.net/blog/nan-in-and-the-professor-a-western-zen-parable/"
+        tipo: secundaria
+        acesso: "2026-08-09"
+    alegacoes:
+      - id: origem_sai_weng
+        natureza: tradicao
+        status: verificada
+        padroes: ['Baseado na sabedoria do provérbio chinês 塞翁失馬']
+        fontes: [huainanzi_sai_weng]
+      - id: nome_sai_weng
+        natureza: tradicao
+        status: adaptada
+        confianca: 0.88
+        padroes: ['\bvelho mestre conhecido como Sai Weng\b']
+        fontes: [huainanzi_sai_weng]
+        nota: "'Sai Weng' designa o velho homem da fronteira no provérbio; apresentá-lo simplesmente como nome próprio oculta que se trata de um epíteto."
+        sugestao: "Usar 'um velho mestre conhecido como Sai Weng, o Velho da Fronteira' ou explicar que o nome foi adotado nesta recriação."
+      - id: origem_han_xin
+        natureza: historica
+        status: verificada
+        padroes: ['Baseado na lenda histórica de Han Xin']
+        fontes: [shiji_han_xin]
+      - id: papel_historico_han_xin
+        natureza: historica
+        status: verificada
+        confianca: 0.92
+        padroes: ['\bestratégias ajudaram Liu Bang a unificar o império\b']
+        fontes: [shiji_han_xin]
+        nota: "Han Xin foi decisivo nas vitórias de Liu Bang e na fundação da dinastia Han; dizer que ele próprio unificou o império concentra nele uma realização política e militar coletiva."
+        sugestao: "Usar 'ajudou Liu Bang a unificar o império' ou formulação equivalente."
+      - id: origem_brotos_de_arroz
+        natureza: tradicao
+        status: verificada
+        padroes: ['Baseado no provérbio clássico 揠苗助長']
+        fontes: [mencius_brotos]
+      - id: origem_general_wen
+        natureza: ficcao_deliberada
+        status: adaptada
+        confianca: 0.9
+        padroes: ['Conto original inspirado no ideal da Coragem Sacrificial']
+        nota: "O conto de Wen e Zhang é uma criação ficcional; o cabeçalho atual pode fazer '烈火雄心' parecer a fonte de uma tradição antiga específica."
+        sugestao: "Rotular como 'Conto original inspirado no ideal de coragem sacrificial'."
+      - id: origem_semente_de_ling
+        natureza: ficcao_deliberada
+        status: adaptada
+        confianca: 0.75
+        padroes: ['Conto reimaginado sobre o valor da honestidade']
+        fontes: []
+        sugestao: "Localizar uma fonte rastreável ou trocar 'lenda clássica' por 'conto reimaginado'."
+      - id: origem_xicara_transbordante
+        natureza: tradicao
+        status: adaptada
+        confianca: 0.9
+        padroes: ['Adaptação livre da parábola zen da xícara transbordante']
+        fontes: [proveniencia_xicara]
+        nota: "A trama da xícara transbordante é associada à parábola zen de Nan-in, difundida em compilação moderna; o verso do bambu expressa humildade, mas não sustenta a origem da trama em Wudang."
+        sugestao: "Explicitar que é uma adaptação livre da parábola zen da xícara transbordante e separar o verso do bambu como tema complementar."
+      - id: origem_sete_flechas
+        natureza: ficcao_deliberada
+        status: adaptada
+        confianca: 0.8
+        padroes: ['Conto original inspirado no provérbio 眾志成城']
+        fontes: []
+        sugestao: "Adicionar fonte específica para a narrativa ou rotular o conto como criação inspirada no provérbio sobre união."
+    termos_temporais:
+      - id: plastico_na_china_antiga
+        padroes: ['\bplástico\b']
+        ignorar_secoes: ["Reflexão"]
+        fontes: [acs_plastico]
+        confianca: 0.99
+        nota: "Plásticos industriais são modernos; a primeira resina inteiramente sintética, a baquelite, foi desenvolvida em 1907. O termo aparece na fala de uma personagem situada na China antiga."
+        sugestao: "Trocar a comparação por material compatível com o universo narrativo, como cera, madeira pintada ou flor sem vida."
+      - id: internet_em_reflexao_moderna
+        padroes: ['\binternet\b']
+        ignorar_secoes: ["Reflexão"]
+        fontes: []
+  estrutura:
+    framework_esperado: contos_parabolas_sabedoria
+    max_itens_relatorio: 100
+    ignorar_regras: []
+    capitulos_ignorados: ["Prefácio"]
+    hierarquia_titulos:
+      salto_maximo: 1
+    registro_capitulos:
+      campo: historias
+      campo_titulo: titulo
+      valores_pendentes: ["Pendente"]
+      permitir_pendentes: false
+    # Estes requisitos pertencem a este livro/preset, não a todos os projetos.
+    secoes_obrigatorias: ["Reflexão"]
+    secoes_unicas: ["Reflexão"]
+    elementos_obrigatorios:
+      atribuicao: true
+      # Imagens internas ainda não existem: nesta fase o plano e os prompts são validados.
+      # Ao mudar plano_ilustracoes.fase para producao, os arquivos previstos passam a ser exigidos.
+      imagem: false
+      texto_alternativo_imagem: false
+      arquivo_imagem: false
+    plano_ilustracoes:
+      # Presets: sem_imagens | abertura_pagina_par | totalmente_ilustrado
+      modo: totalmente_ilustrado
+      gerar_prompts: true
+      provedor_prompts: google_flow
+      idioma_prompts: en
+      arquivo: plano_ilustracoes.yaml
+      fase: planejamento
+      paginas_iniciais: 4
+      # Abertura + no mínimo 3 spreads + reflexão. Contos longos podem receber
+      # spreads adicionais após aviso e validação editorial.
+      quantidade_spreads: adaptativa
+      min_spreads_por_capitulo: 3
+      palavras_por_spread_referencia: 210
+      tolerancia_superior_densidade: 1.25
+      paginas_finais: 4
+      inicio_capitulo_impar: true
+      abertura_pagina_unica: true
+      texto_integrado: true
+    min_palavras_capitulo: 650
+    proporcoes_secoes:
+      Reflexão:
+        min: 0.15
+        max: 0.30
+  legibilidade:
+    min_flesch: 75
+    max_palavras_frase: 24
+    silabas_palavra_dificil: 4
+    min_letras_palavra_dificil: 8
+    max_itens_relatorio: 10
+    min_palavras_secao: 40
+    ignorar_palavras:
+      - imperador
+      - general
+      - guerreiro
 
 # Configuração de Acabamento Gráfico & Cores da Capa
 acabamento: "brochura" # Opções: brochura | capadura | grampo | espiral
 orelhas: false # Livro de bolso sem orelhas (0mm)
 orelha_mm: 0
-cor_capa: "#1c1817" # Cor de fundo da capa (Charcoal Tinta Nanquim Chinês)
+cor_capa: "#4A1525" # Bordô imperial — cor dominante da capa
 guardas_ilustradas: false
 
 # Configuração de Layout
@@ -24,23 +279,83 @@ preset_tipografico: "classico"
 framework: "contos_parabolas_sabedoria"
 overlay_estilo: "gotouge_inherited_will"
 
+# Direção de arte da capa
+estilo_tipografico: "imperial_oriental"
+estilo_visual: "imperial_oriental"
+ornamentos_capa: true
+ornamentos_complexidade: 5
+ornamentos_densidade: "moderada"
+composicao_inteligente: true
+titulo_lettering_modo: "vetorial"
+titulo_lettering_estilo: "han_pincel"
+mostrar_titulo_contracapa: false
+
+# Regra cromática editorial 70/20/10
+proporcao_cores:
+  dominante: 70
+  secundaria: 20
+  destaque: 10
+cor_secundaria: "#7A3043"
+cor_destaque: "#DBB666"
+
+# Brief editorial para direção de arte
+promessa_central: "Apresentar virtudes milenares por meio de aventuras chinesas acessíveis e memoráveis."
+emocao_primaria: "Coragem serena, encantamento e desejo de crescimento."
+publico_visual: "Leitores de 8 a 12 anos e adultos mediadores que procuram fantasia oriental sofisticada."
+simbolos_chave:
+  - "jovem guerreiro"
+  - "montanhas e névoa"
+  - "espada como símbolo de autocontrole"
+  - "nuvens ruyi"
+  - "luz dourada"
+elementos_proibidos:
+  - "violência gráfica"
+  - "estereótipos caricaturais"
+  - "texto gerado dentro da ilustração"
+  - "marcas d'água"
+diferencial_de_prateleira: "Uma capa infantojuvenil de atmosfera épica e acabamento editorial clássico, sem aparência excessivamente infantil."
+
 # Lista de Histórias (7 Histórias em total)
 historias:
   - id: 1
     titulo: "O Mestre da Fronteira e o Cavalo de Vento"
-    virtude: "Serenidade e Equilíbrio"
+    virtude: "Prudência"
+    virtude_tomista: "Prudência"
+    ideograma_virtude: "智德"
+    leitura_ideograma: "zhì dé"
   - id: 2
     titulo: "A Espada que Permaneceu na Bainha"
-    virtude: "Autocontrole e Visão de Longo Prazo"
+    virtude: "Temperança"
+    virtude_tomista: "Temperança"
+    ideograma_virtude: "節德"
+    leitura_ideograma: "jié dé"
   - id: 3
     titulo: "O Homem que Lutou Contra o Tempo"
-    virtude: "Paciência e Respeito aos Processos"
+    virtude: "Paciência"
+    virtude_tomista: "Paciência"
+    ideograma_virtude: "忍耐"
+    leitura_ideograma: "rěn nài"
   - id: 4
     titulo: "O General e a Chama da Última Alvorada"
-    virtude: "Coragem Sacrificial e Valor da Vida"
+    virtude: "Fortaleza"
+    virtude_tomista: "Fortaleza"
+    ideograma_virtude: "勇德"
+    leitura_ideograma: "yǒng dé"
   - id: 5
-    titulo: "Pendente"
+    titulo: "A Semente que Nunca Brotou"
+    virtude: "Veracidade"
+    virtude_tomista: "Veracidade"
+    ideograma_virtude: "誠實"
+    leitura_ideograma: "chéng shí"
   - id: 6
-    titulo: "Pendente"
+    titulo: "A Xícara de Chá Transbordante"
+    virtude: "Humildade"
+    virtude_tomista: "Humildade"
+    ideograma_virtude: "謙遜"
+    leitura_ideograma: "qiān xùn"
   - id: 7
-    titulo: "Pendente"
+    titulo: "As Sete Flechas do Velho General"
+    virtude: "Concórdia"
+    virtude_tomista: "Concórdia"
+    ideograma_virtude: "和睦"
+    leitura_ideograma: "hé mù"

@@ -1,0 +1,165 @@
+# Google Flow — Conto 3: O Homem que Lutou Contra o Tempo
+
+> Fonte estruturada: `conto_03.yaml`. Este pacote gera somente prompts; nenhuma arte é produzida pelo motor.
+
+## Ordem de uso
+
+1. Use uma arte aprovada do Conto 1 ou 2 como @Book_Style_Master. Ela fixa somente pintura, textura do papel, paleta, luz e acabamento; não reutilize personagens, cavalos, mercado ou arquitetura.
+2. Gere e aprove primeiro @Song_Rice_Field_Style, sem personagens. Ele transporta a linguagem da coleção para o arrozal do antigo Estado de Song, sem confundi-lo com a dinastia Song medieval.
+3. Crie @Chen_Farmer anexando somente @Song_Rice_Field_Style; não anexe personagens dos contos anteriores, para evitar contaminação de rosto e figurino.
+4. Crie @Chen_Son a partir de @Chen_Farmer e @Song_Rice_Field_Style, preservando semelhança familiar sem transformar o menino em uma cópia jovem do pai.
+5. Gere a abertura e os três spreads previstos para este conto no mesmo projeto, anexando somente as referências citadas em cada prompt. Três spreads são adequados aqui por sua extensão; não constituem limite fixo para outros contos.
+6. Depois de aprovar a abertura, mantenha-a como @C03_Opener_Approved para reforçar roupa, cabelo, paleta, luz e desenho dos brotos nas cenas seguintes.
+7. Depois de aprovar o spread da ansiedade, mantenha-o como @C03_Anxiety_Approved para preservar geografia do campo e direção visual; use-o apenas quando indicado.
+8. Não peça ao Flow que desenhe título, texto, número de página ou degradê editorial. As áreas claras devem existir organicamente na pintura; a composição tipográfica pertence ao motor de diagramação.
+9. Exporte a melhor variação sem recortar nem redimensionar. O preflight posterior fará upscale, corte para sangria e validação de dobra, texto e coerência narrativa.
+
+## Prompts de referência
+
+### style_bridge_rice_field — Ponte de estilo — arrozal do antigo Estado de Song
+
+- Tipo: `style_reference`
+- Proporção sugerida: `4:3`
+- Objetivo: Fixar o ambiente rural, a água, a vegetação e os materiais do Conto 3 sem herdar personagens dos contos anteriores.
+- Nome a cadastrar no Flow: `Song_Rice_Field_Style`
+
+```text
+Using @Book_Style_Master strictly as the collection's painting, paper texture, palette, lighting and finish reference, create a character-free environment reference for a humble rice-growing settlement in the ancient Chinese State of Song. This is the pre-imperial State of Song, not the later medieval Song dynasty. Do not reproduce, reinterpret or include any recognizable person, horse, market scene, weapon or building from the source image.
+
+Show one coherent summer rice-field landscape: shallow flooded paddies divided by narrow earthen banks, young green rice seedlings planted in irregular hand-worked rows, a modest irrigation channel, a small timber-and-rammed-earth farmhouse, woven reed screens, plain clay jars, a wooden carrying pole resting near the field and low hazy hills. Keep the material culture restrained, practical and rural. No grand pagoda, palace, ornate bridge or picturesque tourist cliché. Include no main character and at most two tiny anonymous silhouettes very far away.
+
+Preserve the approved collection language: sophisticated children's editorial illustration, digital gouache and watercolor on subtly textured paper, organic shapes, soft handcrafted edges, translucent washes, selective opaque brushwork, restrained detail, elegant silhouettes and poetic atmospheric depth. Use warm earth, aged parchment, charcoal, muted jade, rice-shoot green, dusty blue-gray and restrained mineral red. Motivated early-morning light should create colored shadows and luminous reflections that bind water, plants, house and distant hills into one space.
+
+Design the field so it can support both vertical chapter art and horizontal double-page spreads. Include calm low-detail sky, water and mud areas that can later receive editable text without becoming blank white panels. No text, letters, calligraphy, readable signs, logo, watermark, border, page mockup, visible page fold, photorealism, anime, glossy 3D, generic vector art, neon color, plastic, perfectly machine-straight rows or excessive micro-detail.
+```
+
+### character_chen_farmer — Ficha visual de Chen
+
+- Tipo: `character_reference`
+- Proporção sugerida: `3:4`
+- Objetivo: Fixar uma identidade própria para Chen, com corpo de trabalhador e ansiedade legível sem caricatura.
+- Nome a cadastrar no Flow: `Chen_Farmer`
+
+```text
+Using @Song_Rice_Field_Style only as the exact painting, paper texture, palette and historical-material reference, design a completely new full-body character for Chen on a plain warm parchment background. Do not use any character from a previous story as an identity reference. Show one person only in a natural three-quarter standing pose with both hands visible and clear empty space around the silhouette.
+
+Chen is approximately forty-two years old, a hard-working rice farmer with a lean, sinewy body, slightly stooped shoulders from field labor and strong but not oversized hands. Give him a distinctive long oval face, sun-browned skin, pronounced cheekbones, a narrow jaw, a vertical worry line between the eyebrows, deep-set dark-brown eyes and a straight nose with a slightly rounded tip. His expression combines determination, vigilance and difficulty resting. He is clean-shaven except for a very short restrained mustache and faint chin stubble.
+
+His black hair contains a few early gray strands, center-parted and tied into a small low work knot at the nape. Dress him in a faded warm-umber cross-collar work jacket ending at the upper thigh, a muted moss-green inner collar, a dark charcoal cloth sash, loose smoke-gray field trousers rolled to mid-calf and simple woven straw sandals. Add one visible repair at the right elbow and a small desaturated mineral-red cord at the sash as an identifying accent. A broad simple woven field hat hangs flat against his upper back by a cord; it must not cover his face in the canonical sheet.
+
+Sophisticated children's editorial illustration, digital gouache and watercolor on textured paper, handcrafted edges, restrained detail, natural anatomy and historically plausible rural materials. Preserve this exact face, apparent age, hairstyle, body proportions, garments, repair, hat and colors in every scene.
+
+No scenery, extra person, tool, weapon, basket, text, label, calligraphy, decorative frame, photorealism, anime, glossy 3D, modern clothing, aristocratic robe, broad heroic body, high topknot, long beard, straw hat covering the face, resemblance to Sai Weng, Sai Weng's son or Han Xin, or exaggerated comic anxiety.
+```
+
+### character_chen_son — Ficha visual do filho de Chen
+
+- Tipo: `character_reference`
+- Proporção sugerida: `3:4`
+- Objetivo: Fixar o menino que descobre o campo destruído, com semelhança familiar controlada e identidade própria.
+- Nome a cadastrar no Flow: `Chen_Son`
+
+```text
+Using @Chen_Farmer as a family-identity reference and @Song_Rice_Field_Style as the exact illustration and historical-material reference, design Chen's thirteen-year-old son as one full-body character on a plain warm parchment background. He must plausibly be Chen's child but must not look like a miniature copy of his father.
+
+He is short and wiry, with a rounder youthful face, softer cheeks, a smaller straight nose, wide observant dark-brown eyes and thick gently curved eyebrows. Echo Chen only through the eye color and a subtle similarity in the cheekbones. His black hair is tied in a small practical low knot, with shorter loose strands around the temples. His baseline expression is open, curious and energetic.
+
+Dress him in a faded dusty-indigo cross-collar tunic with sleeves tied back for chores, a warm sand-colored sash, straight umber trousers ending above the ankles and woven sandals. Add a small patched cloth pouch at his belt as his identifying object. His clothes are humble and clean, with restrained wear.
+
+Show one person only in a relaxed three-quarter standing pose with both hands visible. Sophisticated children's editorial illustration, digital gouache and watercolor on textured paper, soft handcrafted edges, restrained detail and natural child anatomy. Preserve this exact face, age, hairstyle, proportions, clothes, pouch and colors in the final spread.
+
+No scenery, parent, extra person, tool, weapon, text, label, calligraphy, decorative frame, photorealism, anime, glossy 3D, modern clothing, adult musculature, identical face to Chen or a character from another story, high topknot, ornate costume or exaggerated childish caricature.
+```
+
+
+## Prompts das cenas
+
+### c03_s01_abertura_flow — Abertura — Chen vigia os brotos
+
+- Tipo: `chapter_opener`
+- Proporção sugerida: `3:4`
+- Objetivo: Apresentar Chen, seu trabalho e sua impaciência num único gesto, preservando o alto para título e texto.
+- Páginas: `21`
+- Diagramação: Título e primeiro trecho no alto; Chen no terço inferior direito; arte narrativa nos 55–60% inferiores; preservar 5% para corte e sangria. Alvo final: 1547 × 2197 px a 300 dpi.
+
+```text
+Create a standalone vertical children's editorial illustration for the opening of a premium printed storybook chapter. Use @Song_Rice_Field_Style as the strict environment, painting, paper texture, palette and finish reference. Use @Chen_Farmer as the strict character reference. If available, use @Book_Style_Master only to confirm the collection's finish, never its people, animals or scenery.
+
+At dawn in a flooded rice paddy, Chen crouches on a narrow earthen bank and leans too far forward to inspect a row of very young green seedlings. One hand hovers impatiently just above a shoot while the other presses into his knee. His body is still from restraint, but his raised heel, tightened fingers and forward neck reveal that he cannot wait. His woven field hat remains attached flat against his upper back. A light breeze ripples the water, bends the tiny shoots and tugs the hem of his jacket. The farmhouse is small and distant; the field, not architecture, defines his life.
+
+Compose for a right-hand chapter-opening page with a 50 mm visual feeling, child-eye-level camera and three depth planes. Place Chen below and slightly to the right of center, entirely outside the future title area. Keep his face, hands and the inspected seedling away from trim edges. Use diagonal banks and repeated seedlings to lead the eye toward him without making the rows mechanically perfect.
+
+Keep the upper 38–42% pale, calm and low-detail for the chapter title and opening text. Build this naturally from dawn sky, thin mist and luminous water reflection, with no hard-edged panel or artificial digital gradient. The transition from text-safe atmosphere into the illustrated field should be soft and pictorial. Preserve at least 5% crop tolerance on every outer edge for bleed and final aspect adjustment.
+
+Use cool pearl-blue dawn light with a restrained warm rim from the rising sun. Let Chen, water, plants, mud and farmhouse share identical brushwork, edge softness, reflected light and atmospheric depth. His expression is intent and impatient, never angry, foolish or comic.
+
+No generated text, title, letters, calligraphy, page number, logo, watermark, border or page mockup. No visible fold, drawn gradient, blank rectangle, photorealism, anime, glossy 3D, modern tool, mature rice heads, dry field, duplicated Chen, straw hat covering his face, catalog pose, malformed hands or important detail near the trim edges.
+```
+
+### c03_s02_ansiedade_flow — Spread 1 — a comparação ansiosa
+
+- Tipo: `spread`
+- Proporção sugerida: `4:3`
+- Objetivo: Transformar a ansiedade de Chen em deslocamento e contraste visual entre seu campo e o do vizinho.
+- Páginas: `22, 23`
+- Diagramação: Chen caminha da esquerda para a direita no terço esquerdo; canal e reflexos atravessam a dobra; campo vizinho no terço direito; textos podem ocupar céu externo esquerdo e água externa direita. Alvo: 3024 × 2197 px a 300 dpi.
+
+```text
+Create one continuous horizontal double-page children's editorial illustration. Use @Song_Rice_Field_Style as the strict style and environment reference, @Chen_Farmer as the strict identity reference and @C03_Opener_Approved only for Chen's exact clothing, hair, hat, dawn-to-morning palette and the established appearance of the young seedlings.
+
+Later that morning, Chen paces quickly from left to right along a narrow raised bank between flooded paddies. Capture him in mid-stride rather than posed: shoulders pitched forward, one hand worrying the edge of his thumbnail near his mouth, the other swinging tensely, jacket hem and hat cord responding to motion. His face turns across the irrigation channel toward a neighboring field that merely appears slightly denser and greener in the angled light. Do not show a prosperous palace-like farm or ridicule Chen; the difference is subtle and magnified by his anxious comparison.
+
+Use a cinematic 40 mm visual feeling from a modest elevated three-quarter viewpoint, as if standing on the next field bank. Place Chen large enough to read on the outer half of the left page, moving decisively toward the right. Use diagonal banks, rippling reflections, passing cloud shadows and bending shoots as motion vectors. The neighbor's field occupies the outer right page, while a narrow irrigation channel carries the eye across the spread. A distant anonymous farmer may appear very small, calmly tending the other field, but no second main character is established.
+
+Protect the central 12% gutter zone: let only continuous water, reflections, low seedlings and one uncomplicated bank cross it. No face, hand, foot, hat, distant figure or essential gesture may enter this zone. Avoid a broad empty strip at the fold; the field must remain visually continuous. Reserve one organic low-detail text-safe area in pale sky and mist at the upper outer left, and another in smooth water reflection at the lower or middle outer right. Keep both free from heads, strong banks and high-contrast plants. Preserve at least 5% crop tolerance on every outer edge.
+
+Use clear morning side light, moving cloud shadows and a slightly warmer palette than the opener. Maintain sophisticated digital gouache and watercolor on subtly textured paper, handcrafted edges, selective detail and unified atmospheric perspective. The sequence must read left to right and prepare the physical movement of the next scene without repeating the opener's crouched pose.
+
+No generated text, calligraphy, page numbers, border, visible page division, blank text panel, hard gradient, duplicated Chen, repeated temporal copies, centered protagonist, face in the gutter, perfectly geometric rows, exaggerated green neighbor field, comic nail biting, melodramatic sweat, photorealism, anime, glossy 3D, modern machinery, malformed hands or essential content near the bleed edges.
+```
+
+### c03_s03_puxando_brotos_flow — Spread 2 — Chen força os brotos
+
+- Tipo: `spread`
+- Proporção sugerida: `4:3`
+- Objetivo: Mostrar a falsa solução como esforço físico intenso, mantendo legíveis o gesto e o dano invisível às raízes.
+- Páginas: `24, 25`
+- Diagramação: Câmera baixa junto à água; fileiras diagonais; ação principal no terço direito, sem cruzar a dobra; área clara nos reflexos externos esquerdos e horizonte externo direito. Alvo: 3024 × 2197 px a 300 dpi.
+
+```text
+Create one continuous horizontal double-page children's editorial illustration. Use @Song_Rice_Field_Style and @C03_Anxiety_Approved as strict references for the same paddy geography, painting language, paper texture, young seedling design and summer palette. Use @Chen_Farmer and @C03_Opener_Approved as strict identity and costume references.
+
+In the same field under a harsh summer afternoon sun, Chen is deep in the flooded paddy, performing his misguided solution with exhausting determination. Show one decisive moment only. He is bent in a strong diagonal, one muddy hand carefully but forcefully lifting a single young rice seedling several centimeters by its base while the other hand steadies him against his thigh. The root mass must remain mostly hidden in muddy water; the image communicates dangerous upward force without becoming a botanical diagram. Behind him, irregular rows of already raised and slightly displaced seedlings show how much of the field he has crossed. His calves, sandals and trouser hems are muddy, sweat darkens his collar and his face carries false satisfaction beneath fatigue.
+
+Use a dynamic low water-level camera with a 35 mm visual feeling. Place Chen on the outer half of the right page, large enough that his gripping hand, face and one seedling are legible in print, but keep all three safely away from the gutter. Let foreground water, disturbed mud, concentric ripples, diagonal plant rows and the swing of his jacket create movement from lower left toward upper right. Use a few bent shoots and lifted droplets to show action; do not depict multiple copies of Chen or a static catalog pose.
+
+Protect the central 12% gutter zone with only water ripples, soft reflections and nonessential seedlings. No face, pulling hand, lifted plant, knee or foot may cross it. Do not create a wide empty canyon at the fold. Reserve an organic pale low-detail reflection area on the outer left page for one text block and a calm hazy horizon or sunlit water area on the upper outer right for a second possible block. These are parts of the painting, never rectangles or artificial overlays. Preserve at least 5% crop tolerance around every outer edge.
+
+Shift the palette toward hot straw gold, baked umber and dusty jade while retaining the collection colors. Strong overhead light, reflected water light and colored shadows must affect Chen and the field consistently. Use handcrafted watercolor-gouache edges, selective sharpness on the hand and seedling, and softer distance to create cinematic depth.
+
+No generated text, calligraphy, page number, border, visible page division, text panel, literal diagram, exposed long roots, uprooted plants flying through the air, duplicated Chen, centered face, essential content in the gutter, heroic battle pose, weapon, magical growth, mature rice heads, dry desert field, gore, photorealism, anime, glossy 3D, modern equipment, malformed fingers or important detail at the bleed edges.
+```
+
+### c03_s04_campo_morto_flow — Spread 3 — o campo amarelo
+
+- Tipo: `spread`
+- Proporção sugerida: `4:3`
+- Objetivo: Revelar a consequência por meio da descoberta do filho e da queda de Chen, encerrando o arco em arrependimento, não em punição caricata.
+- Páginas: `26, 27`
+- Diagramação: Filho no terço esquerdo e Chen caindo de joelhos no terço direito; plantas e caminho conectam as páginas; faixa central sem rostos nem mãos; céu pálido e terra externa para texto. Alvo: 3024 × 2197 px a 300 dpi.
+
+```text
+Create one continuous horizontal double-page children's editorial illustration. Use @Song_Rice_Field_Style and @C03_Anxiety_Approved as strict references for the same field geography, farmhouse, irrigation banks, painting language and paper texture. Use @Chen_Farmer, @Chen_Son and @C03_Opener_Approved as strict identity, costume and continuity references.
+
+At late afternoon, Chen's son has reached the field first and freezes on the outer half of the left page. His forward run has just stopped: one foot remains lifted behind him, one hand holds his small belt pouch and the other hangs open as he stares at the ruined paddy. His face changes from expectation to stunned grief. Across the field on the outer half of the right page, Chen arrives a heartbeat later and his knees give way. Capture the descent, not a settled pose: one knee hits the dry bank, one muddy hand reaches toward the yellow wilted shoots and his torso folds as he understands what his impatience destroyed. His expression is shock, remorse and protective grief, not theatrical despair.
+
+The rice field itself reveals the consequence. Young plants that were green in previous scenes are now yellow, limp and uneven, with disturbed mud and broken contact around their bases. Avoid a completely dry wasteland; this is the same irrigated field damaged within a day. Use the surviving green edge plants and the familiar farmhouse in the distance to confirm continuity. A soft wind moves the son's tunic, Chen's jacket hem and the wilted leaves in opposing rhythms, making the silence feel alive.
+
+Use a cinematic 50 mm visual feeling from a low-to-medium viewpoint at the field edge. Create an emotional dialogue across the spread: the son in the left third, Chen in the right third, and diagonal rows, a narrow bank and their eyelines linking them. Keep the central 12% gutter zone visually continuous with nonessential pale field rows, soft mud and atmospheric light only. No face, hand, knee, pouch or key plant may cross the gutter. Do not center either figure or place both in one cluster.
+
+Reserve an organic pale-sky and mist area in the upper outer left for text, and a low-detail band of dry bank or luminous water in the outer right for optional continuation text. Keep text-safe zones away from both faces and gestures. They must remain painted atmosphere rather than white panels or digital gradients. Preserve at least 5% crop tolerance around every outer edge.
+
+Let late-afternoon light lose the hot brilliance of the previous scene: muted ochre, gray-green, dusty blue and a restrained warm edge of sun. Use sophisticated digital gouache and watercolor on textured paper, natural anatomy, emotionally precise gestures, controlled detail hierarchy and unified light. The ending should invite reflection on patience and responsibility rather than ridicule Chen.
+
+No generated text, calligraphy, page number, border, visible page division, hard text panel, centered figures, face or hand in the gutter, two copies of Chen, smiling son, angry accusatory son, comic crying, melodramatic collapse, dead bodies, gore, desert devastation, mature rice harvest, fantasy symbolism, photorealism, anime, glossy 3D, modern object, malformed hands or essential content near the bleed edges.
+```

@@ -6,7 +6,7 @@
    ============================================================================== */
 
 #import "book_base.typ": book-base
-#import "components.typ": moldura, full-bleed, double-spread, svg-divider
+#import "components.typ": moldura, full-bleed, double-spread, svg-divider, illustrated-chapter-opener
 
 #let romance-theme(
   title: "Título do Romance",

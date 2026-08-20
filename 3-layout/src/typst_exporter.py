@@ -119,7 +119,7 @@ def build_typst_document(
 
     rel_template_posix = Path(rel_template).as_posix()
 
-    return f"""#import "{rel_template_posix}": romance-theme, moldura, full-bleed, double-spread, svg-divider
+    return f"""#import "{rel_template_posix}": romance-theme, moldura, full-bleed, double-spread, svg-divider, illustrated-chapter-opener
 
 #show: doc => romance-theme(
   title: "{title}",

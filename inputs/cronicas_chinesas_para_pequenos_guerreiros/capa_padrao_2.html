@@ -106,6 +106,7 @@
     .pattern-3 .front-subtitle-italic { font-style: italic; font-size: 9pt; color: #5c4a15; }
     .pattern-3 .gold-frame-wrapper { flex: 1; display: flex; justify-content: center; align-items: center; margin: 10px 0; }
     .pattern-3 .gold-frame-border {
+      position: relative;
       width: 90%; height: 95%;
       border: 3px double #8c6d1f;
       border-radius: 8px;
@@ -116,6 +117,16 @@
     }
     .pattern-3 .framed-art { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
     .pattern-3 .framed-footer { margin-top: 10px; }
+
+    /* Elementos Ornamentais (opt-in via ornamentos_capa) */
+    .frame-corner { position: absolute; width: 40px; height: 40px; z-index: 2; }
+    .frame-corner.corner-tl { top: 6px; left: 6px; }
+    .frame-corner.corner-tr { top: 6px; right: 6px; transform: rotate(90deg); }
+    .frame-corner.corner-br { bottom: 6px; right: 6px; transform: rotate(180deg); }
+    .frame-corner.corner-bl { bottom: 6px; left: 6px; transform: rotate(270deg); }
+    .medallion-seal svg { height: 42px; width: 42px; }
+    .front-title-img { max-width: 90%; height: auto; display: block; margin: 0 auto; }
+    .title-lettering { display: block; margin: 0 auto; max-width: 95%; }
 
     .author-name { font-family: 'Montserrat', sans-serif; font-size: 10pt; font-weight: 700; color: #ffffff; letter-spacing: 3.5px; text-transform: uppercase; }
   </style>
@@ -130,6 +141,7 @@
     </div>
     <div class="back-footer">
       <div class="publisher-seal"><img src='file:///Users/gabrielpereira/Desktop/Projetos/Livros/resources/logos/coala/logo.svg'></div>
+      
       <div class="barcode-img"><img src="file:///Users/gabrielpereira/Desktop/Projetos/Livros/inputs/cronicas_chinesas_para_pequenos_guerreiros/assets/isbn_barcode.svg"></div>
     </div>
   </div>

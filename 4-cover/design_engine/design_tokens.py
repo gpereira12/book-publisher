@@ -101,18 +101,106 @@ FONT_THEMES = {
 }
 
 
+# Heurística de sugestão de estilo_tipografico quando não informado explicitamente.
+# Prioridade: overlay_estilo > framework > genero > default. Sempre sobrescrevível
+# via config["estilo_tipografico"] — nenhuma destas linhas é uma verdade rígida.
+OVERLAY_TO_ESTILO = {
+    "overlay_gotouge_inherited_will": "imperial_oriental",
+    "gotouge_inherited_will": "imperial_oriental",
+    "overlay_tolkien": "imperial_oriental",
+    "overlay_lewis": "academico_solene",
+    "overlay_chesterton": "academico_solene",
+    "overlay_rowling": "infantojuvenil",
+}
+
+FRAMEWORK_TO_ESTILO = {
+    "brooks_story_engineering": "misterio_thriller",
+    "snowflake": "imperial_oriental",
+    "save_the_cat": "geek_scifi",
+    "minto_pyramid": "academico_solene",
+    "scholastic_aquinas": "academico_solene",
+    "devotional_n_days": "poesia_contemporanea",
+    "kishotenketsu": "infantojuvenil",
+}
+
+GENERO_TO_ESTILO = {
+    "teologia": "academico_solene",
+    "romance": "romance_classico",
+    "ficcao": "misterio_thriller",
+    "ficção": "misterio_thriller",
+    "infantojuvenil": "infantojuvenil",
+    "juvenil": "infantojuvenil",
+    "poesia": "poesia_contemporanea",
+    "suspense": "misterio_thriller",
+    "misterio": "misterio_thriller",
+    "mistério": "misterio_thriller",
+    "thriller": "misterio_thriller",
+    "ficcao_cientifica": "geek_scifi",
+    "ficção_científica": "geek_scifi",
+    "scifi": "geek_scifi",
+}
+
+DEFAULT_ESTILO_TIPOGRAFICO = "imperial_oriental"
+
+
+def _hex_luminance(color: str) -> float:
+    value = color.lstrip("#")
+    if len(value) != 6:
+        return 0.0
+    channels = [int(value[index:index + 2], 16) / 255 for index in (0, 2, 4)]
+    linear = [channel / 12.92 if channel <= 0.04045 else ((channel + 0.055) / 1.055) ** 2.4 for channel in channels]
+    return 0.2126 * linear[0] + 0.7152 * linear[1] + 0.0722 * linear[2]
+
+
+def suggest_estilo_tipografico(config: Dict[str, Any]) -> str:
+    """Sugere um estilo_tipografico quando config não define um explicitamente.
+    Prioridade: overlay_estilo > framework > genero > default. O resultado é só
+    uma sugestão de fallback — config["estilo_tipografico"] sempre tem prioridade
+    (ver get_tokens)."""
+    overlay = str(config.get("overlay_estilo", "")).strip().lower()
+    if overlay in OVERLAY_TO_ESTILO:
+        return OVERLAY_TO_ESTILO[overlay]
+
+    framework = str(config.get("framework", "")).strip().lower()
+    if framework in FRAMEWORK_TO_ESTILO:
+        return FRAMEWORK_TO_ESTILO[framework]
+
+    genero = str(config.get("genero", "")).strip().lower()
+    if genero in GENERO_TO_ESTILO:
+        return GENERO_TO_ESTILO[genero]
+
+    return DEFAULT_ESTILO_TIPOGRAFICO
+
+
 def get_tokens(config: Dict[str, Any]) -> Dict[str, Any]:
+    from design_engine.color_strategy import build_color_plan
+
     theme = config.get("tema", "nanquim").lower()
     palette = COLOR_PALETTES.get(theme, COLOR_PALETTES["nanquim"]).copy()
-    
+
     # Sobrescreve cor de capa personalizada se informada em HEX
     if config.get("cor_capa"):
         palette["bg_color"] = config["cor_capa"]
-        
-    font_key = config.get("estilo_tipografico", "imperial_oriental").lower()
-    font_theme = FONT_THEMES.get(font_key, FONT_THEMES["imperial_oriental"])
-    
+        # Uma cor customizada pode inverter a luminosidade da paleta original.
+        # Mantém a cor de destaque, mas adapta os papéis semânticos de leitura.
+        if _hex_luminance(str(config["cor_capa"])) < 0.18:
+            palette["text_light"] = "#ffffff"
+            palette["text_subtle"] = "#d1d5db"
+            palette["soft_gold"] = "#f0e6d2"
+            palette["box_bg"] = "rgba(255, 255, 255, 0.04)"
+
+    requested_font_key = str(config.get("estilo_tipografico") or suggest_estilo_tipografico(config)).lower()
+    font_key = requested_font_key if requested_font_key in FONT_THEMES else DEFAULT_ESTILO_TIPOGRAFICO
+    font_theme = FONT_THEMES[font_key]
+    color_plan = build_color_plan(config, palette)
+    palette["bg_color"] = color_plan.dominant.color
+    palette["secondary_color"] = color_plan.secondary.color
+    palette["accent_color"] = color_plan.accent.color
+    palette["gold_color"] = color_plan.accent.color
+
     return {
         "palette": palette,
-        "fonts": font_theme
+        "fonts": font_theme,
+        "estilo_tipografico": font_key,
+        "color_plan": color_plan.to_dict(),
     }

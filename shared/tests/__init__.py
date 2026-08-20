@@ -1,0 +1,2 @@
+"""Testes da infraestrutura compartilhada."""
+

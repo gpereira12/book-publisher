@@ -2,9 +2,9 @@
 title: Crônicas Chinesas para Pequenos Guerreiros
 subtitle: Histórias Milenares de Coragem, Sabedoria e Autocontrole
 author: Gabriel Pereira
-publisher: Boutique Editorial
+publisher: Ílios Editorial
 year: 2026
-city: São Paulo
+city: Santo André
 format: Pocket
 theme: Creme
 framework_used: contos_parabolas_sabedoria
@@ -19,6 +19,18 @@ ficha_catalografica:
   - 3. Virtudes e Moral.
 ---
 
+# Prefácio
+
+Este livro reúne sete histórias inspiradas em provérbios e lendas chinesas milenares. Elas não são traduções dos contos originais: cada uma foi recriada do zero, com personagens, diálogos e cenas novos, usando a sabedoria antiga apenas como ponto de partida.
+
+Escolhi contar histórias em vez de escrever uma lista de virtudes porque uma criança guarda um general que arde a última noite para proteger sua vila muito mais tempo do que guarda uma regra decorada.
+
+Este livro também é para quem lê em voz alta. Ler estas páginas para um filho, uma aluna ou um neto é uma chance de revisitar, na própria vida, a coragem, a paciência e a honestidade que tentamos ensinar todos os dias.
+
+Espero que estas histórias abram boas conversas depois da leitura, e que cada criança que passar por elas saia um pouco mais forte por dentro.
+
+---
+
 # O Mestre da Fronteira e o Cavalo de Vento
 
 > *Baseado na sabedoria do provérbio chinês 塞翁失馬 (Sài Wēng Shī Mǎ — "O Velho da Fronteira Perdeu Seu Cavalo")*
@@ -27,7 +39,7 @@ ficha_catalografica:
 ![Figura 1 — O Mestre Sai Weng e o Cavalo de Vento](assets/sai_weng_cavalo.png)
 :::
 
-Havia uma região na China antiga onde a muralha terminava e o deserto começava. Lá vivia um velho mestre chamado Sai Weng. Ele não possuía ouro nem terras, apenas um casebre, um amado filho e um cavalo, veloz como o próprio vento. Todo o vilarejo admirava aquele animal.
+Havia uma região na China antiga onde a muralha terminava e o deserto começava. Lá vivia um velho mestre conhecido como Sai Weng — o Velho da Fronteira. Ele não possuía ouro nem terras, apenas um casebre, um amado filho e um cavalo, veloz como o próprio vento. Todo o vilarejo admirava aquele animal.
 
 Certa manhã, porém, o portão do estábulo ficou aberto e o cavalo fugira para as montanhas.
 
@@ -67,13 +79,11 @@ Só então, ao verem pai e filho trabalhando juntos no campo, os vizinhos finalm
 
 ## Reflexão
 
-Sai Weng sentia as coisas, assim como nós. Ele ficou triste quando o cavalo sumiu e ficou feliz quando os cavalos voltaram. Mas ele não deixou sua alma ser sequestrada por esses sentimentos.
+Sai Weng nos ensina a **prudência**. Quando o cavalo desapareceu e quando voltou acompanhado, ele não tratou o primeiro acontecimento como o fim de tudo nem o segundo como uma vitória garantida. Reconheceu que ainda não conhecia a história inteira e esperou antes de julgar.
 
-Quando perdeu o cavalo, sentiu a perda, mas não se entregou ao desespero. Quando ganhou dois, sentiu a alegria, mas não se entregou à euforia. Ele manteve o "centro". Assim como no Kung Fu, em que você precisa de uma base firme para não cair com um empurrão, Sai Weng tinha uma base firme na alma. Sentia a emoção, mas era ele quem mandava nela, e não ela nele. Por isso, ganhou a paz e a vida do filho.
+Ser prudente não é ser frio, medroso ou incapaz de decidir. É permitir que a razão conduza o que sentimos. Sai Weng sofreu com a perda e se alegrou com o retorno, mas não entregou suas escolhas ao medo nem à euforia. Observou a realidade, considerou o que sabia e cuidou do que precisava ser feito naquele momento.
 
-Os vizinhos viveram o vício da inconstância. Eram escravos do que sentiam na hora: "Isso é horrível!", "Isso é maravilhoso!". Por causa disso, viviam atormentados pelo medo e pela ansiedade. Eram folhas ao vento.
-
-Se algo der muito errado nas suas vidas, sintam a tristeza, mas não chorem dizendo "tudo acabou". Se algo der muito certo, fiquem felizes, mas não gritem dizendo "sou o melhor". Respirem fundo. Lembrem-se de Sai Weng. O que acontece hoje é apenas uma parte da história, não o final dela. Mantenham a guarda alta e o coração calmo.
+Quando uma nota, uma briga ou uma notícia parece decidir todo o nosso futuro, podemos parar, reunir os fatos, pedir conselho e pensar nas consequências. Nem sempre controlamos o que acontecerá depois, mas podemos escolher com responsabilidade o próximo passo. A prudência nos ajuda a reconhecer o bem possível e a agir na hora certa.
 
 ---
 
@@ -85,7 +95,7 @@ Se algo der muito errado nas suas vidas, sintam a tristeza, mas não chorem dize
 ![Figura 2 — Han Xin no mercado diante do açougueiro](assets/han_xin_espada.png)
 :::
 
-Han Xin era um jovem guerreiro. Ele era pobre e suas roupas estavam gastas, mas caminhava com a postura de um rei. Em suas costas, carregava sua única posse valiosa: uma espada antiga e afiada.
+Han Xin era um jovem guerreiro. Ele era pobre e suas roupas estavam gastas, mas caminhava com a postura de um rei. Junto à cintura, carregava sua única posse valiosa: uma espada antiga e afiada.
 
 Han Xin sabia lutar. Ele treinou seu corpo e sua mente, e sentia dentro de si um fogo poderoso, a certeza de que um dia faria grandes coisas.
 
@@ -112,7 +122,7 @@ Gargalhadas explodiram ao redor.
 
 Han Xin se levantou. Ele estava sujo de poeira. Seu rosto estava vermelho de vergonha e ele sentia lágrimas de raiva querendo sair, mas ele as segurou. Limpou as roupas, ergueu o queixo novamente e seguiu seu caminho, sem olhar para trás, deixando as risadas morrerem ao longe.
 
-Anos depois, a China estava em guerra. Um gênio militar surgiu, um general invencível que unificou o império com estratégias brilhantes. Seu nome era Han Xin.
+Anos depois, a China estava em guerra. Um gênio militar surgiu, um general invencível cujas estratégias ajudaram Liu Bang a unificar o império. Seu nome era Han Xin.
 
 Agora, como Grande General, voltou à sua cidade natal e mandou chamar o açougueiro.
 O homem, agora velho e trêmulo, ajoelhou-se diante do General, esperando ser executado por ter humilhado o herói no passado.
@@ -128,11 +138,11 @@ O açougueiro chorou. Naquele momento, ele entendeu que a verdadeira força não
 
 ## Reflexão
 
-Han Xin sentiu uma raiva terrível. Ele sentiu a vergonha queimar seu rosto quando todos riram. Ele não era de pedra. A vontade dele era lutar e mostrar que era forte. Mas ele demonstrou um tipo superior de força: a capacidade de ter poder nas mãos, mas escolher não usá-lo porque sabia que aquele não era o momento nem o motivo certo. Ele venceu a batalha mais difícil de todas: a batalha contra o seu próprio orgulho.
+Han Xin nos ensina a **temperança**, manifestada no autocontrole. Ele sentiu raiva e vergonha quando foi provocado, mas não deixou que o agressor escolhesse o seu futuro. Pensou antes de agir e não aumentou a violência.
 
-O açougueiro queria briga por nada, apenas para aparecer. Ele achava que ser forte era impor medo. Mas, no final, ele aprendeu que quem tenta humilhar os outros é, na verdade, quem possui a alma pequena.
+Ter autocontrole não é fingir que nada aconteceu. Também não é aceitar uma injustiça calado. Podemos sair de perto, pedir ajuda e dizer com firmeza que algo precisa parar. Falar com um adulto de confiança também é um ato de coragem.
 
-Na vida, muitas vezes alguém vai ofender ou provocar vocês. O sangue vai ferver e a vontade de revidar será enorme. Mas lembrem-se de Han Xin. Perguntem-se: "Isso vale o meu futuro?". Ser forte de verdade é saber aguentar momentos difíceis e engolir o orgulho temporário para alcançar sonhos maiores lá na frente. Às vezes, a maior coragem é virar as costas, ignorar o barulho e seguir o seu próprio caminho.
+Nem sempre podemos controlar o que os outros dizem. Podemos, porém, cuidar do que fazemos em seguida. Han Xin não deixou o orgulho mandar nele. Em certos momentos, manter a calma e seguir o próprio caminho é a escolha mais sábia.
 
 ---
 
@@ -177,17 +187,17 @@ Chen chegou logo atrás do filho. Quando viu a destruição, seus joelhos cedera
 
 ## Reflexão
 
-Chen não era preguiçoso; pelo contrário, ele trabalhou duro. Mas ele falhou porque não soube respeitar o tempo natural das coisas. Ele sentia uma ansiedade enorme, um desejo de ver o resultado *agora*, e achou que podia forçar a natureza a obedecer à sua vontade.
+Chen precisava aprender a **paciência**. Ele não era preguiçoso. Trabalhou muito, mas confundiu pressa com progresso. Ao puxar as plantas, estragou o trabalho que acontecia em silêncio sob a terra.
 
-O erro dele foi acreditar que fazer "mais rápido" é o mesmo que fazer "melhor". Ao tentar pular etapas e forçar o crescimento, ele quebrou a base que sustentava a vida das plantas.
+Ter paciência não é ficar parado. Quem cuida de uma planta rega, protege e volta no dia seguinte. Faz a sua parte, mesmo sem ver o resultado na mesma hora. Aprender e crescer também acontecem assim: um pouco de cada vez.
 
-Na vida de vocês, muitas vezes vai parecer que as coisas estão indo devagar demais. Pode ser uma matéria difícil na escola, um livro longo para ler ou uma habilidade nova que vocês querem aprender. A vontade será de pular páginas, de fazer de qualquer jeito só para terminar logo ou de desistir porque "não está crescendo". Mas lembrem-se de Chen. Tudo o que é valioso precisa de tempo para criar raízes fortes. Se vocês tentarem pular as etapas, o resultado pode parecer pronto por fora, mas estará fraco por dentro. O segredo para crescer alto não é puxar para cima, é nutrir a raiz e saber esperar.
+Uma matéria, um livro, uma amizade ou uma nova habilidade podem levar tempo. Não precisamos correr nem comparar nosso passo com o dos outros. Podemos dividir o caminho em partes menores e comemorar cada avanço. Cada etapa tem valor. Nem tudo precisa dar flores hoje para estar crescendo.
 
 ---
 
 # O General e a Chama da Última Alvorada
 
-> *Inspirado na sabedoria da Coragem Sacrificial 烈火雄心 (Liè Huǒ Xióng Xīn — "Coração de Chama Ardente")*
+> *Conto original inspirado no ideal da Coragem Sacrificial — 烈火雄心 (Liè Huǒ Xióng Xīn, "Coração de Chama Ardente")*
 
 ::: pagina-cheia
 ![](assets/general_wen_alvorada.png)
@@ -224,9 +234,13 @@ Wen firmou os pés na neve. Uma aura dourada, quente como o sol, começou a bril
 — Minha técnica é valiosa *porque* meu tempo é curto! Eu me esforcei tanto para aprender *porque* eu sabia que não teria outra chance!
 
 — Tolo! — gritou Zhang. — Você escolhe a morte?
-— Eu escolho a vida! — rugiu Wen. — A flor de cerejeira é bela porque ela cai! Se ela ficasse na árvore para sempre, seria feita de plástico, morta e fria como você! Eu prefiro queimar minha vida em uma única noite para proteger quem eu amo, do que viver mil anos treinando sozinho no escuro!
+— Eu escolho a vida! — rugiu Wen. — A flor de cerejeira é bela porque ela cai! Se ela ficasse na árvore para sempre, seria apenas uma imitação fria e sem vida, como você! Eu prefiro queimar minha vida em uma única noite para proteger quem eu amo a viver mil anos treinando sozinho no escuro!
 
-A batalha explodiu. Wen, movido por uma força espiritual "Chama Vital", atacou com uma velocidade que surpreendeu o Imortal.
+Zhang riu, sem entender.
+— Uma noite, e depois? Cinzas, general. Só cinzas.
+— Cinzas, não. Chama — respondeu Wen. — Um mestre não vive para sempre: ele vira fogo em quem ensina. O meu ainda arde em mim. Um dia, vou arder em outro.
+
+A batalha explodiu. Wen, movido por uma força espiritual, atacou com uma velocidade que surpreendeu o Imortal.
 — Incrível! — ria Zhang, defendendo os golpes. — Que espírito! Que foco! É por isso que você deve viver para sempre!
 
 Mas Wen não parou. Ele usou cada gota de sua vida. Ele transformou sua alma em fogo. Ele apanhou, caiu, teve a lança quebrada, mas lutou com os punhos nus. Ele segurou o Imortal ali, no passo da montanha, impedindo-o de descer ao vilarejo.
@@ -234,33 +248,39 @@ Mas Wen não parou. Ele usou cada gota de sua vida. Ele transformou sua alma em 
 A luta durou a madrugada inteira. Wen era uma fogueira humana contra um iceberg.
 
 Finalmente, o horizonte ficou roxo. Depois, laranja.
-Zhang olhou para o Leste e seu sorriso desapareceu. O sol estava nascendo. Como criatura da noite eterna, a luz do dia queimava sua pele perfeita.
+Zhang olhou para o Leste e seu sorriso desapareceu. O sol estava nascendo. Como criatura da noite eterna, a luz do dia queimava sua pele perfeita, pois ele não poderia ter contato direto com o sol, a maior fraqueza dele.
 
 — O sol... — sibilou Zhang, cobrindo o rosto. Ele olhou para Wen uma última vez, com um misto de raiva e respeito profundo. — Você lutou até o fim, humano. Você protegeu seu formigueiro. Mas agora você morre, e eu continuo.
 
 O Imortal virou as costas e desapareceu nas sombras profundas das cavernas, fugindo da luz.
 
 Quando o sol dourado banhou a montanha, Wen ainda estava de pé, na posição de guarda, bloqueando o caminho.
-Ele não se movia. Seus olhos estavam fechados e havia um sorriso sereno em seu rosto. Ele havia queimado tudo o que tinha. O General Wen partiu, mas o vilarejo atrás dele acordou em segurança, iluminado pelo sol que ele garantiu que nascesse.
+Ele não se movia. Seus olhos estavam fechados e havia um sorriso sereno em seu rosto. Na luz quente daquela alvorada, por um instante, Wen viu de novo o rosto do seu velho mestre — o mesmo de tantos invernos atrás, quando lhe pôs a lança nas mãos pela primeira vez.
+
+— Mestre... — sussurrou Wen, num fio de voz que só o vento levou. — Eu ardi bem?
+
+E foi como se o velho mestre sorrisse, orgulhoso, antes que a luz o envolvesse por completo.
+
+Wen sorriu de volta, fechou os olhos, e deixou-se ir, calmo como quem finalmente descansa. Ele havia queimado tudo o que tinha. O General Wen partiu, mas o vilarejo atrás dele acordou em segurança, iluminado pelo sol que ele garantiu que nascesse.
 
 ## Reflexão
 
-O guerreiro imortal, Zhang, ficou impressionado com a força de Wen. Ele ofereceu a eternidade porque achava que era um desperdício alguém tão bom envelhecer e morrer.
+Wen nos ensina a **coragem** e a **generosidade**. Diante do perigo, usou o que sabia para proteger outras pessoas. Ele não queria aplausos. Queria cuidar de quem precisava dele.
 
-Mas Wen nos ensinou a lição da **Coragem Sacrificial**. Ele mostrou que o que torna a vida humana preciosa é justamente o fato de ela não durar para sempre. É a nossa fragilidade que nos dá urgência para amar, para treinar e para fazer o bem *hoje*, não amanhã.
+A escolha de Wen faz parte de uma história fantástica. Na vida real, uma criança não precisa enfrentar um perigo nem se colocar em risco para mostrar coragem. Ser corajoso pode ser chamar um adulto, pedir ajuda, defender alguém com palavras ou contar a verdade sobre um medo.
 
-Wen partiu, mas venceu. Ele não trocou sua humanidade por poder fácil. Ele usou sua vida para criar um futuro seguro para os outros. A verdadeira força não é viver para sempre em um corpo perfeito, mas viver de forma tão honrosa e generosa que a sua luz continue iluminando o caminho daqueles que você protegeu.
+A coragem também conhece seus limites. Cuidar dos outros inclui cuidar de si, buscar apoio e não tentar resolver sozinho aquilo que precisa da ajuda de muitas pessoas.
 
-Quando o dia for difícil ou parecer que vocês não têm forças, lembrem-se da chama de Wen. Não deixem para amanhã o bem que vocês podem fazer hoje. Queimem com brilho, cuidem dos seus e mantenham o coração aquecido.
+Wen também deixou seus bons exemplos para quem veio depois. Todos nós podemos fazer isso. Um gesto de cuidado, uma lição e uma ajuda podem ficar no coração de alguém por muito tempo. Não é preciso realizar algo enorme. A generosidade começa nas pequenas escolhas de cada dia.
 
 ---
 
 # A Semente que Nunca Brotou
 
-> *Baseado na lenda clássica de Ling e o Imperador 誠信至上 (Chéng Xìn Zhì Shàng — "A Verdade Acima de Tudo")*
+> *Conto reimaginado sobre o valor da honestidade — 誠信至上 (Chéng Xìn Zhì Shàng, "A Verdade Acima de Tudo")*
 
 ::: moldura
-![Figura 5 — Ling segurando seu vaso de terra nua diante do trono](assets/ling_semente.png)
+![Figura 5 — Ling segurando seu vaso de terra diante do trono](assets/ling_semente.png)
 :::
 
 Há muitos séculos, governava a China um Imperador idoso, sábio e amado por seu povo. Ele não tinha filhos, e o tempo de escolher seu sucessor havia chegado. O Imperador desejava um governante que não fosse apenas inteligente, mas de caráter inquebrável.
@@ -286,9 +306,9 @@ Quando a primavera chegou, todas as crianças marcharam orgulhosas em direção 
 — Eu falhei — disse ele para a sua mãe, de cabeça baixa. — Meu vaso só tem terra.
 
 Sua mãe segurou seu queixo delicadamente e disse:
-— Meu filho, você trabalhou duro e cuidou da semente com amor. Não mentiste nem desistiu. Vá ao palácio e apresente a verdade ao Imperador. O dever de um guerreiro é ser verdadeiro.
+— Meu filho, você cuidou dessa semente com amor todos os dias, sem nunca mentir, sem nunca desistir. Isso já vale mais do que qualquer flor do palácio. Vá e leve ao Imperador a sua verdade. O dever de um guerreiro é ser verdadeiro.
 
-Com o coração apertado, Ling caminhou para o palácio carregando seu vaso de terra nua.
+Com o coração apertado, Ling caminhou para o palácio carregando seu vaso de terra.
 
 O salão imperial estava repleto de cores e aromas de flores incríveis. O Imperador caminhava lentamente entre as fileiras de crianças, observando cada vaso. Mas seu rosto permanecia sério e seus olhos não demonstravam alegria.
 
@@ -298,7 +318,7 @@ Finalmente, o Imperador parou diante de Ling. O menino estava encolhido no canto
 Ling caiu de joelhos. As lágrimas escorreram pelo seu rosto.
 — Majestade... eu plantei a semente. Eu reguei todos os dias. Eu a protegi do vento frio. Mas nada cresceu. Esta terra é tudo o que tenho para lhe entregar. Perdoe a minha falha.
 
-As outras crianças riram em sussurros. O açougueiro da corte balançou a cabeça com desprezo.
+As outras crianças riram em sussurros. Um dos cortesãos balançou a cabeça com desprezo.
 
 Mas o Imperador não brigou. Ele estendeu a mão, ajudou Ling a se levantar e olhou fundo nos olhos do menino. Em seguida, virou-se para a multidão e sua voz ressoou como um trovão por todo o palácio:
 
@@ -310,23 +330,23 @@ O salão calou-se em choque absoluto.
 
 Um silêncio envergonhado tomou conta das crianças. Muitas baixaram os olhos, percebendo que, ao verem que suas sementes não cresciam, haviam trocado a semente do Imperador por sementes comuns para não passarem vergonha.
 
-— Quando viram que a semente não brotava — continuou o Imperador —, vocês trocaram a verdade pela mentira, tudo por causa do orgulho e do medo de falhar. Mas este jovem, Ling, teve a coragem rara de ser honesto quando todos mentiram. Ele me trouxe o vaso da verdade. A coragem de viver na verdade é a maior virtude de um líder!
+— Quando viram que a semente não brotava — continuou o Imperador —, vocês trocaram a verdade pela mentira, tudo por causa do orgulho e do medo de falhar. Mas este jovem, Ling, teve a coragem rara de ser honesto quando todos mentiram. Ele me trouxe o vaso da verdade. A coragem de viver na verdade é a maior virtude de um monarca!
 
 Ling herdou o trono anos depois e governou o império com a maior justiça e paz da história da China.
 
 ## Reflexão
 
-Ling sentiu vergonha. Ele viu todos ao seu redor exibindo flores lindas e achou que ele era o único derrotado. A tentação de comprar outra semente e mentir como os outros deve ter sido enorme. Mas ele preferiu passar a vergonha da verdade do que a falsa glória da mentira.
+Ling nos ensina a **honestidade**. Ao ver tantos vasos com flores, pensou que tinha fracassado. Mesmo com vergonha, levou ao palácio o resultado verdadeiro. Não tentou esconder a terra vazia com uma mentira.
 
-No mundo em que vivemos, vocês verão muitas pessoas trapaceando para tirar notas altas, mentindo para não levar bronca ou inventando histórias para parecerem mais legais na internet. Parecerá que quem mente está se dando bem e crescendo como aquelas flores falsas.
+Dizer a verdade pode ser difícil. Podemos ter medo de levar uma bronca ou de deixar alguém triste. Mas a verdade permite pedir ajuda, corrigir um erro e cuidar da relação. Isso cria confiança. A mentira pode esconder um problema por algum tempo, mas não faz o problema sumir.
 
-Mas lembrem-se de Ling. A mentira cria uma flor bonita por fora, mas o vaso por dentro é podre. A honestidade pode parecer dolorosa na hora, mas ela constrói um caráter de ferro que ninguém pode destruir. A maior vitória de um pequeno guerreiro não é ganhar troféus, é poder olhar no espelho e saber que nunca precisou mentir para ser grande.
+Notas, prêmios e elogios não dizem tudo sobre uma pessoa. Ling não levou a flor mais bonita. Levou algo mais raro: a coragem de não fingir. Ser honesto é crescer sem precisar esconder quem somos ou o que aconteceu.
 
 ---
 
 # A Xícara de Chá Transbordante
 
-> *Baseado no ensinamento clássico 虛心竹有低頭葉 (Xū Xīn Zhú Yǒu Dī Tóu Yè — "O Bambu Humilde Curva suas Folhas")*
+> *Adaptação livre da parábola zen da xícara transbordante, com o tema da humildade expresso em 虛心竹有低頭葉 (Xū Xīn Zhú Yǒu Dī Tóu Yè, "O Bambu Humilde Curva suas Folhas")*
 
 ::: moldura
 ![Figura 6 — O Mestre Li despejando chá na xícara transbordante](assets/mestre_xicara_cha.png)
@@ -334,7 +354,7 @@ Mas lembrem-se de Ling. A mentira cria uma flor bonita por fora, mas o vaso por 
 
 Nas montanhas nevadas de Wudang, vivia um velho mestre de artes marciais chamado Mestre Li. Diziam que seus movimentos eram tão leves que ele podia andar sobre as folhas das árvores sem dobrá-las.
 
-Um dia, um jovem lutador chamado Chao subiu a montanha. Chao era um prodígio. Tinha braços fortes, reflexos rápidos e já havia derrotado todos os adversários da sua cidade natal. Mas Chao tinha um problema: sua cabeça era maior do que sua força. Ele achava que não tinha mais nada a aprender com ninguém.
+Um dia, um jovem lutador chamado Chao subiu a montanha. Chao era um prodígio. Tinha braços fortes, reflexos rápidos e já havia derrotado todos os adversários da sua cidade natal. Mas Chao tinha um problema: sua cabeça era maior do que sua força. Ele achava que já sabia quase tudo o que um lutador precisa saber — só lhe faltava arrancar dos grandes mestres os últimos segredos guardados, como quem completa uma coleção. Foi por isso, e não por humildade, que ele subiu até Wudang.
 
 Chao entrou no templo sem bater no portão. Encontrou o Mestre Li sentado em silêncio, vestindo uma túnica simples de algodão, preparando o chá da tarde.
 
@@ -359,34 +379,35 @@ O Mestre Li parou de despejar. Colocou o bule suavemente sobre a mesa, olhou nos
 
 — Exatamente, meu jovem. Assim como esta xícara, a sua mente está completamente cheia das suas próprias opiniões, do seu orgulho e da certeza de que já sabe tudo.
 
-Chao travou. As palavras do velho bateram nele com mais força do que um soco.
+Chao travou. As palavras do velho bateram nele com mais força do que um soco. Mas o orgulho não se rende fácil.
+— Isso é só um truque de palavras, velho! — resmungou, ainda de pé, o rosto vermelho. — Eu vim aprender golpes, não filosofia de chá!
 
-— Como posso eu lhe ensinar o Kung Fu superior — continuou o Mestre Li —, se você não esvaziar a sua xícara primeiro? Se você acha que já sabe tudo, qualquer ensinamento que eu lhe der vai transbordar e se perder na lama, exatamente como este chá.
+O Mestre Li nem se abalou. Esperou em silêncio, como quem sabe que toda tempestade passa.
 
-Chao olhou para a xícara molhada. Olhou para as próprias mãos. Lembrou-se de como havia entrado gritando e se gabando. Percebeu que seu orgulho o tornara cego. Toda a sua força física não valia nada se sua mente estivesse trancada.
+— Como posso eu lhe ensinar o Kung Fu superior — continuou, calmo —, se você não esvaziar a sua xícara primeiro? Se você acha que já sabe tudo, qualquer ensinamento que eu lhe der vai transbordar e se perder na lama, exatamente como este chá.
+
+Chao abriu a boca para rebater, mas nenhuma palavra saiu. Olhou para a xícara molhada. Olhou para as próprias mãos. Lembrou-se de como havia entrado gritando e se gabando. Percebeu que seu orgulho o tornara cego. Toda a sua força física não valia nada se sua mente estivesse trancada.
 
 O jovem lutador caiu de joelhos na madeira molhada. Baixou a cabeça até a poeira do chão e disse:
 — Perdoe a minha arrogância, Mestre. Por favor... ensine-me a esvaziar a minha xícara.
 
-Chao permaneceu no templo por dez anos. Aprendeu que o verdadeiro sábio é aquele que se faz pequeno para poder aprender com tudo e com todos.
+Chao permaneceu no templo por dez anos.
+
+Dizem que, no dia em que finalmente desceu a montanha, um jovem lutador arrogante subiu gritando desafios pelo mesmo caminho — e Chao, agora de cabelos grisalhos e olhar manso, apenas serviu-lhe uma xícara de chá e esperou, em silêncio, ela transbordar. Havia aprendido, por fim, que o verdadeiro sábio é aquele que se faz pequeno para poder aprender com tudo e com todos.
 
 ## Reflexão
 
-Chao achava que ser forte era saborear vitórias e mostrar aos outros o quanto ele era incrível. Mas ele estava cego. Quem acha que já sabe tudo fecha as portas para o crescimento.
+A xícara nos ensina a **humildade**. Chao tinha talento, mas achava que já sabia quase tudo. Por isso, parou de fazer perguntas e de ouvir com atenção. Sua mente estava cheia como a xícara de chá.
 
-Na escola ou em casa, é muito fácil a gente cair na armadilha da "xícara cheia". É quando o pai, a mãe ou o professor tentam nos ensinar algo e a nossa resposta imediata na cabeça é: *"Eu já sei disso!"*, *"Não preciso de ajuda!"* ou *"Eu sou melhor nisso do que eles!"*.
+Ser humilde não é pensar que somos piores que os outros. É reconhecer o que sabemos sem nos achar superiores. Também é poder dizer: "Não entendi", "Eu errei" ou "Você pode me ensinar?".
 
-Quando a gente age assim, o ensinamento transborda e vai embora, exatamente como o chá do Mestre Li. 
-
-O bambu é uma das plantas mais fortes e resistentes da natureza. Ele aguenta tempestades e ventos fortíssimos sem quebrar. E sabe qual é o segredo do bambu? Ele tem o tronco oco (vazio por dentro) e sabe se curvar com humildade.
-
-Seja como o bambu e como a xícara vazia. Mantenham a mente aberta para aprender com os erros, para escutar quem tem mais experiência e para admitir quando não souberem algo. O verdadeiro guerreiro é um eterno aprendiz.
+Aprendemos com professores e familiares. Também aprendemos com amigos, pessoas mais novas e nossos próprios erros. Ouvir não é concordar com tudo. É tentar entender antes de responder. Uma mente aberta, como uma xícara vazia, sempre tem espaço para uma nova e boa ideia. É assim que o saber continua a crescer.
 
 ---
 
 # As Sete Flechas do Velho General
 
-> *Baseado na lição dos Sete Bambus 眾志成城 (Zhòng Zhì Chéng Chéng — "Muitos Corações Formam uma Fortaleza")*
+> *Conto original inspirado no provérbio 眾志成城 (Zhòng Zhì Chéng Chéng, "Muitos Corações Formam uma Fortaleza")*
 
 ::: pagina-cheia
 ![](assets/sete_flechas_uniao.png)
@@ -394,7 +415,7 @@ Seja como o bambu e como a xícara vazia. Mantenham a mente aberta para aprender
 
 Nas vastas planícies da China antiga, vivia um velho General aposentado chamado Zhao. Ele havia vencido muitas batalhas no passado, mas agora enfrentava um problema dentro da própria casa.
 
-Zhao tinha sete filhos. Todos eram jovens fortes, hábeis com o arco e com a espada. Porém, os irmãos viviam em pé de guerra.
+Zhao tinha sete filhos, e cada um carregava um dom diferente: um tinha a força de um búfalo, outro a pontaria mais precisa da província, outro a velocidade do vento, outro ainda a paciência de uma tartaruga. Porém, em vez de somar essas diferenças, os irmãos viviam em pé de guerra.
 
 Bastava o sol nascer para as brigas começarem:
 — Essa espada é minha! — gritava o mais velho.
@@ -404,7 +425,7 @@ Bastava o sol nascer para as brigas começarem:
 Eles disputavam por comida, por atenção, por espaço e por motivos bobos. Viviam se empurrando e trocando ofensas. O velho General olhava para aquela cena com o coração pesado. Ele sabia que o mundo fora de casa era duro e que a divisão destruiria sua família.
 
 Certo dia, o General Zhao chamou seus sete filhos para o pátio de treinos.
-Sobre uma mesa de pedra, havia sete flechas de bambu pontiagudas.
+Sobre uma mesa de pedra, havia oito flechas de bambu pontiagudas.
 
  O General pegou uma única flecha e a entregou ao filho mais velho, um rapaz musculoso que se gabava de sua força bruta.
 — Meu filho — disse o pai —, pegue esta flecha com as duas mãos e quebre-a ao meio.
@@ -413,14 +434,14 @@ O rapaz sorriu com desdém.
 *Nhanque!* Com um movimento rápido dos punhos, a flecha estalou e se dividiu em duas partes.
 — Fácil demais, pai — zombou o jovem.
 
- O General Zhao apenas acenou com a cabeça. Em seguida, pegou as outras seis flechas e as juntou à metade da primeira. Formou um feixe com as **sete flechas juntas**. Pegou um cordão de couro resistente e amarrou o feixe firmemente, dando vários nós apertados.
+ O General Zhao apenas acenou com a cabeça. Em seguida, pegou as outras sete flechas. Formou um feixe com as **sete flechas juntas**. Pegou um cordão de couro resistente e amarrou o feixe firmemente, dando vários nós apertados.
 
 O General entregou o feixe amarrado para o mesmo filho musculoso.
 — Agora, meu filho, tente quebrar este feixe de sete flechas.
 
 O rapaz segurou o feixe amarrado. Estufou o peito, fez força nos braços. As veias do seu pescoço saltaram. Ele forçou o feixe contra o joelho. Fez um esforço enorme até ficar com o rosto vermelho como uma pimenta.
 
-A madeira rangeram, mas **nenhuma das flechas quebrou**. O feixe permaneceu intacto.
+A madeira rangeu, mas **nenhuma das flechas quebrou**. O feixe permaneceu intacto.
 
 Exausto e arfando, o rapaz entregou o feixe de volta ao pai:
 — É impossível! Ninguém consegue quebrar todas juntas!
@@ -443,12 +464,8 @@ Anos mais tarde, quando as secas e os invernos rigorosos chegaram à região, en
 
 ## Reflexão
 
-Uma única flecha de bambu pode ser muito bonita e afiada, mas é frágil quando está sozinha. Qualquer pressão a quebra ao meio. Mas quando ela se une a outras flechas, a força de todas se multiplica.
+As sete flechas nos ensinam a **cooperação**. Cada irmão sabia fazer algo diferente. Foi essa mistura que ajudou o grupo. Juntos, fizeram o que nenhum deles faria sozinho.
 
-Muitas vezes, a gente quer resolver tudo sozinho ou acha que os nossos irmãos, amigos ou colegas de classe são nossos "concorrentes". A gente briga por brinquedos, por atenção ou para provar quem é o melhor.
+Cooperar não é pensar do mesmo jeito. É juntar ideias e dons para chegar ao mesmo lugar. Em casa, entre amigos ou na escola, as pessoas podem discordar. Mesmo assim, podem ouvir umas às outras, dividir tarefas e oferecer ajuda. Também podem notar quem ficou de fora e chamar essa pessoa para perto.
 
-Mas o segredo dos maiores campeões e das maiores famílias é a **União**.
-
-Se vocês estiverem na escola, não deixem um colega isolado; juntem-se a ele. Se tiverem irmãos em casa, parem de disputar coisas bobas e protejam-se uns aos outros. Um guerreiro sozinho pode ir rápido, mas um exército de irmãos unidos vai longe e nunca é derrotado.
-
-Lembrem-se das sete flechas amarradas pelo couro da lealdade. Sejam o apoio uns dos outros. Juntos, vocês são invencíveis.
+Ninguém precisa carregar um peso sozinho. Pedir ajuda não é fraqueza. O dom de uma pessoa não apaga o dom de outra. Quando há respeito, cada um mantém seu jeito e o grupo segue mais forte.

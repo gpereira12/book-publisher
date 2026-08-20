@@ -1,0 +1,15 @@
+<svg class="title-lettering lettering-selo" viewBox="0 0 620 180" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lettering-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0e6d2"/><stop offset="0.48" stop-color="#DBB666"/><stop offset="1" stop-color="#DBB666" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+  <rect x="28" y="15" width="564" height="148" rx="6" fill="none" stroke="#DBB666" stroke-width="2"/>
+  <rect x="38" y="25" width="544" height="128" rx="3" fill="none" stroke="#DBB666" stroke-width="0.8" opacity="0.7"/>
+  <path d="M 38,54 H 125 M 495,54 H 582 M 38,126 H 125 M 495,126 H 582" stroke="#DBB666" stroke-width="2"/>
+  <text x="310" y="48" text-anchor="middle" font-family="&#x27;Cinzel Decorative&#x27;, &#x27;Cinzel&#x27;, serif" font-size="29" letter-spacing="4" fill="#f0e6d2">CRÔNICAS CHINESAS</text>
+  <text x="310" y="82" text-anchor="middle" font-family="&#x27;Cormorant Garamond&#x27;, serif" font-size="22" letter-spacing="6" fill="#DBB666">PARA PEQUENOS</text>
+  <text x="310" y="137" text-anchor="middle" font-family="&#x27;Cinzel Decorative&#x27;, &#x27;Cinzel&#x27;, serif" font-size="54" font-weight="900" letter-spacing="2" fill="url(#lettering-gold)">GUERREIROS</text>
+  <circle cx="38" cy="54" r="4" fill="#DBB666"/><circle cx="582" cy="54" r="4" fill="#DBB666"/>
+  <circle cx="38" cy="126" r="4" fill="#DBB666"/><circle cx="582" cy="126" r="4" fill="#DBB666"/>
+</svg>

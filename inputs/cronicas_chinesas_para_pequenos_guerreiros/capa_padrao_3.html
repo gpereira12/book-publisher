@@ -106,6 +106,7 @@
     .pattern-3 .front-subtitle-italic { font-style: italic; font-size: 9pt; color: #5c4a15; }
     .pattern-3 .gold-frame-wrapper { flex: 1; display: flex; justify-content: center; align-items: center; margin: 10px 0; }
     .pattern-3 .gold-frame-border {
+      position: relative;
       width: 90%; height: 95%;
       border: 3px double #8c6d1f;
       border-radius: 8px;
@@ -117,6 +118,16 @@
     .pattern-3 .framed-art { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
     .pattern-3 .framed-footer { margin-top: 10px; }
 
+    /* Elementos Ornamentais (opt-in via ornamentos_capa) */
+    .frame-corner { position: absolute; width: 40px; height: 40px; z-index: 2; }
+    .frame-corner.corner-tl { top: 6px; left: 6px; }
+    .frame-corner.corner-tr { top: 6px; right: 6px; transform: rotate(90deg); }
+    .frame-corner.corner-br { bottom: 6px; right: 6px; transform: rotate(180deg); }
+    .frame-corner.corner-bl { bottom: 6px; left: 6px; transform: rotate(270deg); }
+    .medallion-seal svg { height: 42px; width: 42px; }
+    .front-title-img { max-width: 90%; height: auto; display: block; margin: 0 auto; }
+    .title-lettering { display: block; margin: 0 auto; max-width: 95%; }
+
     .author-name { font-family: 'Montserrat', sans-serif; font-size: 10pt; font-weight: 700; color: #ffffff; letter-spacing: 3.5px; text-transform: uppercase; }
   </style>
 </head>
@@ -125,11 +136,28 @@
   <div class="back-cover">
     <div>
       <div class="back-title">CRÔNICAS CHINESAS PARA PEQUENOS GUERREIROS</div>
-      <div class="gold-divider"></div>
+      <svg class="ornament-divider" viewBox="-150.0 -18.0 300 36.0" width="300" height="36.0" xmlns="http://www.w3.org/2000/svg">
+  <line x1="-150.0" y1="0" x2="-37.8" y2="0" stroke="#8c6d1f" stroke-width="2.88" />
+  <line x1="37.8" y1="0" x2="150.0" y2="0" stroke="#8c6d1f" stroke-width="2.88" />
+  <g fill="#8c6d1f">
+          <circle cx="0" cy="0" r="9.180000000000001" />
+          <circle cx="-12.959999999999999" cy="3.2399999999999998" r="5.4" />
+          <circle cx="12.959999999999999" cy="3.2399999999999998" r="5.4" />
+        </g>
+</svg>
       <div class="synopsis-box">Sinopse do livro aqui.</div>
     </div>
     <div class="back-footer">
       <div class="publisher-seal"><img src='file:///Users/gabrielpereira/Desktop/Projetos/Livros/resources/logos/coala/logo.svg'></div>
+      <div class="medallion-seal"><svg class="ornament-medallion" viewBox="0 0 90 90" width="90" height="90" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="45.0" cy="45.0" r="43.199999999999996" fill="none" stroke="#8c6d1f" stroke-width="1.8" />
+  <circle cx="45.0" cy="45.0" r="34.2" fill="none" stroke="#8c6d1f" stroke-width="1.08" />
+  <g transform="translate(45.0,45.0)"><g fill="#8c6d1f">
+          <circle cx="0" cy="0" r="6.732000000000001" />
+          <circle cx="-9.504" cy="2.376" r="3.9600000000000004" />
+          <circle cx="9.504" cy="2.376" r="3.9600000000000004" />
+        </g></g>
+</svg></div>
       <div class="barcode-img"><img src="file:///Users/gabrielpereira/Desktop/Projetos/Livros/inputs/cronicas_chinesas_para_pequenos_guerreiros/assets/isbn_barcode.svg"></div>
     </div>
   </div>
@@ -142,7 +170,15 @@
     <div class="front-cover pattern-3">
       <div class="framed-header">
         <div class="front-title">CRÔNICAS CHINESAS PARA PEQUENOS GUERREIROS</div>
-        <div class="gold-divider"></div>
+        <svg class="ornament-divider" viewBox="-150.0 -18.0 300 36.0" width="300" height="36.0" xmlns="http://www.w3.org/2000/svg">
+  <line x1="-150.0" y1="0" x2="-37.8" y2="0" stroke="#8c6d1f" stroke-width="2.88" />
+  <line x1="37.8" y1="0" x2="150.0" y2="0" stroke="#8c6d1f" stroke-width="2.88" />
+  <g fill="#8c6d1f">
+          <circle cx="0" cy="0" r="9.180000000000001" />
+          <circle cx="-12.959999999999999" cy="3.2399999999999998" r="5.4" />
+          <circle cx="12.959999999999999" cy="3.2399999999999998" r="5.4" />
+        </g>
+</svg>
         <div class="front-subtitle-italic">Histórias Milenares de Coragem, Sabedoria e Autocontrole</div>
       </div>
 
@@ -150,6 +186,40 @@
       <div class="gold-frame-wrapper">
         <div class="gold-frame-border">
           <img class='framed-art' src='file:///Users/gabrielpereira/Desktop/Projetos/Livros/inputs/cronicas_chinesas_para_pequenos_guerreiros/assets/capa.jpg'>
+          
+          <div class="frame-corner corner-tl"><svg class="ornament-corner" viewBox="0 0 80 80" width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 2,32.0 L 2,2 L 32.0,2" stroke="#8c6d1f" stroke-width="2.8000000000000003" fill="none" stroke-linecap="round" />
+  <g transform="translate(17.6,17.6)"><g fill="#8c6d1f">
+          <circle cx="0" cy="0" r="5.984000000000001" />
+          <circle cx="-8.448" cy="2.112" r="3.5200000000000005" />
+          <circle cx="8.448" cy="2.112" r="3.5200000000000005" />
+        </g></g>
+</svg></div>
+          <div class="frame-corner corner-tr"><svg class="ornament-corner" viewBox="0 0 80 80" width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 2,32.0 L 2,2 L 32.0,2" stroke="#8c6d1f" stroke-width="2.8000000000000003" fill="none" stroke-linecap="round" />
+  <g transform="translate(17.6,17.6)"><g fill="#8c6d1f">
+          <circle cx="0" cy="0" r="5.984000000000001" />
+          <circle cx="-8.448" cy="2.112" r="3.5200000000000005" />
+          <circle cx="8.448" cy="2.112" r="3.5200000000000005" />
+        </g></g>
+</svg></div>
+          <div class="frame-corner corner-bl"><svg class="ornament-corner" viewBox="0 0 80 80" width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 2,32.0 L 2,2 L 32.0,2" stroke="#8c6d1f" stroke-width="2.8000000000000003" fill="none" stroke-linecap="round" />
+  <g transform="translate(17.6,17.6)"><g fill="#8c6d1f">
+          <circle cx="0" cy="0" r="5.984000000000001" />
+          <circle cx="-8.448" cy="2.112" r="3.5200000000000005" />
+          <circle cx="8.448" cy="2.112" r="3.5200000000000005" />
+        </g></g>
+</svg></div>
+          <div class="frame-corner corner-br"><svg class="ornament-corner" viewBox="0 0 80 80" width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 2,32.0 L 2,2 L 32.0,2" stroke="#8c6d1f" stroke-width="2.8000000000000003" fill="none" stroke-linecap="round" />
+  <g transform="translate(17.6,17.6)"><g fill="#8c6d1f">
+          <circle cx="0" cy="0" r="5.984000000000001" />
+          <circle cx="-8.448" cy="2.112" r="3.5200000000000005" />
+          <circle cx="8.448" cy="2.112" r="3.5200000000000005" />
+        </g></g>
+</svg></div>
+        
         </div>
       </div>
 

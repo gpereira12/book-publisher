@@ -1,0 +1,15 @@
+<svg class="ornament-medallion ornament-medallion-oriental" viewBox="0 0 180 180" width="180" height="180" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="90.0" cy="90.0" r="86.39999999999999" fill="none" stroke="#DBB666" stroke-width="3.2399999999999998" />
+  <circle cx="90.0" cy="90.0" r="68.4" fill="none" stroke="#DBB666" stroke-width="1.6199999999999999" stroke-dasharray="6.300000000000001 4.5" />
+  
+  <rect x="50.400000000000006" y="50.400000000000006" width="79.2" height="79.2" rx="6.300000000000001" fill="none" stroke="#DBB666" stroke-width="2.52" transform="rotate(45 90.0 90.0)" />
+  <g transform="translate(90.0,90.0)"><g fill="none" stroke="#DBB666" stroke-width="3.3660000000000005" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M -36.432,5.5440000000000005
+                   C -28.512,-4.752 -19.008,-4.752 -15.840000000000002,1.584
+                   C -19.8,-13.464000000000002 -4.752,-19.008 0,-7.128
+                   C 4.752,-19.008 19.8,-13.464000000000002 15.840000000000002,1.584
+                   C 19.008,-4.752 28.512,-4.752 36.432,5.5440000000000005" />
+          <path d="M -24.552,8.712 Q -13.464000000000002,16.632 0,7.128 Q 13.464000000000002,16.632 24.552,8.712" />
+          <circle cx="0" cy="7.128" r="2.7720000000000002" fill="#DBB666" stroke="none" />
+        </g></g>
+</svg>

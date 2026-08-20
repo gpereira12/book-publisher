@@ -12,13 +12,6 @@ import argparse
 from pathlib import Path
 from typing import Dict, List, Set, Any, Optional
 
-from src.parser import process_markdown
-from src.builder import build_html
-from src.pdf_printer import print_pdf
-from src.typst_exporter import export_typst_from_file
-from src.epub_exporter import export_epub
-
-
 VALID_ENGINES: Set[str] = {"typst", "html"}
 VALID_TARGETS: Set[str] = {"pdf_print", "pdf_digital", "epub"}
 DEFAULT_TARGETS: List[str] = ["pdf_print", "pdf_digital", "epub"]
@@ -87,6 +80,9 @@ def collect_interactive_config(args: argparse.Namespace) -> Dict[str, Any]:
 
 def execute_typst_engine(config: Dict[str, Any], targets: List[str], output_dir: Path) -> List[str]:
     """Executa a exportação utilizando o motor Typst com saídas organizadas em subpastas."""
+    from src.epub_exporter import export_epub
+    from src.typst_exporter import export_typst_from_file
+
     results: List[str] = []
     md_file: Path = config["md_file"]
 
@@ -114,6 +110,11 @@ def execute_typst_engine(config: Dict[str, Any], targets: List[str], output_dir:
 
 def execute_html_engine(config: Dict[str, Any], targets: List[str], output_dir: Path) -> List[str]:
     """Executa a exportação utilizando o motor HTML/Paged.js com saídas organizadas em subpastas."""
+    from src.builder import build_html
+    from src.epub_exporter import export_epub
+    from src.parser import process_markdown
+    from src.pdf_printer import print_pdf
+
     results: List[str] = []
     md_file: Path = config["md_file"]
 
@@ -164,6 +165,11 @@ def build_arg_parser() -> argparse.ArgumentParser:
     parser.add_argument("--title", help="Título do Livro")
     parser.add_argument("--cover", help="Caminho da imagem de capa")
     parser.add_argument(
+        "--illustrated-chapters",
+        help="Gera prova ilustrada dos capítulos informados (ex.: 1,2), usando plano_ilustracoes.yaml",
+    )
+    parser.add_argument("--output", help="Caminho de saída para a prova ilustrada")
+    parser.add_argument(
         "--engine",
         default="typst",
         choices=list(VALID_ENGINES),
@@ -184,6 +190,22 @@ def main() -> None:
 
     parser = build_arg_parser()
     args = parser.parse_args()
+
+    if args.illustrated_chapters:
+        from src.illustrated_proof import generate_illustrated_proof
+
+        if not args.book_dir:
+            parser.error("--book-dir é obrigatório com --illustrated-chapters")
+        raw = Path(args.book_dir)
+        book_dir = raw if raw.exists() else Path("inputs") / raw
+        selected = [int(value.strip()) for value in args.illustrated_chapters.split(",") if value.strip()]
+        output = Path(args.output) if args.output else (
+            Path("outputs") / book_dir.name / "pdf" / "prova_ilustrada_contos_01_02.pdf"
+        )
+        print(f"\n--- GERANDO PROVA ILUSTRADA (contos {selected}) ---")
+        result = generate_illustrated_proof(book_dir, selected, output)
+        print(f"✅ Prova ilustrada: {result}")
+        return
 
     targets = parse_target_list(args.targets)
     config = collect_interactive_config(args)

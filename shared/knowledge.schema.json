@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:hub-editorial:knowledge:v1",
+  "title": "Hub Editorial Knowledge",
+  "type": "object",
+  "required": ["schema_version", "entities"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "type"],
+        "properties": {
+          "uid": {"type": "string", "minLength": 16},
+          "universe_uid": {"type": "string"},
+          "name": {"type": "string", "minLength": 1},
+          "type": {"enum": ["character", "location", "organization", "object", "concept"]},
+          "description": {"type": "string"},
+          "aliases": {"type": "array", "items": {"type": "string"}},
+          "attributes": {"type": "object"},
+          "state_scene_uid": {"type": "string", "minLength": 16}
+        },
+        "additionalProperties": true
+      }
+    },
+    "predicates": {"type": "array", "items": {"type": "object"}},
+    "relationships": {"type": "array", "items": {"type": "object"}},
+    "claims": {"type": "array", "items": {"type": "object"}}
+  },
+  "additionalProperties": true
+}

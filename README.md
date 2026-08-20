@@ -2,7 +2,7 @@
 
 # 📚 Hub Editorial — Boutique de Livros
 
-**Pipeline industrial de publicação: `Ideia/Briefing → Manuscrito → Revisão → Diagramação → Capa → Aprovação Final`**
+**Pipeline industrial de publicação: `Ideia/Briefing → Manuscrito → Revisão → Ilustração (quando aplicável) → Diagramação → Capa → Aprovação Final`**
 
 *Transforma Markdown/YAML em livros comerciais prontos para gráfica (PDF/X 300 DPI, EAN-13, CMYK) e e-books digitais (EPUB3).*
 
@@ -24,11 +24,14 @@ Cada módulo é um projeto independente (pasta numerada + `main.py` próprio), e
 |---|---|---|---|
 | 1 | **Draft** | [`1-draft/`](1-draft/README.md) | Escrita — gera o manuscrito a partir de briefing/framework narrativo |
 | 2 | **Edit** | [`2-edit/`](2-edit/README.md) | Revisão editorial em 5 camadas (Dreyer & King, regência, verba dicendi, style sheet, legibilidade) |
+| — | **Illustration** | [`5-illustration/`](5-illustration/README.md) | Preflight das artes: sangria, pixels, 300 ppi, perfil ICC, formato e medianiz, sempre com aviso antes de corrigir |
 | 3 | **Layout** | [`3-layout/README.md`](3-layout/README.md) | Diagramação dual-engine (Typst + Paged.js) → PDF de impressão + EPUB3 |
 | 4 | **Cover** | [`4-cover/`](4-cover/README.md) | Capas & artes — motor híbrido HTML/Playwright + presets Typst, EAN-13, selos editoriais |
 | 5 | **Ship** | [`5-ship/`](5-ship/) | QA pré-impressão (PDF/X, CMYK, 300 DPI, EPUBCheck) + empacotamento final — **em construção** |
 
-Status: Draft, Edit, Layout e Cover estão completos e em uso; Ship é o próximo passo.
+Status: Draft, Edit, Layout para PDF e Cover estão em uso. O módulo EPUB3
+ilustrado permanece registrado no roadmap do Layout; o Ship será responsável por
+validá-lo com EPUBCheck e verificações de acessibilidade, navegação e integridade.
 
 ---
 
@@ -39,6 +42,7 @@ Livros/
 │
 ├── 1-draft/            # Projeto 1 — Escrita (frameworks narrativos, dossiês de personagem)
 ├── 2-edit/              # Projeto 2 — Revisão (5 camadas de qualidade editorial)
+├── 5-illustration/      # Projeto visual condicional — conferência e preparação das artes
 ├── 3-layout/            # Projeto 3 — Diagramação (Typst / Paged.js → PDF + EPUB3)
 ├── 4-cover/             # Projeto 4 — Capas & Artes (HTML+Playwright / Typst, EAN-13, selos)
 ├── 5-ship/              # Projeto 5 — QA Pre-Flight & empacotamento (a iniciar)
@@ -63,8 +67,17 @@ Livros/
 # 1. Escrita — gera o manuscrito
 python 1-draft/main.py --book-dir meu_livro
 
-# 2. Revisão — audita e lapidação editorial (dispara o Layout automaticamente com --auto-approve)
-python 2-edit/main.py --book-dir meu_livro --auto-approve
+# 2. Revisão — auditoria segura, sem sobrescrever o manuscrito
+python 2-edit/main.py --book-dir meu_livro
+
+# Aplicar correções mecânicas e, opcionalmente, disparar o Layout
+python 2-edit/main.py --book-dir meu_livro --apply-safe-fixes --auto-approve
+
+# Conferir ilustrações — somente relata; não altera arquivos
+python 5-illustration/main.py --book-dir meu_livro
+
+# Aplicar ajustes técnicos depois de revisar e aprovar os avisos
+python 5-illustration/main.py --book-dir meu_livro --apply --confirm-fixes
 
 # 3. Diagramação — PDF de impressão + digital + EPUB3
 python 3-layout/main.py --book-dir meu_livro --format A5 --theme Creme

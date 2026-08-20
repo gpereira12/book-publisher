@@ -62,13 +62,13 @@ Só então, ao verem pai e filho trabalhando juntos no campo, os vizinhos finalm
 == Reflexão
 
 
-Sai Weng sentia as coisas, assim como nós. Ele ficou triste quando o cavalo sumiu e ficou feliz quando os cavalos voltaram. Mas ele não deixou sua alma ser sequestrada por esses sentimentos.
+Sai Weng sentia as coisas, assim como todos nós. Ele ficou triste quando o cavalo sumiu e ficou feliz quando os cavalos voltaram. Mas ele não deixou sua alma ser levada por esses impulsos do momento.
 
-Quando perdeu o cavalo, sentiu a perda, mas não se entregou ao desespero. Quando ganhou dois, sentiu a alegria, mas não se entregou à euforia. Ele manteve o "centro". Assim como no Kung Fu, em que você precisa de uma base firme para não cair com um empurrão, Sai Weng tinha uma base firme na alma. Sentia a emoção, mas era ele quem mandava nela, e não ela nele. Por isso, ganhou a paz e a vida do filho.
+Quando perdeu o cavalo, sentiu a perda, mas não se entregou ao desespero. Quando ganhou dois, sentiu a alegria, mas não se entregou à euforia. Ele manteve o seu centro de equilíbrio. Assim como uma árvore de raízes profundas permanece de pé mesmo diante de um vento forte, Sai Weng tinha uma base firme na alma. Ele sentia a emoção, mas era ele quem mandava nela, e não ela nele. Por isso, conquistou a paz e salvou a vida do filho.
 
-Os vizinhos viveram o vício da inconstância. Eram escravos do que sentiam na hora: "Isso é horrível!", "Isso é maravilhoso!". Por causa disso, viviam atormentados pelo medo e pela ansiedade. Eram folhas ao vento.
+Os vizinhos viviam na inconstância. Eram escravos do que sentiam a cada segundo: "Isso é horrível!", "Isso é maravilhoso!". Por causa disso, viviam atormentados pela ansiedade. Eram como folhas levadas pela ventania.
 
-Se algo der muito errado nas suas vidas, sintam a tristeza, mas não chorem dizendo "tudo acabou". Se algo der muito certo, fiquem felizes, mas não gritem dizendo "sou o melhor". Respirem fundo. Lembrem-se de Sai Weng. O que acontece hoje é apenas uma parte da história, não o final dela. Mantenham a guarda alta e o coração calmo.
+Na vida de vocês, no dia a dia da escola, nos esportes ou em casa, haverá dias bons e dias difíceis. Se algo der errado, sintam a tristeza, mas não digam "tudo acabou". Se algo der muito certo, fiquem felizes, mas sem achar que são superiores a ninguém. Respirem fundo e lembrem-se de Sai Weng. O que acontece hoje é apenas um capítulo, não a história inteira. Mantenham a mente serena e o coração firme no centro.
 
 ---
 
@@ -126,11 +126,11 @@ O açougueiro chorou. Naquele momento, ele entendeu que a verdadeira força não
 == Reflexão
 
 
-Han Xin sentiu uma raiva terrível. Ele sentiu a vergonha queimar seu rosto quando todos riram. Ele não era de pedra. A vontade dele era lutar e mostrar que era forte. Mas ele demonstrou um tipo superior de força: a capacidade de ter poder nas mãos, mas escolher não usá-lo porque sabia que aquele não era o momento nem o motivo certo. Ele venceu a batalha mais difícil de todas: a batalha contra o seu próprio orgulho.
+Han Xin sentiu uma raiva terrível. Ele sentiu a vergonha queimar seu rosto quando todos riram. Ele não era de pedra. A vontade dele era partir para a briga e provar que era forte. No entanto, ele demonstrou um tipo superior de coragem: a capacidade de ter poder nas mãos, mas escolher não usar a violência porque sabia que aquele não era o momento nem a causa certa. Ele venceu a batalha mais difícil de todas: a batalha contra o próprio orgulho.
 
-O açougueiro queria briga por nada, apenas para aparecer. Ele achava que ser forte era impor medo. Mas, no final, ele aprendeu que quem tenta humilhar os outros é, na verdade, quem possui a alma pequena.
+O açougueiro buscava confusão por motivos bobos, apenas para aparecer. Ele achava que ser forte era impor medo aos outros. Mas, no final, aprendeu que quem tenta diminuir os outros é quem tem a alma pequena.
 
-Na vida, muitas vezes alguém vai ofender ou provocar vocês. O sangue vai ferver e a vontade de revidar será enorme. Mas lembrem-se de Han Xin. Perguntem-se: "Isso vale o meu futuro?". Ser forte de verdade é saber aguentar momentos difíceis e engolir o orgulho temporário para alcançar sonhos maiores lá na frente. Às vezes, a maior coragem é virar as costas, ignorar o barulho e seguir o seu próprio caminho.
+Na escola, no bairro ou nas redes sociais, muitas vezes alguém tentará provocar ou ofender vocês. O sangue vai ferver e a vontade de revidar imediatamente será grande. Nesses momentos, lembrem-se de Han Xin e perguntem-se: "Vale a pena estragar meu dia e meu futuro por causa dessa provocação?". A verdadeira força está em dominar a própria raiva e olhar para o objetivo maior lá na frente. Às vezes, a maior vitória é saber virar as costas, ignorar as ofensas e seguir de cabeça erguida.
 
 ---
 
@@ -178,11 +178,11 @@ Chen chegou logo atrás do filho. Quando viu a destruição, seus joelhos cedera
 == Reflexão
 
 
-Chen não era preguiçoso; pelo contrário, ele trabalhou duro. Mas ele falhou porque não soube respeitar o tempo natural das coisas. Ele sentia uma ansiedade enorme, um desejo de ver o resultado *agora*, e achou que podia forçar a natureza a obedecer à sua vontade.
+Chen não era preguiçoso; pelo contrário, trabalhou duro. Mas ele falhou porque não soube respeitar o tempo natural das coisas. Sentia uma ansiedade enorme, um desejo de ver o resultado *agora*, e achou que podia forçar a natureza a obedecer à sua pressa.
 
-O erro dele foi acreditar que fazer "mais rápido" é o mesmo que fazer "melhor". Ao tentar pular etapas e forçar o crescimento, ele quebrou a base que sustentava a vida das plantas.
+O erro dele foi acreditar que fazer "mais rápido" é o mesmo que fazer "melhor". Ao tentar pular etapas e forçar o crescimento, ele destruiu a raiz que sustentava a vida das plantas.
 
-Na vida de vocês, muitas vezes vai parecer que as coisas estão indo devagar demais. Pode ser uma matéria difícil na escola, um livro longo para ler ou uma habilidade nova que vocês querem aprender. A vontade será de pular páginas, de fazer de qualquer jeito só para terminar logo ou de desistir porque "não está crescendo". Mas lembrem-se de Chen. Tudo o que é valioso precisa de tempo para criar raízes fortes. Se vocês tentarem pular as etapas, o resultado pode parecer pronto por fora, mas estará fraco por dentro. O segredo para crescer alto não é puxar para cima, é nutrir a raiz e saber esperar.
+Na vida de vocês, muitas vezes parecerá que as coisas estão indo devagar demais. Pode ser uma matéria difícil na escola, um livro longo para ler, um esporte novo ou uma habilidade que vocês querem aprender. A vontade será de fazer de qualquer jeito só para terminar logo, ou de desistir porque "não está crescendo". Mas lembrem-se de Chen. Tudo o que é valioso precisa de tempo para criar raízes fortes. Se tentarem pular as etapas, o resultado até pode parecer pronto por fora, mas estará fraco por dentro. O segredo para crescer alto não é puxar para cima com pressa, é nutrir a raiz e saber esperar com paciência.
 
 ---
 

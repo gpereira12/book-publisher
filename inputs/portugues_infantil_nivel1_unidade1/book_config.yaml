@@ -1,0 +1,13 @@
+titulo: "Livro do Aluno — Unidade 1"
+subtitulo: "Português Infantil — Nível 1"
+autor: "Equipe Editorial"
+editora: "Editora Boutique"
+cidade: "São Paulo"
+isbn: "978-0-00000-000-0"
+ano: 2026
+idioma: "pt-BR"
+genero: "infantojuvenil"
+formato: "A4"
+tema: "Branco"
+faixa_etaria: "4-6 anos"
+preset_typst: "apostila"

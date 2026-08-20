@@ -2,7 +2,13 @@ playwright
 markdown
 beautifulsoup4
 jinja2
-PyPDF2
+pypdf
 Pillow
+reportlab
+numpy
+opencv-python-headless
 ebooklib
 PyYAML
+fastembed
+sqlite-vec
+mcp[cli]>=2,<3

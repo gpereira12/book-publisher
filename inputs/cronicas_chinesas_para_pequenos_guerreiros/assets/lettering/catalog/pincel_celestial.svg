@@ -1,0 +1,12 @@
+<svg class="title-lettering lettering-pincel" viewBox="0 0 620 180" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lettering-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0e6d2"/><stop offset="0.48" stop-color="#DBB666"/><stop offset="1" stop-color="#DBB666" stop-opacity="0.82"/>
+    </linearGradient>
+  </defs>
+  <path d="M 62,43 C 170,16 420,20 560,48" fill="none" stroke="#DBB666" stroke-width="3" stroke-linecap="round" opacity="0.72"/>
+  <text x="310" y="42" text-anchor="middle" font-family="&#x27;Cormorant Garamond&#x27;, serif" font-size="30" font-style="italic" letter-spacing="5" fill="#f0e6d2">CRÔNICAS CHINESAS</text>
+  <text x="310" y="83" text-anchor="middle" font-family="&#x27;Cinzel Decorative&#x27;, &#x27;Cinzel&#x27;, serif" font-size="25" letter-spacing="7" fill="#DBB666">PARA PEQUENOS</text>
+  <text x="310" y="137" text-anchor="middle" font-family="&#x27;Cinzel Decorative&#x27;, &#x27;Cinzel&#x27;, serif" font-size="55" font-weight="900" letter-spacing="2" fill="url(#lettering-gold)" stroke="#2b0813" stroke-width="1.1">GUERREIROS</text>
+  <path d="M 72,154 C 175,137 238,168 324,151 C 406,135 477,155 561,143 C 490,169 397,157 324,169 C 224,184 151,151 72,164 Z" fill="#DBB666" opacity="0.78"/>
+</svg>

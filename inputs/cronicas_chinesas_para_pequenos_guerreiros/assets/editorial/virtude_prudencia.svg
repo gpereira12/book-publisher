@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="180" viewBox="0 0 280 180" role="img" aria-labelledby="title desc">
+  <title id="title">Marca editorial da virtude Prudência</title>
+  <desc id="desc">Ideogramas chineses tradicionais para a virtude da prudência, com leitura e nome em português.</desc>
+  <g fill="none" stroke="#8A3F2A" stroke-width="1.5" opacity="0.55">
+    <path d="M58 28H222"/>
+    <path d="M140 142V158"/>
+  </g>
+  <text x="140" y="105" text-anchor="middle" fill="#8A3F2A"
+        font-family="Songti SC, STSong, serif" font-size="64" letter-spacing="8">智德</text>
+  <text x="140" y="135" text-anchor="middle" fill="#8A3F2A"
+        font-family="Arial Unicode MS, sans-serif" font-size="12" letter-spacing="1.5">ZHÌ DÉ · PRUDÊNCIA</text>
+</svg>

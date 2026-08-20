@@ -8,6 +8,7 @@ e no tipo de acabamento gráfico (Brochura, Capa Dura, Grampo, Espiral).
 
 import subprocess
 import re
+import math
 from pathlib import Path
 from typing import Dict, Any
 
@@ -20,9 +21,11 @@ PAPER_FACTORS_MM = {
 }
 
 
-def count_pdf_pages(pdf_path: Path) -> int:
+def count_pdf_pages(pdf_path: Path, *, strict: bool = False) -> int:
     """Conta o número exato de páginas de um arquivo PDF."""
     if not pdf_path.exists():
+        if strict:
+            raise FileNotFoundError(f"PDF do miolo não encontrado: {pdf_path}")
         return 100  # Fallback
 
     try:
@@ -32,13 +35,16 @@ def count_pdf_pages(pdf_path: Path) -> int:
             if match:
                 return int(match.group(1))
     except Exception:
-        pass
+        if strict:
+            raise
 
     try:
         content = pdf_path.read_bytes()
         pages = len(re.findall(rb'/Type\s*/Page\b', content))
         return max(1, pages)
-    except Exception:
+    except Exception as exc:
+        if strict:
+            raise RuntimeError(f"Não foi possível contar as páginas de {pdf_path}") from exc
         return 100
 
 
@@ -54,6 +60,8 @@ def calculate_spine_width_mm(
         return 0.0
 
     factor = PAPER_FACTORS_MM.get(paper_type, 0.115)
-    sheets = page_count / 2.0
+    # Um miolo ímpar ainda ocupa a última folha física; o preflight pede que a
+    # página branca seja confirmada, mas a lombada não pode subestimar o volume.
+    sheets = math.ceil(page_count / 2.0)
     spine_mm = sheets * factor
     return round(max(3.0, spine_mm), 2)

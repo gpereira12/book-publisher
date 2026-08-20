@@ -1,0 +1,25 @@
+{
+  "prompt": "Crônicas Chinesas para Pequenos Guerreiros. cinematic photorealistic illustration with oriental ink-wash (shuimo) influence. ornate, imperial, epic, ancient China, gold accents. medium shot, subject framed from the waist up, balanced context and detail. eye-level camera angle, neutral and grounded perspective. golden hour lighting, warm low-angle sunlight, long soft shadows. composed on the rule of thirds, subject off-center. generous negative space in the upper third of the frame. character-led narrative scene, dominant color #4A1525 approximately 70 percent, secondary color #7A3043 approximately 20 percent, accent color #DBB666 approximately 10 percent. cover artwork only, no typography, no letters, no words, no logos, no watermark.",
+  "structured": {
+    "subject": "Crônicas Chinesas para Pequenos Guerreiros",
+    "estilo_key": "imperial_oriental",
+    "shot_type": "medium",
+    "camera_angle": "eye_level",
+    "lighting": "golden_hour",
+    "composition": "rule_of_thirds",
+    "negative_space_for_title": true,
+    "extra_keywords": [
+      "character-led narrative scene",
+      "dominant color #4A1525 approximately 70 percent",
+      "secondary color #7A3043 approximately 20 percent",
+      "accent color #DBB666 approximately 10 percent"
+    ],
+    "exclude_text": true,
+    "style_override": null
+  },
+  "provider_hints": {
+    "aspect_ratio": "27:40",
+    "negative_prompt": "text, letters, words, logo, watermark, signature"
+  },
+  "label": "direcao_figurativa"
+}

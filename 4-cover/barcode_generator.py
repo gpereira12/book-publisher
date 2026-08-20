@@ -28,15 +28,77 @@ FIRST_DIGIT_PATTERNS = [
     "LGGLLG", "LGGGLL", "LGLGLG", "LGLGGL", "LGGLGL"
 ]
 
+# Fonte bitmap 5×7 mínima para manter o barcode 100% vetorial, sem fontes PDF.
+BITMAP_GLYPHS = {
+    "0": ("01110", "10001", "10011", "10101", "11001", "10001", "01110"),
+    "1": ("00100", "01100", "00100", "00100", "00100", "00100", "01110"),
+    "2": ("01110", "10001", "00001", "00010", "00100", "01000", "11111"),
+    "3": ("11110", "00001", "00001", "01110", "00001", "00001", "11110"),
+    "4": ("00010", "00110", "01010", "10010", "11111", "00010", "00010"),
+    "5": ("11111", "10000", "10000", "11110", "00001", "00001", "11110"),
+    "6": ("01110", "10000", "10000", "11110", "10001", "10001", "01110"),
+    "7": ("11111", "00001", "00010", "00100", "01000", "01000", "01000"),
+    "8": ("01110", "10001", "10001", "01110", "10001", "10001", "01110"),
+    "9": ("01110", "10001", "10001", "01111", "00001", "00001", "01110"),
+    "I": ("11111", "00100", "00100", "00100", "00100", "00100", "11111"),
+    "S": ("01111", "10000", "10000", "01110", "00001", "00001", "11110"),
+    "B": ("11110", "10001", "10001", "11110", "10001", "10001", "11110"),
+    "N": ("10001", "11001", "11001", "10101", "10011", "10011", "10001"),
+    "X": ("10001", "10001", "01010", "00100", "01010", "10001", "10001"),
+    "-": ("00000", "00000", "00000", "11111", "00000", "00000", "00000"),
+    " ": ("00000",) * 7,
+}
+
+
+def _vector_text(text: str, center_x: float, top_y: float, scale: float) -> str:
+    glyph_w = 5 * scale
+    advance = 6 * scale
+    total_w = max(0.0, len(text) * advance - scale)
+    start_x = center_x - total_w / 2
+    rects = []
+    for char_index, char in enumerate(text.upper()):
+        glyph = BITMAP_GLYPHS.get(char, BITMAP_GLYPHS[" "])
+        for row_index, row in enumerate(glyph):
+            for column_index, bit in enumerate(row):
+                if bit == "1":
+                    rects.append(
+                        f'<rect x="{start_x + char_index*advance + column_index*scale:.2f}" '
+                        f'y="{top_y + row_index*scale:.2f}" width="{scale:.2f}" height="{scale:.2f}"/>'
+                    )
+    return f'<g fill="#000000">{"".join(rects)}</g>'
+
 
 def clean_digits(isbn_str: str) -> str:
-    """Extrai apenas os dígitos numéricos de um ISBN."""
-    digits = re.sub(r'\D', '', isbn_str)
-    if len(digits) == 10:
-        digits = "978" + digits[:9]  # Converte ISBN-10 para 13 dígitos preliminares
-    if len(digits) < 13:
-        digits = digits.ljust(13, '0')[:13]
-    return digits[:13]
+    """Normaliza ISBN-10/13 e rejeita valores que produziriam barras inválidas."""
+    raw = re.sub(r"[^0-9Xx]", "", isbn_str)
+    if len(raw) == 10:
+        if not validate_isbn10(raw):
+            raise ValueError(f"ISBN-10 inválido: {isbn_str!r}")
+        base = "978" + raw[:9]
+        return base + str(calculate_ean13_check_digit(base))
+    if len(raw) != 13 or not raw.isdigit():
+        raise ValueError(f"ISBN deve conter exatamente 10 ou 13 dígitos: {isbn_str!r}")
+    if not validate_ean13(raw):
+        raise ValueError(f"Dígito verificador EAN-13 inválido: {isbn_str!r}")
+    return raw
+
+
+def calculate_ean13_check_digit(first_twelve: str) -> int:
+    if len(first_twelve) != 12 or not first_twelve.isdigit():
+        raise ValueError("O cálculo do EAN-13 exige exatamente 12 dígitos")
+    weighted = sum(int(d) * (1 if index % 2 == 0 else 3) for index, d in enumerate(first_twelve))
+    return (10 - weighted % 10) % 10
+
+
+def validate_ean13(digits: str) -> bool:
+    return len(digits) == 13 and digits.isdigit() and calculate_ean13_check_digit(digits[:12]) == int(digits[-1])
+
+
+def validate_isbn10(value: str) -> bool:
+    if len(value) != 10 or not value[:9].isdigit() or not (value[-1].isdigit() or value[-1].upper() == "X"):
+        return False
+    values = [int(char) for char in value[:9]] + [10 if value[-1].upper() == "X" else int(value[-1])]
+    return sum((10 - index) * digit for index, digit in enumerate(values)) % 11 == 0
 
 
 def encode_ean13_binary(digits: str) -> str:
@@ -73,7 +135,7 @@ def generate_ean13_svg(isbn_str: str, output_path: Path) -> Path:
     digits = clean_digits(isbn_str)
     binary = encode_ean13_binary(digits)
     
-    formatted_isbn = f"ISBN {isbn_str}" if "ISBN" not in isbn_str else isbn_str
+    formatted_isbn = f"ISBN {digits}"
     bottom_digits_fmt = f"{digits[0]} {digits[1:7]} {digits[7:13]}"
 
     # Dimensões do SVG (Quiet zone de 125px x 70px)
@@ -99,21 +161,23 @@ def generate_ean13_svg(isbn_str: str, output_path: Path) -> Path:
             )
 
     rects_str = "\n    ".join(rects_svg)
+    top_text_svg = _vector_text(formatted_isbn, svg_width / 2, 4, 0.72)
+    bottom_text_svg = _vector_text(bottom_digits_fmt, svg_width / 2, 59, 0.62)
 
     svg_content = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{svg_width}" height="{svg_height}" viewBox="0 0 {svg_width} {svg_height}">
   <!-- Fundo Fundo Fundo Branco Fundo Quiet Zone -->
   <rect width="{svg_width}" height="{svg_height}" fill="#ffffff" rx="4" ry="4" stroke="#cccccc" stroke-width="0.5"/>
   
-  <!-- Texto Superior ISBN -->
-  <text x="{svg_width/2:.1f}" y="13" font-family="Courier, monospace" font-size="7.5" font-weight="bold" fill="#000000" text-anchor="middle">{formatted_isbn}</text>
+  <!-- Texto Superior ISBN convertido em glifos vetoriais 5x7 -->
+  {top_text_svg}
   
   <!-- Barras Vetoriais EAN-13 -->
   <g>
     {rects_str}
   </g>
 
-  <!-- Texto Inferior Dígitos EAN-13 -->
-  <text x="{svg_width/2:.1f}" y="66" font-family="Courier, monospace" font-size="7" font-weight="bold" fill="#000000" text-anchor="middle">{bottom_digits_fmt}</text>
+  <!-- Dígitos inferiores convertidos em glifos vetoriais 5x7 -->
+  {bottom_text_svg}
 </svg>
 """
 
